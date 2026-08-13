@@ -16,7 +16,7 @@ export function WhyChoose() {
         <div className="text-center max-w-2xl mx-auto mb-14">
           <SectionLabel className="justify-center">Why Choose Divine IVF</SectionLabel>
           <h2 className="mt-5 text-3xl md:text-[2.6rem] leading-tight text-ink-900">
-            Built around <span className="font-serif italic text-rose-600">how you're actually cared for</span>
+            Built around <span className="font-serif italic text-rose-600">how you&apos;re actually cared for</span>
           </h2>
         </div>
 
