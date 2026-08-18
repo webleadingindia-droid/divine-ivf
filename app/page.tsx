@@ -26,9 +26,7 @@ export default function HomePage() {
       <DoctorSection />
       <WhyChoose />
       <SuccessRate />
-      <FertilityJourney />
       <IvfJourney />
-      <AdvancedIvf />
       <FertilityScience />
       <PatientReviews />
       <ServicePathways />

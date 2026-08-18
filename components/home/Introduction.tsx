@@ -37,18 +37,18 @@ export function Introduction() {
             consultation with Dr. Mandavi Rai starts with your history, your
             previous attempts, and what matters to you.
           </p>
-          <p className="text-ink-400 leading-relaxed mb-8">
+          <p className="text-ink-400 leading-relaxed mb-4">
             From fertility investigation and IUI to IVF and advanced embryology
             techniques, the clinic brings together gynaecology, male fertility
             evaluation and pregnancy care under one roof in Sector 76, Noida.
           </p>
           <div className="grid grid-cols-2 gap-6">
             <div>
-              <p className="font-serif italic text-3xl text-rose-600">22+</p>
+              <p className="font-serif italic text-[45px] text-rose-600">22+</p>
               <p className="text-sm text-ink-400 mt-1">Fertility &amp; women&apos;s health services</p>
             </div>
             <div>
-              <p className="font-serif italic text-3xl text-rose-600">1</p>
+              <p className="font-serif italic text-[45px] text-rose-600">1</p>
               <p className="text-sm text-ink-400 mt-1">Doctor-led care team, start to finish</p>
             </div>
           </div>
