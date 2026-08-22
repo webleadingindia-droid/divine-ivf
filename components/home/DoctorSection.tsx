@@ -24,18 +24,18 @@ export function DoctorSection() {
           }} 
         />
 
-        {/* Floating Elements - Reduced & Refined */}
+        {/* Static Decorative Elements - No Animation */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-5 left-5 md:top-10 md:left-10 opacity-10 animate-float-slow">
+          <div className="absolute top-5 left-5 md:top-10 md:left-10 opacity-10">
             <Heart className="h-12 w-12 md:h-16 md:w-16 text-rose-500" />
           </div>
-          <div className="absolute bottom-10 right-5 md:bottom-16 md:right-16 opacity-10 animate-float-medium">
+          <div className="absolute bottom-10 right-5 md:bottom-16 md:right-16 opacity-10">
             <Baby className="h-10 w-10 md:h-14 md:w-14 text-rose-400" />
           </div>
-          <div className="absolute top-1/2 left-1/4 opacity-8 animate-float-fast hidden md:block">
+          <div className="absolute top-1/2 left-1/4 opacity-8 hidden md:block">
             <Sparkles className="h-12 w-12 text-amber-400" />
           </div>
-          <div className="absolute bottom-1/3 right-10 opacity-8 animate-float-slow hidden lg:block">
+          <div className="absolute bottom-1/3 right-10 opacity-8 hidden lg:block">
             <Award className="h-10 w-10 text-rose-300" />
           </div>
         </div>
@@ -247,31 +247,6 @@ export function DoctorSection() {
             </div>
           </div>
         </div>
-
-        {/* Animations */}
-        <style jsx>{`
-          @keyframes float-slow {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-12px) rotate(4deg); }
-          }
-          @keyframes float-medium {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-8px) rotate(-4deg); }
-          }
-          @keyframes float-fast {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-6px) rotate(6deg); }
-          }
-          .animate-float-slow {
-            animation: float-slow 6s ease-in-out infinite;
-          }
-          .animate-float-medium {
-            animation: float-medium 4s ease-in-out infinite;
-          }
-          .animate-float-fast {
-            animation: float-fast 3s ease-in-out infinite;
-          }
-        `}</style>
       </section>
     </ScrollAnimation>
   );
