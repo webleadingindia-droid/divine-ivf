@@ -485,7 +485,7 @@ export function TreatmentTemplate({
             Ready to talk to <span className="font-serif italic text-rose-200">Dr. Mandavi Rai</span>?
           </h2>
           <p className="text-rose-100 mb-7 max-w-xl mx-auto text-sm">
-            Bring your questions, your history, and your pace — we'll build the next step together.
+            Bring your questions, your history, and your pace — we`ll build the next step together.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link

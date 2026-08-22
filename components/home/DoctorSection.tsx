@@ -115,7 +115,7 @@ export function DoctorSection() {
                   </div>
                   
                   <p className="text-sm md:text-base font-serif italic text-white leading-relaxed mb-2.5">
-                    "There is no one-size-fits-all path to parenthood."
+                    &ldquo;There is no one-size-fits-all path to parenthood.&rdquo;
                   </p>
                   
                   <div className="grid grid-cols-3 gap-1.5 mb-2.5">

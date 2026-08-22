@@ -113,7 +113,7 @@ export function WhyChoose() {
           <h2 className="text-3xl md:text-[2.6rem] leading-tight text-ink-900">
             Built around{' '}
             <span className="font-serif italic bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">
-              how you're actually cared for
+              how you`re actually cared for
             </span>
           </h2>
           <div className="flex items-center justify-center gap-3 mt-4">
