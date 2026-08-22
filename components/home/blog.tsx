@@ -31,7 +31,7 @@ export function Blog() {
 
             <p className="text-ink-400 mt-3 max-w-xl text-sm md:text-base">
               Stay informed with expert articles, treatment guides, and fertility tips 
-              from Dr. Mandavi Rai.
+              from Dr. Mandavi Rai
             </p>
           </div>
 

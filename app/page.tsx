@@ -14,7 +14,7 @@ import { Testimonials } from "@/components/home/Testimonials";
 import { ServicePathways } from "@/components/home/ServicePathways";
 import { Gallery } from "@/components/home/Gallery";
 import { Videos } from "@/components/home/Videos";
-import { Blog } from "@/components/home/Blog";
+import { Blog } from "@/components/home/blog";
 import { Faq } from "@/components/home/Faq";
 import { FinalCta } from "@/components/home/FinalCta";
 
