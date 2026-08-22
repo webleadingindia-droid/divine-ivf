@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, ReactNode, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 
 interface ScrollAnimationProps {
   children: ReactNode;
@@ -19,6 +19,10 @@ export function ScrollAnimation({
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const element = ref.current;
+
+    if (!element) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -32,19 +36,22 @@ export function ScrollAnimation({
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    observer.observe(element);
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
-  const initialTransform = {
+  const initialTransform: Record<
+    "up" | "down" | "left" | "right",
+    string
+  > = {
     up: "translateY(30px)",
     down: "translateY(-30px)",
     left: "translateX(30px)",
     right: "translateX(-30px)",
-  }[direction];
+  };
 
   return (
     <div
@@ -52,8 +59,10 @@ export function ScrollAnimation({
       className={className}
       style={{
         opacity: isVisible ? 1 : 0,
-        transform: isVisible ? "translate(0, 0)" : initialTransform,
-        transition: `all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) ${delay}s`,
+        transform: isVisible
+          ? "translate3d(0, 0, 0)"
+          : initialTransform[direction],
+        transition: `opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) ${delay}s`,
         width: "100%",
       }}
     >
