@@ -7,8 +7,8 @@ import { BloomMotif } from "@/components/ui/BloomMotif";
 import { useState, useEffect } from "react";
 
 const trustPoints = [
-  "Personalised fertility evaluation",
   "IVF & advanced fertility treatments",
+  "Personalised Fertility Care",
 ];
 
 // Background images for hero slider with responsive sources
@@ -17,7 +17,7 @@ const heroImages = [
     alt: "Happy couple at fertility clinic",
     images: {
       mobile: "https://plain-apac-prod-public.komododecks.com/202608/18/01rqpt3qDsWvbVJgBpka/image.jpg",
-      tablet: "https://plain-apac-prod-public.komododecks.com/202608/18/TaGIv0LnILUd2ouSqju2/image.png",
+      tablet: "https://plain-apac-prod-public.komododecks.com/202608/18/01rqpt3qDsWvbVJgBpka/image.jpg",
       desktop: "https://plain-apac-prod-public.komododecks.com/202608/18/TaGIv0LnILUd2ouSqju2/image.png",
       large: "https://plain-apac-prod-public.komododecks.com/202608/18/TaGIv0LnILUd2ouSqju2/image.png",
     }
@@ -25,17 +25,17 @@ const heroImages = [
   {
     alt: "Doctor consulting with a couple about fertility care",
     images: {
-      mobile: "https://plain-apac-prod-public.komododecks.com/202608/18/GDnW4Mxyl0yqkFaXMdd0/image.jpg",
-      tablet: "https://plain-apac-prod-public.komododecks.com/202608/18/QZbQH1b5XcmPtDrOKvF9/image.png",
-      desktop: "https://plain-apac-prod-public.komododecks.com/202608/18/QZbQH1b5XcmPtDrOKvF9/image.png",
-      large: "https://plain-apac-prod-public.komododecks.com/202608/18/QZbQH1b5XcmPtDrOKvF9/image.png",
+      mobile: "https://plain-apac-prod-public.komododecks.com/202608/19/StaV2t00157EGwz7SzE7/image.png",
+      tablet: "https://plain-apac-prod-public.komododecks.com/202608/19/StaV2t00157EGwz7SzE7/image.png",
+      desktop: "https://plain-apac-prod-public.komododecks.com/202608/19/tiDoC8roOqSE9CjLREFq/image.png",
+      large: "https://plain-apac-prod-public.komododecks.com/202608/19/tiDoC8roOqSE9CjLREFq/image.png",
     }
   },
   {
     alt: "IVF laboratory and medical professionals",
     images: {
       mobile: "https://plain-apac-prod-public.komododecks.com/202608/18/xV5JDkRAIrrdz6ll9vIC/image.jpg",
-      tablet: "https://plain-apac-prod-public.komododecks.com/202608/18/OXq6ChgNsdQRTSmz77tc/image.png",
+      tablet: "https://plain-apac-prod-public.komododecks.com/202608/18/xV5JDkRAIrrdz6ll9vIC/image.jpg",
       desktop: "https://plain-apac-prod-public.komododecks.com/202608/18/OXq6ChgNsdQRTSmz77tc/image.png",
       large: "https://plain-apac-prod-public.komododecks.com/202608/18/OXq6ChgNsdQRTSmz77tc/image.png",
     }
@@ -44,7 +44,7 @@ const heroImages = [
     alt: "Fertility clinic consultation room",
     images: {
       mobile: "https://plain-apac-prod-public.komododecks.com/202608/18/e8Txo2bfDUbSHqHxcCAx/image.jpg",
-      tablet: "https://plain-apac-prod-public.komododecks.com/202608/18/dqmHEqBm0heFtUivEdWL/image.png",
+      tablet: "https://plain-apac-prod-public.komododecks.com/202608/18/e8Txo2bfDUbSHqHxcCAx/image.jpg",
       desktop: "https://plain-apac-prod-public.komododecks.com/202608/18/dqmHEqBm0heFtUivEdWL/image.png",
       large: "https://plain-apac-prod-public.komododecks.com/202608/18/dqmHEqBm0heFtUivEdWL/image.png",
     }
@@ -182,20 +182,18 @@ export function Hero() {
             <div className="animate-fade-up">
               <span className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] sm:text-xs md:text-sm font-medium mb-3 md:mb-6">
                 <Sparkles className="h-2.5 w-2.5 md:h-3.5 md:w-3.5" />
-                Divine &amp; IVF, Sector 76, Noida
+                Divine IVF, Sector 76, Noida
               </span>
               
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl leading-[1.2] sm:leading-[1.15] md:leading-[1.08] text-white mb-3 md:mb-6 drop-shadow-lg">
-                Trying to conceive?{" "}
+                Your Dream of Parenthood{" "}
                 <span className="font-serif italic text-rose-200">
-                  Let&apos;s find the right next step
-                </span>{" "}
-                — together.
+                  Starts With the Right Care.
+                </span>
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-white/90 max-w-xl mb-5 md:mb-8 leading-relaxed drop-shadow-md">
-                Personalised fertility evaluation, IVF and reproductive care with
-                Dr. Mandavi Rai — built around your history, not a standard protocol.
+                Personalised fertility care, advanced IVF treatments, and expert guidance by Dr. Mandavi Rai.
               </p>
 
               <div className="flex flex-wrap items-center gap-2 sm:gap-3 md:gap-4 mb-6 md:mb-10">

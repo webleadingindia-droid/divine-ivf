@@ -3,7 +3,7 @@ import { testimonials } from "@/data/testimonials";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import Image from "next/image";
 
-export function PatientReviews() {
+export function Testimonials() {
   // Generate random dates for reviews
   const getRandomDate = (index: number) => {
     const dates = [

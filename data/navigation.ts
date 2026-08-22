@@ -149,8 +149,8 @@ export const primaryNav: NavItem[] = [
     href: "/resources",
     children: [
       {
-        label: "Fertility Knowledge Hub",
-        href: "/resources",
+        label: "Blog",
+        href: "/blog",
       },
       {
         label: "Patient Stories",

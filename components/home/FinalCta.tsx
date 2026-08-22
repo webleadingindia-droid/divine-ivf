@@ -15,7 +15,7 @@ export function FinalCta() {
           <span className="font-serif italic">a conversation</span>.
         </h2>
         <p className="text-white/85 mb-9 leading-relaxed">
-          Reach out to Divine Women &amp; IVF Clinic in Sector 76, Noida, and
+          Reach out to Divine Ivf in Sector 76, Noida, and
           take the first step toward a clear, personalised plan.
         </p>
         <div className="flex flex-wrap justify-center gap-4">

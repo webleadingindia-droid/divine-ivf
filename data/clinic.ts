@@ -1,6 +1,6 @@
 // Verified clinic information only. Do not add unverified facts (hours, awards, stats).
 export const clinic = {
-  name: "Divine Women & IVF Clinic",
+  name: "Divine Ivf",
   doctorName: "Dr. Mandavi Rai",
   addressLines: [
     "Shop Number 13, First Floor,",

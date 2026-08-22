@@ -79,7 +79,7 @@ export function IvfJourney() {
 
             {/* Description */}
             <p className="text-sm md:text-base text-ink-500 leading-relaxed mb-6">
-              Every IVF journey is unique. Here`s what you can expect at each step
+              Every IVF journey is unique. Here's what you can expect at each step
               of the process with our expert team by your side.
             </p>
 

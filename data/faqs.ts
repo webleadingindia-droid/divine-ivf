@@ -67,7 +67,7 @@ export const faqCategories: FaqCategory[] = [
     items: [
       {
         question: "Where is the clinic located?",
-        answer: "Divine Women & IVF Clinic is located at Shop Number 13, First Floor, Street 76 Market, Sector 76, Noida, Uttar Pradesh.",
+        answer: "Divine Ivf is located at Shop Number 13, First Floor, Street 76 Market, Sector 76, Noida, Uttar Pradesh.",
       },
       {
         question: "How can I book a consultation?",

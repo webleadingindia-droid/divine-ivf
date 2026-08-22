@@ -106,7 +106,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ink-400">
-          <p>&copy; {new Date().getFullYear()} Divine Women &amp; IVF Clinic. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Divine Ivf. All rights reserved.</p>
           <div className="flex items-center gap-5">
             <Link href="/privacy-policy" className="hover:text-rose-600">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-rose-600">Terms</Link>
