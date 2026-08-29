@@ -125,10 +125,6 @@ export function PatientStories() {
                 Journeys to Parenthood
               </span>
             </h2>
-
-            <p className="text-sm text-ink-400 mt-3">
-              Hear directly from patients who trusted us with their fertility journey. Tap a video to play, tap again to pause.
-            </p>
           </div>
 
           <div className="hidden md:flex items-center gap-3 shrink-0">

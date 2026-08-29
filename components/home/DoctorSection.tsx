@@ -51,7 +51,7 @@ export function DoctorSection() {
 
       <div className="container-page px-4 sm:px-6 relative z-10">
         {/* Section Header - Minimal & Sophisticated */}
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-rose-100/40 shadow-sm text-rose-600 text-xs font-medium tracking-wide mb-5">
             <Heart className="h-3.5 w-3.5" />
             <span>Meet Your Fertility Specialist</span>
@@ -62,16 +62,8 @@ export function DoctorSection() {
           </h2>
           
           <p className="text-base md:text-lg text-ink-500 mt-3 max-w-2xl mx-auto font-light tracking-wide">
-            Consultant Gynaecologist &amp; Infertility Specialist (IVF)
+            Best Gynaecologist &amp; IVF Doctor in Noida
           </p>
-          
-          <div className="flex items-center justify-center gap-4 mt-4">
-            <span className="h-px w-16 bg-gradient-to-r from-transparent to-rose-300" />
-            <span className="text-xs text-ink-400 font-medium tracking-widest uppercase">
-              Compassionate, evidence-based care
-            </span>
-            <span className="h-px w-16 bg-gradient-to-l from-transparent to-rose-300" />
-          </div>
         </div>
 
         {/* Main Grid - Clean Two Column Layout */}
@@ -98,8 +90,8 @@ export function DoctorSection() {
                     <p className="text-[8px] uppercase tracking-widest text-ink-400">Experience</p>
                   </div>
                   <div className="bg-white/90 backdrop-blur-md rounded-2xl px-3.5 py-2 shadow-lg border border-white/30">
-                    <p className="text-xs font-bold text-emerald-600">94%</p>
-                    <p className="text-[8px] uppercase tracking-widest text-ink-400">Success Rate</p>
+                    <p className="text-xs font-bold text-emerald-600">10+ Years</p>
+                    <p className="text-[8px] uppercase tracking-widest text-ink-400">Infertility Experience</p>
                   </div>
                 </div>
 
@@ -107,11 +99,11 @@ export function DoctorSection() {
                 <div className="absolute bottom-4 left-4 right-4 flex flex-wrap items-center gap-2">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/90 backdrop-blur-md rounded-full text-[10px] font-semibold text-rose-600 shadow-lg border border-white/30">
                     <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
-                    4.9 (300+ Reviews)
+                    Reproductive Medicine Specialist
                   </span>
                   <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-rose-500/90 backdrop-blur-md rounded-full text-[10px] font-semibold text-white shadow-lg">
                     <BadgeCheck className="h-3.5 w-3.5" />
-                    500+ IVF Success
+                    15+ Years of Clinical Experience
                   </span>
                 </div>
               </div>
@@ -214,7 +206,7 @@ export function DoctorSection() {
               </div>
 
               <h3 className="text-xl md:text-2xl font-bold text-ink-900 mb-4 leading-snug">
-                Because your fertility journey is more than a number.
+                Gynecologist &amp; IVF Doctor (Professional Journey)
               </h3>
 
               <div className="grid grid-cols-3 gap-3 mb-5">
@@ -239,12 +231,14 @@ export function DoctorSection() {
               </div>
 
               <p className="text-sm text-ink-600 leading-relaxed">
-                <span className="font-semibold text-ink-800">Dr. Mandavi Rai</span> is a
-                trusted Fertility &amp; IVF Specialist in Noida and Delhi NCR with extensive
-                experience in fertility and assisted reproductive medicine. She has walked
-                alongside couples through the most hopeful—and difficult—chapters of their
-                lives. With over 15 years of experience and 10 years dedicated to infertility,
-                she brings a compassionate, evidence-based approach to every patient&apos;s journey.
+                <span className="font-semibold text-ink-800">Dr. Mandavi Rai</span> is an
+                IVF fertility specialist in Noida with a vision to improve the reproductive outcomes
+                of childless couples or individuals. She has been on this journey for over 15 years
+                and has 10 years of experience in infertility. After completing her MD in Obstetrics
+                and Gynaecology from Mumbai, she pursued a fellowship in Reproductive Medicine from
+                NUS Singapore. Over the years, she has developed a deep understanding of the pain and
+                anguish of people who are unable to conceive naturally, while embracing the evolving
+                science of reproduction and assisted fertility care.
               </p>
             </div>
 
@@ -261,13 +255,13 @@ export function DoctorSection() {
 
               <div className="space-y-1.5 max-h-[200px] overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-rose-200 scrollbar-track-transparent">
                 {[
+                  "Diploma in Ultrasound – Randhawa Institute of Ultrasound Training, Delhi (2015)",
+                  "Masters in Minimal Access Surgery (M.MAS) – Gold Medalist, World Laparoscopy Hospital, Gurgaon (2016)",
+                  "Fellowship in Reproductive Medicine – CREST, National University Health System, Singapore (2017–2018 / 2019)",
+                  "Post-Graduation Diploma in Hospital and Health Management – IGNOU, New Delhi (2020)",
                   "M.S. OBGY – MGM Institute of Health Sciences, Mumbai (2013)",
                   "MBBS – Bharati Vidyapeeth University, Pune (2005)",
-                  "Fellowship in Reproductive Medicine – CREST, National University Health System, Singapore (2017–2019)",
-                  "Masters in Minimal Access Surgery (M.MAS) – Gold Medalist, World Laparoscopy Hospital, Gurgaon (2016)",
-                  "Post-Graduation Diploma in Hospital and Health Management – IGNOU, New Delhi (2020)",
                   "Post Graduate Diploma in Sexual Health and Reproductive Medicine – University of South Wales, UK (2020)",
-                  "Diploma in Ultrasound – Randhawa Institute of Ultrasound Training, Delhi (2015)",
                   "FICOG – Fellow of the Indian College of Obstetricians and Gynecologists",
                 ].map((cred, index) => (
                   <div
@@ -294,13 +288,13 @@ export function DoctorSection() {
 
               <div className="space-y-1.5 max-h-[200px] overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-rose-200 scrollbar-track-transparent">
                 {[
-                  "Center Head & Senior Consultant IVF Specialist – INDIRA IVF, Noida Center (Present)",
-                  "Senior Consultant & IVF Specialist – INDIRA IVF, Raj Nagar, Ghaziabad",
-                  "Senior Consultant & IVF Specialist – INDIRA IVF, Patel Nagar, New Delhi",
-                  "Senior Resident – ESIC Hospital & Medical College, Faridabad",
-                  "Senior Resident – Lady Hardinge Medical College, New Delhi",
-                  "Senior Resident – Max Super Speciality Hospital, Saket, Delhi",
-                  "Junior Resident – Safdarjung Hospital, New Delhi",
+                  "Center Head and Senior Consultant & IVF Specialist – Indira IVF, Noida Center",
+                  "Senior Consultant & IVF Specialist – Indira IVF, Raj Nagar, Ghaziabad; achieved about 200% growth in embryo transfer cases and institutionalized formal tie-ups with other OPD centres",
+                  "Senior Consultant & IVF Specialist – Indira IVF, Patel Nagar, New Delhi; contributed to the organization reaching 50,000 successful IVF cycles and was chosen to lead the Noida centre",
+                  "Senior Resident – ESIC Hospital & Medical College, Faridabad; extensive medico-legal experience and numerous surgeries on complicated cases",
+                  "Senior Resident – Lady Hardinge Medical College, New Delhi; treated high-risk pregnancies with life-threatening complications and gained hospital administration experience",
+                  "Senior Resident – Max Super Speciality Hospital, Saket, Delhi; corporate hospital patient-care experience and exposure to complex cases",
+                  "Junior Resident – Safdarjung Hospital, New Delhi; extensive normal deliveries, medico-legal cases and clinical complications",
                 ].map((exp, index) => (
                   <div
                     key={index}
