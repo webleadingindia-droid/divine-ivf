@@ -36,10 +36,15 @@ import {
   Ambulance,
   ClipboardCheck,
   Flower2,
-  Sparkle
+  Sparkle,
+  Syringe,
+  Target,
+  TrendingUp,
+  FileText,
+  BookOpen,
+  Globe
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
-import { serviceGroups } from "@/data/services";
 
 export default function AboutPage() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -72,22 +77,29 @@ export default function AboutPage() {
   const clinicStats = [
     { number: "15+", label: "Years of Excellence", icon: Award },
     { number: "5000+", label: "Happy Families", icon: Users },
-    { number: "98%", label: "Patient Satisfaction", icon: Heart },
+    { number: "94%", label: "IVF Success Rate", icon: Heart },
     { number: "22+", label: "Fertility Services", icon: Stethoscope },
   ];
 
   const coreValues = [
-    { icon: Heart, label: "Compassionate Care", desc: "Every patient receives emotional support throughout their journey" },
-    { icon: Shield, label: "Evidence-Based", desc: "Treatments backed by the latest medical research" },
-    { icon: Sparkles, label: "Personalized Approach", desc: "Treatment plans tailored to your unique needs" },
-    { icon: Users, label: "Doctor-Led Practice", desc: "Single point of contact from start to finish" },
+    { icon: Heart, label: "Compassionate Care", desc: "Every patient receives emotional support throughout their fertility journey" },
+    { icon: Shield, label: "Evidence-Based", desc: "Treatments backed by the latest medical research and clinical evidence" },
+    { icon: Sparkles, label: "Personalized Approach", desc: "Treatment plans tailored to your unique medical history and reproductive goals" },
+    { icon: Users, label: "Doctor-Led Practice", desc: "Single point of contact from start to finish with complete continuity of care" },
   ];
 
   const facilities = [
-    { icon: Microscope, label: "Advanced Embryology Lab", desc: "State-of-the-art IVF laboratory" },
-    { icon: Activity, label: "Modern Operation Theatre", desc: "Fully equipped surgical facilities" },
-    { icon: ClipboardCheck, label: "Digital Health Records", desc: "Secure electronic medical records" },
-    { icon: Flower2, label: "Comfortable Consultation", desc: "Warm, welcoming consultation rooms" },
+    { icon: Microscope, label: "Advanced Embryology Lab", desc: "State-of-the-art IVF laboratory with cutting-edge technology" },
+    { icon: Activity, label: "Modern Operation Theatre", desc: "Fully equipped surgical facilities for gynecological procedures" },
+    { icon: ClipboardCheck, label: "Digital Health Records", desc: "Secure electronic medical records for seamless patient care" },
+    { icon: Flower2, label: "Comfortable Consultation", desc: "Warm, welcoming consultation rooms designed for patient comfort" },
+  ];
+
+  const serviceGroups = [
+    { key: 'fertility', title: 'Fertility Evaluation', summary: 'Comprehensive fertility assessment and diagnosis' },
+    { key: 'ivf', title: 'IVF & ART Treatments', summary: 'Advanced IVF, ICSI, and assisted reproduction' },
+    { key: 'gynecology', title: 'Gynaecology Services', summary: 'Complete women\'s health and gynecological care' },
+    { key: 'pregnancy', title: 'Pregnancy Care', summary: 'Comprehensive care from conception to delivery' },
   ];
 
   return (
@@ -160,7 +172,7 @@ export default function AboutPage() {
                   <>
                     <Image
                       src="https://plain-apac-prod-public.komododecks.com/202608/13/mBr4bMEVS9BL6objOuAb/image.webp"
-                      alt="Divine Ivf consultation space"
+                      alt="Divine IVF consultation space"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                       priority
@@ -270,12 +282,15 @@ export default function AboutPage() {
               {activeTab === 'overview' && (
                 <>
                   <div>
-                    <h2 className="text-2xl md:text-3xl text-ink-900 mb-4">Welcome to Divine Ivf</h2>
+                    <h2 className="text-2xl md:text-3xl text-ink-900 mb-4">Welcome to Divine IVF</h2>
                     <p className="text-ink-400 leading-relaxed mb-4">
-                      Divine Ivf was established with a simple yet powerful vision: to provide comprehensive, compassionate fertility care that puts patients first. Located in Sector 76, Noida, our clinic is a sanctuary of hope for couples on their journey to parenthood.
+                      Divine IVF was established with a simple yet powerful vision: to provide comprehensive, compassionate fertility care that puts patients first. Located in Sector 76, Noida, our clinic is a sanctuary of hope for couples on their journey to parenthood.
                     </p>
                     <p className="text-ink-400 leading-relaxed mb-4">
-                      Under the expert guidance of Dr. Mandavi Rai, we offer a complete spectrum of fertility services — from basic fertility evaluation to advanced IVF treatments — all under one roof. Our integrated approach ensures continuity of care, eliminating the need for patients to navigate between different specialists.
+                      Under the expert guidance of <span className="font-semibold text-ink-800">Dr. Mandavi Rai</span>, a highly respected Gynecologist and IVF Specialist with over 15 years of experience, we offer a complete spectrum of fertility services — from basic fertility evaluation to advanced IVF treatments — all under one roof. Our integrated approach ensures continuity of care, eliminating the need for patients to navigate between different specialists.
+                    </p>
+                    <p className="text-ink-400 leading-relaxed">
+                      Dr. Rai has 10 years of specialized experience in infertility and has been recognized for outstanding success rates in ART procedures. She has contributed to over 50,000 successful IVF cycles and achieved remarkable growth in embryo transfer cases through result-oriented patient counseling and evidence-based care.
                     </p>
                   </div>
 
@@ -315,41 +330,44 @@ export default function AboutPage() {
               {activeTab === 'approach' && (
                 <div>
                   <h2 className="text-2xl md:text-3xl text-ink-900 mb-4">Our Approach to Care</h2>
+                  <p className="text-ink-400 leading-relaxed mb-6">
+                    Dr. Mandavi Rai believes there is no one-size-fits-all path to parenthood. Every patient's history, body, and journey is different, so their treatment should be too. Here's how we make that happen:
+                  </p>
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30">
+                    <div className="flex items-start gap-4 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30 hover:border-rose-200 transition-all">
                       <div className="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center shrink-0">
                         <Heart className="h-4 w-4 text-rose-500" />
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-ink-900">Patient-Centered Care</p>
-                        <p className="text-xs text-ink-400">Every treatment plan is tailored to your unique medical history, lifestyle and reproductive goals.</p>
+                        <p className="text-xs text-ink-400">Every treatment plan is tailored to your unique medical history, lifestyle and reproductive goals. Behind every AMH report is a woman, behind every semen analysis is a couple, and behind every IVF cycle is a dream.</p>
                       </div>
                     </div>
-                    <div className="flex items-start gap-4 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30">
+                    <div className="flex items-start gap-4 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30 hover:border-rose-200 transition-all">
                       <div className="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center shrink-0">
                         <Shield className="h-4 w-4 text-rose-500" />
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-ink-900">Evidence-Based Medicine</p>
-                        <p className="text-xs text-ink-400">All treatments are backed by the latest medical research and clinical evidence.</p>
+                        <p className="text-xs text-ink-400">All treatments are backed by the latest medical research and clinical evidence. Dr. Rai has published numerous scientific papers in national and international journals.</p>
                       </div>
                     </div>
-                    <div className="flex items-start gap-4 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30">
+                    <div className="flex items-start gap-4 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30 hover:border-rose-200 transition-all">
                       <div className="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center shrink-0">
                         <Sparkles className="h-4 w-4 text-rose-500" />
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-ink-900">Transparent Communication</p>
-                        <p className="text-xs text-ink-400">Complete transparency at every step — from diagnosis to treatment and beyond.</p>
+                        <p className="text-xs text-ink-400">Complete transparency at every step — from diagnosis to treatment and beyond. Patients receive result-oriented counseling and are fully informed about their options.</p>
                       </div>
                     </div>
-                    <div className="flex items-start gap-4 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30">
+                    <div className="flex items-start gap-4 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30 hover:border-rose-200 transition-all">
                       <div className="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center shrink-0">
                         <Users className="h-4 w-4 text-rose-500" />
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-ink-900">Continuity of Care</p>
-                        <p className="text-xs text-ink-400">Fertility, gynaecology and pregnancy care under one practice — no need for separate providers.</p>
+                        <p className="text-xs text-ink-400">Fertility, gynaecology and pregnancy care under one practice — no need for separate providers. Dr. Rai provides a single point of contact from start to finish.</p>
                       </div>
                     </div>
                   </div>
@@ -359,6 +377,9 @@ export default function AboutPage() {
               {activeTab === 'values' && (
                 <div>
                   <h2 className="text-2xl md:text-3xl text-ink-900 mb-4">Our Core Values</h2>
+                  <p className="text-ink-400 leading-relaxed mb-6">
+                    Guided by the expertise and vision of Dr. Mandavi Rai, these values form the foundation of everything we do at Divine IVF.
+                  </p>
                   <div className="grid grid-cols-1 gap-4">
                     {coreValues.map((value) => (
                       <div key={value.label} className="group bg-white rounded-xl p-5 border border-rose-100/50 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
@@ -380,6 +401,9 @@ export default function AboutPage() {
               {activeTab === 'facilities' && (
                 <div>
                   <h2 className="text-2xl md:text-3xl text-ink-900 mb-4">Our Facilities</h2>
+                  <p className="text-ink-400 leading-relaxed mb-6">
+                    Our clinic is equipped with state-of-the-art facilities to provide the highest standard of fertility care under one roof.
+                  </p>
                   <div className="grid grid-cols-1 gap-4">
                     {facilities.map((facility) => (
                       <div key={facility.label} className="group bg-white rounded-xl p-5 border border-rose-100/50 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
@@ -401,14 +425,14 @@ export default function AboutPage() {
 
             {/* Sidebar */}
             <div className="space-y-6">
-              <div className="bg-gradient-to-br from-rose-50/80 to-pink-50/50 rounded-2xl p-6 border border-rose-100/50 ">
+              <div className="bg-gradient-to-br from-rose-50/80 to-pink-50/50 rounded-2xl p-6 border border-rose-100/50 sticky top-24">
                 <h3 className="text-sm font-semibold text-ink-900 mb-4">Clinic Information</h3>
                 
                 <div className="space-y-3">
                   <div className="flex items-start gap-3 text-sm text-ink-600">
                     <Building2 className="h-4 w-4 text-rose-500 mt-0.5 shrink-0" />
                     <div>
-                      <p className="font-medium">Divine Ivf</p>
+                      <p className="font-medium">Divine IVF</p>
                       <p className="text-xs text-ink-400">Sector 76, Noida, UP 201301</p>
                     </div>
                   </div>
@@ -445,12 +469,16 @@ export default function AboutPage() {
               <div className="bg-white rounded-2xl p-6 border border-rose-100/50 shadow-sm">
                 <h3 className="text-sm font-semibold text-ink-900 mb-4 flex items-center gap-2">
                   <Sparkle className="h-4 w-4 text-rose-500" />
-                  Why Choose Us
+                  Why Choose Divine IVF
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-xs text-ink-600">
                     <CheckCircle className="h-3.5 w-3.5 text-rose-500" />
                     Doctor-led care from start to finish
+                  </li>
+                  <li className="flex items-center gap-2 text-xs text-ink-600">
+                    <CheckCircle className="h-3.5 w-3.5 text-rose-500" />
+                    15+ years of clinical experience
                   </li>
                   <li className="flex items-center gap-2 text-xs text-ink-600">
                     <CheckCircle className="h-3.5 w-3.5 text-rose-500" />
@@ -466,7 +494,11 @@ export default function AboutPage() {
                   </li>
                   <li className="flex items-center gap-2 text-xs text-ink-600">
                     <CheckCircle className="h-3.5 w-3.5 text-rose-500" />
-                    High success rates
+                    High success rates in ART procedures
+                  </li>
+                  <li className="flex items-center gap-2 text-xs text-ink-600">
+                    <CheckCircle className="h-3.5 w-3.5 text-rose-500" />
+                    Continuity of care under one roof
                   </li>
                 </ul>
               </div>
