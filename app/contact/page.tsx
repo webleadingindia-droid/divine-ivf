@@ -27,7 +27,7 @@ export default function ContactPage() {
   const features = [
     { icon: Heart, text: "Patient-Centered Care" },
     { icon: Shield, text: "95% Success Rate" },
-    { icon: Award, text: "10+ Years Experience" },
+    { icon: Award, text: "15+ Years Experience" },
     { icon: Users, text: "8000+ Happy Families" },
   ];
 

@@ -70,7 +70,7 @@ export default function AboutPage() {
   };
 
   const clinicStats = [
-    { number: "10+", label: "Years of Excellence", icon: Award },
+    { number: "15+", label: "Years of Excellence", icon: Award },
     { number: "5000+", label: "Happy Families", icon: Users },
     { number: "98%", label: "Patient Satisfaction", icon: Heart },
     { number: "22+", label: "Fertility Services", icon: Stethoscope },

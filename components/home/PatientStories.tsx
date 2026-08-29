@@ -120,9 +120,9 @@ export function PatientStories() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-ink-900 leading-[1.15]">
-              Real journeys,{" "}
+              Stories of Hope,{" "}
               <span className="bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent font-serif italic">
-                real joy
+                Journeys to Parenthood
               </span>
             </h2>
 

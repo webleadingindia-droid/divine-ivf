@@ -233,7 +233,7 @@ export function Introduction() {
                   <Calendar className="h-4 w-4 text-rose-500" />
                 </div>
               </div>
-              <p className="font-serif italic text-3xl text-rose-600 group-hover:scale-105 transition-transform">10+ Years</p>
+              <p className="font-serif italic text-3xl text-rose-600 group-hover:scale-105 transition-transform">15+ Years</p>
               <p className="text-[10px] text-ink-500 mt-1 font-medium">IVF & Fertility Expertise</p>
             </div>
             
@@ -243,7 +243,7 @@ export function Introduction() {
                   <Users className="h-4 w-4 text-rose-500" />
                 </div>
               </div>
-              <p className="font-serif italic text-3xl text-rose-600 group-hover:scale-105 transition-transform">1000+</p>
+              <p className="font-serif italic text-3xl text-rose-600 group-hover:scale-105 transition-transform">3000+</p>
               <p className="text-[10px] text-ink-500 mt-1 font-medium">Parenthood Journeys Supported</p>
             </div>
 
