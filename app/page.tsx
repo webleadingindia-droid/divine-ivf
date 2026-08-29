@@ -51,10 +51,6 @@ export default function HomePage() {
         <IvfJourney />
       </ScrollAnimation>
 
-      <ScrollAnimation delay={0.2}>
-        <FertilityScience />
-      </ScrollAnimation>
-
       <ScrollAnimation delay={0.15}>
         <Testimonials />
       </ScrollAnimation>
