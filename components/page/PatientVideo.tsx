@@ -7,6 +7,8 @@ import { Play, Pause } from "lucide-react";
 interface PatientVideoProps {
   videoId: string;
   name: string;
+  treatment: string;
+  location: string;
   thumbnailPath: string;
 }
 
