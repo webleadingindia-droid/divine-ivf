@@ -30,7 +30,13 @@ import {
   BadgeCheck,
   Building2,
   UserRound,
-  Activity
+  Activity,
+  FileText,
+  BookOpen,
+  Globe,
+  Target,
+  TrendingUp,
+  Syringe
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
@@ -40,45 +46,76 @@ const doctorData = {
   role: "Gynecologist & IVF Specialist",
   experience: "15+ Years",
   patients: "5000+",
-  successRate: "98%",
+  successRate: "94%",
   rating: "4.9",
   reviews: "300+",
   qualifications: [
-    { degree: "MBBS", institution: "Himalayan Institute of Medical Sciences, Dehradun" },
-    { degree: "Diploma in Obstetrics & Gynaecology (DGO)", institution: "Himalayan Institute of Medical Sciences, Dehradun" },
-    { degree: "Fellowship in Reproductive Medicine", institution: "CIMAR, Kochi" },
-    { degree: "Diploma in Reproductive Medicine & Embryology (D.M.R.E.)", institution: "International School of Medicine, Kiel, Germany" },
-    { degree: "Fellowship in Assisted Reproductive Technology (FART)", institution: "World Laparoscopy Hospital, New Delhi" },
-    { degree: "FMAS & DMAS", institution: "World Laparoscopy Hospital, New Delhi" },
-    { degree: "PGEPHM", institution: "IIM Kashipur in collaboration with Max Healthcare" },
+    { degree: "M.S. OBGY", institution: "MGM Institute of Health Sciences, Mumbai (2013)" },
+    { degree: "MBBS", institution: "Bharati Vidyapeeth University, Pune (2005)" },
+    { degree: "Fellowship in Reproductive Medicine", institution: "CREST, National University Health System, Singapore (2017-2019)" },
+    { degree: "Masters in Minimal Access Surgery (M.MAS) - Gold Medalist", institution: "World Laparoscopy Hospital, Gurgaon (2016)" },
+    { degree: "Post-Graduation Diploma in Hospital and Health Management", institution: "IGNOU, New Delhi (2020)" },
+    { degree: "Post Graduate Diploma in Sexual Health and Reproductive Medicine", institution: "University of South Wales, UK (2020)" },
+    { degree: "Diploma in Ultrasound", institution: "Randhawa Institute of Ultrasound Training, Delhi (2015)" },
+    { degree: "FICOG", institution: "Fellow of the Indian College of Obstetricians and Gynecologists" },
   ],
   expertise: [
-    { icon: Microscope, label: "IVF (In Vitro Fertilization)", color: "from-rose-500 to-pink-500" },
-    { icon: Baby, label: "ICSI Treatment", color: "from-blue-500 to-cyan-500" },
-    { icon: Heart, label: "Recurrent Implantation Failure", color: "from-purple-500 to-pink-500" },
-    { icon: Stethoscope, label: "PCOS & Ovulation Disorders", color: "from-emerald-500 to-teal-500" },
-    { icon: Calendar, label: "Low Ovarian Reserve", color: "from-amber-500 to-orange-500" },
-    { icon: Shield, label: "Hysteroscopy & Fertility Procedures", color: "from-indigo-500 to-purple-500" },
+    { icon: Syringe, label: "IVF (In Vitro Fertilization)", description: "Advanced IVF treatments with personalized protocols" },
+    { icon: Baby, label: "ICSI Treatment", description: "Intracytoplasmic sperm injection for male factor infertility" },
+    { icon: Heart, label: "Recurrent Implantation Failure", description: "Specialized management for repeated IVF failures" },
+    { icon: Stethoscope, label: "PCOS & Ovulation Disorders", description: "Comprehensive management of polycystic ovary syndrome" },
+    { icon: Calendar, label: "Low Ovarian Reserve", description: "Minimal stimulation protocols for poor responders" },
+    { icon: Shield, label: "Hysteroscopy & Fertility Procedures", description: "Diagnostic and operative hysteroscopy" },
+    { icon: Microscope, label: "Laparoscopic Surgery", description: "Minimally invasive gynecological surgeries" },
+    { icon: TrendingUp, label: "Minimal Stimulation IVF", description: "Gentle IVF protocols for better outcomes" },
   ],
   bio: [
-    "Dr. Mandavi Rai is one of Delhi NCR's most trusted Gynecologist & IVF Specialists, dedicated to helping couples achieve their dream of parenthood. With more than 15 years of experience in Obstetrics, Gynaecology, and Reproductive Medicine, she combines advanced fertility treatments with evidence-based care and a compassionate approach.",
-    "Her expertise includes IVF, ICSI, IUI, recurrent implantation failure, and complex infertility cases, ensuring every patient receives a personalized treatment plan. She believes infertility treatment should focus not only on medical success but also on providing emotional support throughout the journey.",
+    "Dr. Mandavi Rai is a highly respected Gynecologist and IVF Specialist in Noida and Delhi NCR with over 15 years of experience in Obstetrics, Gynaecology, and Reproductive Medicine. She is dedicated to helping couples achieve their dream of parenthood through evidence-based, compassionate care.",
+    "With 10 years of specialized experience in infertility, Dr. Rai has walked alongside countless couples through the most hopeful and challenging chapters of their lives. She believes infertility treatment should focus not only on medical success but also on providing emotional support throughout the journey.",
+    "Her expertise includes IVF, ICSI, IUI, recurrent implantation failure, minimal stimulation protocols, hysteroscopy, and laparoscopic surgery. She ensures every patient receives a personalized treatment plan tailored to their unique medical history, lifestyle, and reproductive goals.",
+    "Dr. Rai has been recognized for outstanding success rates in ART procedures and result-oriented patient counseling. She has contributed to over 50,000 successful IVF cycles and achieved 200% growth in embryo transfer cases within a short span.",
   ],
-  philosophy: "Every fertility journey is unique. Dr. Mandavi Rai believes in understanding each patient's medical history, lifestyle, and reproductive goals before creating a customized treatment plan. From diagnosis to successful pregnancy, patients receive complete transparency, emotional support, and the latest evidence-based fertility care.",
+  philosophy: "There is no one-size-fits-all path to parenthood. Every patient's history, body, and journey is different, so their treatment should be too. Dr. Mandavi Rai believes in understanding each patient's complete medical history, lifestyle, and reproductive goals before creating a customized treatment plan. From diagnosis to successful pregnancy, patients receive complete transparency, emotional support, and the latest evidence-based fertility care.",
   memberships: [
     "Indian Society for Assisted Reproduction (ISAR)",
-    "Federation of Obstetric & Gynaecological Societies of India",
+    "Federation of Obstetric & Gynaecological Societies of India (FOGSI)",
     "Indian Medical Association (IMA)",
-    "European Society of Human Reproduction & Embryology",
+    "European Society of Human Reproduction & Embryology (ESHRE)",
+    "Indian College of Obstetricians and Gynecologists (ICOG)",
   ],
   experienceTimeline: [
-    { year: "2014 – 2015", title: "Senior Resident - Swami Dayanand Government Hospital, Delhi" },
-    { year: "2015", title: "Senior Resident - Batra Hospital & Medical Research Centre, Delhi" },
-    { year: "2016 - 2020", title: "Advanced Training in Laparoscopy, Endoscopy & ART" },
-    { year: "2020 - Present", title: "Founder & Consultant Fertility Specialist - Divine IVF" },
+    { year: "Jul 2023 - Present", title: "Senior Consultant – IVF & Reproductive Medicine – Cloudnine Hospital, Gurugram" },
+    { year: "2025 - Present", title: "Visiting Consultant – Infertility – Motherhood Hospital, Gurugram" },
+    { year: "Jul 2022 - Jul 2023", title: "Chief Consultant & Centre Head – IVF & Wings IVF & Orthus Health, New Delhi" },
+    { year: "Jan 2021 - Jul 2022", title: "Consultant – IVF Specialist – Milan Fertility Centre, Delhi & Gurugram" },
+    { year: "Jul 2020 - Present", title: "Director & Consultant – IVF & Gynaecology – The Fertility, Gurugram" },
+    { year: "Jan 2020 - Dec 2020", title: "Consultant – IVF Specialist – W Pratishka Hospital, Gurugram" },
+    { year: "Apr 2019 - Present", title: "Visiting Consultant – Infertility & Gynaecology – Max Hospital, Gurugram" },
+    { year: "Jun 2019 - Aug 2019", title: "Consultant-IVF Specialist – Myra IVF Center, Gurugram" },
+    { year: "2017 - 2018", title: "Fellowship in Reproductive Medicine – CIMAR, Kochi" },
+    { year: "2012 - 2014", title: "Diploma in Obstetrics & Gynaecology – HIHT University, Dehradun" },
+    { year: "2008 - 2011", title: "MBBS – HIHT University, Dehradun" },
+  ],
+  achievements: [
+    "Recognized for one of the best success rates in ART procedures",
+    "Led the Noida centre of INDIRA IVF as administrative head-cum-IVF consultant",
+    "Achieved 200% growth in embryo transfer cases within a short span",
+    "Contributed to 50,000 successful IVF cycles at INDIRA IVF",
+    "Successfully institutionalized formal tie-ups with other OPD centres to enhance revenue generation",
+  ],
+  publications: [
+    "Second Trimester Uterine Rupture – Journal of Evolutionary Medicine and Dental Sciences, Volume 3, Issue 14, 7th April 2014",
+    "Uterus Didelphys with Pregnancy in Right Cornu – Journal of Evolutionary Medicine and Dental Sciences, Volume 3, Issue 24, 16th June 2014",
+    "Study of Drug Utilization Pattern in Gynaecology OPD – World Journal of Pharmacy and Pharmaceutical Sciences, Volume 3, Issue 12, 19th October 2014",
+    "One Step Diagnosis of GDM – International Journal of Medicine and Allied Sciences, Volume 7, 15th August 2015",
+    "Clinical Study of Cases of Intrauterine Foetal Death – International Journal of Research in Medical Sciences, Volume 4, Issue 3, March 2016",
+    "Comparison between Different Entry Techniques in Performing Pneumoperitoneum – World Journal of Laparoscopic Surgery, September-December 2016",
+    "Prenatal Diagnosis of AVM in Liver – MAR Gynecology Journal, August 2022",
+    "Successful IVF Pregnancy in patient with Serous Borderline Ovarian Tumor – MAR Gynecology Journal, July 2022",
+    "Conservative Management in Single Foetal Death in DADC Twin Pregnancy – MAR Gynecology Journal, January 2023",
   ],
   clinic: {
-    name: "Divine Ivf",
+    name: "Divine IVF",
     address: "Sector 76, Noida, Uttar Pradesh 201301",
     phone: "+91 95600 26697",
     email: "info@divineivf.com",
@@ -242,6 +279,8 @@ export default function DoctorPage() {
               { id: 'qualifications', label: 'Qualifications' },
               { id: 'expertise', label: 'Expertise' },
               { id: 'experience', label: 'Experience' },
+              { id: 'achievements', label: 'Achievements' },
+              { id: 'publications', label: 'Publications' },
             ].map((tab) => (
               <button
                 key={tab.id}
@@ -295,7 +334,7 @@ export default function DoctorPage() {
 
               {activeTab === 'qualifications' && (
                 <div>
-                  <h2 className="text-2xl md:text-3xl text-ink-900 mb-6">Qualifications</h2>
+                  <h2 className="text-2xl md:text-3xl text-ink-900 mb-6">Qualifications & Education</h2>
                   <div className="space-y-4">
                     {doctorData.qualifications.map((q, i) => (
                       <div key={i} className="flex items-start gap-4 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30 hover:border-rose-200 transition-all hover:shadow-md">
@@ -321,10 +360,11 @@ export default function DoctorPage() {
                         key={item.label}
                         className="group bg-white rounded-xl p-5 border border-rose-100/50 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
                       >
-                        <div className={`inline-flex p-2.5 rounded-xl bg-gradient-to-br ${item.color} bg-opacity-10 group-hover:scale-110 transition-transform mb-3`}>
+                        <div className="inline-flex p-2.5 rounded-xl bg-gradient-to-br from-rose-500 to-pink-500 bg-opacity-10 group-hover:scale-110 transition-transform mb-3">
                           <item.icon className="h-5 w-5 text-white" />
                         </div>
                         <p className="text-sm font-semibold text-ink-900">{item.label}</p>
+                        <p className="text-xs text-ink-400 mt-1">{item.description}</p>
                       </div>
                     ))}
                   </div>
@@ -347,6 +387,34 @@ export default function DoctorPage() {
                           <span className="text-xs font-bold text-rose-600 bg-rose-50 px-3 py-1 rounded-full">{exp.year}</span>
                           <p className="text-sm text-ink-600 mt-1">{exp.title}</p>
                         </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {activeTab === 'achievements' && (
+                <div>
+                  <h2 className="text-2xl md:text-3xl text-ink-900 mb-6">Key Achievements</h2>
+                  <div className="space-y-4">
+                    {doctorData.achievements.map((achievement, i) => (
+                      <div key={i} className="flex items-start gap-3 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30">
+                        <Award className="h-5 w-5 text-rose-500 shrink-0 mt-0.5" />
+                        <p className="text-sm text-ink-600">{achievement}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {activeTab === 'publications' && (
+                <div>
+                  <h2 className="text-2xl md:text-3xl text-ink-900 mb-6">Scientific Publications</h2>
+                  <div className="space-y-3">
+                    {doctorData.publications.map((pub, i) => (
+                      <div key={i} className="flex items-start gap-3 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30 hover:border-rose-200 transition-all">
+                        <FileText className="h-5 w-5 text-rose-500 shrink-0 mt-0.5" />
+                        <p className="text-sm text-ink-600 leading-relaxed">{pub}</p>
                       </div>
                     ))}
                   </div>
