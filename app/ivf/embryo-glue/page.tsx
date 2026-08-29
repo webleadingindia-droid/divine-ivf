@@ -190,7 +190,7 @@ export default function EmbryoGluePage() {
           process of implantation. In the body, hyaluronan (a substance naturally present in the 
           uterine cavity) plays a role in helping the embryo attach to the uterine lining. 
           <strong>Embryo Glue</strong> provides a concentrated dose of hyaluronan at the exact 
-          moment of transfer, potentially supporting the embryo's ability to implant.
+          moment of transfer, potentially supporting the embryo`s ability to implant.
         </p>
 
         {/* Image Row 2 */}

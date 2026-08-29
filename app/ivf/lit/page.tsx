@@ -187,7 +187,7 @@ export default function LitPage() {
           <Link href="/fertility-investigation" className="text-rose-600 font-semibold hover:underline">
           fertility investigation</Link> and detailed consultation with <Link href="/doctor/dr-mandavi-rai" className="text-rose-600 font-semibold hover:underline">
           Dr. Mandavi Rai</Link>. Unlike standard fertility treatments, LIT is not something 
-          that's recommended without thorough evaluation — it's considered only after reviewing 
+          that`s recommended without thorough evaluation — it`s considered only after reviewing 
           your complete history, previous treatment outcomes, and specific immunological markers.
         </p>
 
@@ -225,7 +225,7 @@ export default function LitPage() {
         <p>
           The science behind <strong>LIT</strong> is based on the understanding that the 
           immune system plays a complex and crucial role in implantation and early pregnancy. 
-          The embryo is a semi-foreign body to the mother's immune system, and successful 
+          The embryo is a semi-foreign body to the mother`s immune system, and successful 
           pregnancy requires a delicate balance of immune tolerance. In some patients, this 
           tolerance may be inadequate, potentially contributing to implantation failure or 
           early pregnancy loss.
@@ -271,7 +271,7 @@ export default function LitPage() {
         <p>
           At <strong>Divine IVF, Sector 76, Noida</strong>, the approach to <strong>LIT therapy</strong> 
           is evidence-based and transparent. Dr. Rai discusses openly with patients what is and 
-          isn't established about the therapy's role in their specific case. The therapy is 
+          isn`t established about the therapy`s role in their specific case. The therapy is 
           never recommended as a standalone add-on or without proper clinical indication.
         </p>
 

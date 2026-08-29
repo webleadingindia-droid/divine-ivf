@@ -61,7 +61,7 @@ export default function ContactPage() {
             </h1>
             
             <p className="mt-4 text-lg text-ink-500 leading-relaxed max-w-2xl">
-              We're here to help you on your fertility journey. Call, email, or visit 
+              We`re here to help you on your fertility journey. Call, email, or visit 
               our clinic — our team is ready to assist you with compassion and expertise.
             </p>
 
@@ -98,11 +98,11 @@ export default function ContactPage() {
             <div>
               <SectionLabel>Contact Information</SectionLabel>
               <h2 className="text-2xl md:text-3xl font-bold text-ink-900 mt-4 mb-6">
-                Let's Start Your{" "}
+                Let`s Start Your{" "}
                 <span className="text-rose-600">Journey</span>
               </h2>
               <p className="text-ink-400 leading-relaxed mb-8 max-w-md">
-                Reach out to us through any of the following channels. We're here 
+                Reach out to us through any of the following channels. We`re here 
                 to answer your questions and guide you through every step.
               </p>
 

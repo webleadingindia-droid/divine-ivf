@@ -275,7 +275,7 @@ export default function DoctorPage() {
                     <div className="absolute -top-10 -right-10 w-32 h-32 bg-rose-100/30 rounded-full blur-2xl"></div>
                     <Quote className="h-5 w-5 text-rose-400 mb-3 relative z-10" />
                     <p className="text-sm text-ink-600 leading-relaxed relative z-10 italic">
-                      "{doctorData.philosophy}"
+                      {doctorData.philosophy}
                     </p>
                   </div>
 

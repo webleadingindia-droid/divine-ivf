@@ -189,7 +189,7 @@ export default function PrpPage() {
         </p>
 
         <p>
-          <strong>PRP (Platelet Rich Plasma)</strong> is an autologous therapy — meaning it's 
+          <strong>PRP (Platelet Rich Plasma)</strong> is an autologous therapy — meaning it`s 
           prepared from your own blood. A small blood sample is drawn and processed in a 
           laboratory to concentrate platelets, which contain growth factors and other bioactive 
           proteins that may support tissue regeneration and healing.
@@ -233,7 +233,7 @@ export default function PrpPage() {
 
         <ul className="list-disc pl-5 space-y-2 text-ink-500">
           <li>
-            <strong>Thin Endometrium</strong> — PRP may help improve endometrial thickness in women who haven't responded to standard treatment
+            <strong>Thin Endometrium</strong> — PRP may help improve endometrial thickness in women who haven`t responded to standard treatment
           </li>
           <li>
             <strong>Diminished Ovarian Reserve</strong> — PRP has been explored for potential ovarian rejuvenation
@@ -270,7 +270,7 @@ export default function PrpPage() {
             </li>
             <li className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500">✓</span>
-              Following thorough evaluation and when there's a clinical indication
+              Following thorough evaluation and when there`s a clinical indication
             </li>
           </ul>
         </div>
@@ -278,7 +278,7 @@ export default function PrpPage() {
         <p>
           At <strong>Divine IVF, Sector 76, Noida</strong>, the approach to <strong>PRP therapy</strong> 
           is evidence-based and transparent. Dr. Rai discusses openly with patients what is and 
-          isn't established about the therapy's role in their specific case. The therapy is 
+          isn`t established about the therapy`s role in their specific case. The therapy is 
           never recommended as a standalone add-on or without proper clinical indication.
         </p>
 

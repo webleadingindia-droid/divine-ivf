@@ -245,7 +245,7 @@ export default function IcsiPage() {
         <div className="bg-gradient-to-br from-rose-50/80 to-pink-50/50 rounded-2xl p-6 border border-rose-100/50 mt-6">
           <h4 className="text-sm font-semibold text-ink-900 mb-3 flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
-            ICSI, PICSI, and IMSI — What's the Difference?
+            ICSI, PICSI, and IMSI — What`s the Difference?
           </h4>
           <ul className="space-y-3">
             <li className="flex items-start gap-2 text-sm text-ink-600">

@@ -160,8 +160,8 @@ export default function BlogPostPage({ params }: { params: Params }) {
                 
                 <blockquote>
                   <p>
-                    "Every fertility journey is unique, and with the right guidance and support, 
-                    there is always hope."
+                    Every fertility journey is unique, and with the right guidance and support, 
+                    there is always hope.
                   </p>
                   <footer>— Dr. Mandavi Rai</footer>
                 </blockquote>
@@ -271,7 +271,7 @@ export default function BlogPostPage({ params }: { params: Params }) {
                   Need Help?
                 </h3>
                 <p className="text-white/90 text-sm mb-4">
-                  Connect with us instantly. We're here to help you.
+                  Connect with us instantly. We`re here to help you.
                 </p>
                 
                 <div className="space-y-3">

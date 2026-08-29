@@ -200,7 +200,7 @@ export default function IvfPage() {
         <p>
           The journey to <strong>IVF</strong> typically begins with a thorough <Link href="/fertility-investigation" className="text-rose-600 font-semibold hover:underline">
           fertility investigation</Link> and consultation with <Link href="/doctor/dr-mandavi-rai" className="text-rose-600 font-semibold hover:underline">
-          Dr. Mandavi Rai</Link>. Unlike simpler treatments that work with the body's natural processes, 
+          Dr. Mandavi Rai</Link>. Unlike simpler treatments that work with the body`s natural processes, 
           <strong>IVF</strong> takes over the entire fertilisation process — from egg retrieval to 
           embryo transfer — making it suitable for a broader range of fertility challenges.
         </p>
@@ -238,7 +238,7 @@ export default function IvfPage() {
 
         <p>
           <strong>IVF</strong> is particularly valuable for couples where simpler treatments like 
-          <Link href="/iui" className="text-rose-600 font-semibold hover:underline">IUI</Link> haven't 
+          <Link href="/iui" className="text-rose-600 font-semibold hover:underline">IUI</Link> haven`t 
           been successful, or where specific challenges such as blocked fallopian tubes, significant 
           <Link href="/male-infertility" className="text-rose-600 font-semibold hover:underline">
           male infertility</Link>, ovulation disorders, or reduced ovarian reserve are present. 

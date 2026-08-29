@@ -281,7 +281,7 @@ export default function EraPage() {
         <p>
           At <strong>Divine IVF, Sector 76, Noida</strong>, the approach to <strong>ERA testing</strong> 
           is evidence-based and personalised. Dr. Rai ensures that this advanced diagnostic test is 
-          offered only when there's a clinical indication suggesting it may be beneficial — never 
+          offered only when there`s a clinical indication suggesting it may be beneficial — never 
           as a routine test without proper evaluation.
         </p>
 

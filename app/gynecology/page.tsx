@@ -188,13 +188,13 @@ export default function GynecologyPage() {
           <strong>Gynaecological care in Noida</strong> at <strong>Divine IVF, Sector 76</strong> 
           offers women a complete, compassionate approach to their health — independent of any 
           <strong>fertility treatment</strong> journey. Dr. Mandavi Rai provides care across the 
-          full spectrum of women's health, from routine check-ups to complex gynaecological conditions.
+          full spectrum of women`s health, from routine check-ups to complex gynaecological conditions.
         </p>
 
         <p>
           Many women experience gynaecological symptoms for months or even years before seeking 
-          help — often because they've been told their symptoms are 'normal' or 'just part of 
-          being a woman.' Dr. Rai takes a different approach: every concern is taken seriously 
+          help — often because they`ve been told their symptoms are normal or just part of 
+          being a woman. Dr. Rai takes a different approach: every concern is taken seriously 
           from the first conversation, whether that leads to simple reassurance, further 
           investigation, or a specific treatment.
         </p>
@@ -253,7 +253,7 @@ export default function GynecologyPage() {
           When a procedure is needed — such as <strong>hysteroscopy</strong> to examine the 
           uterus or <strong>laparoscopy</strong> to assess the pelvis — Dr. Rai explains the 
           reasoning, the expected process, and what to expect clearly before you decide how 
-          to proceed. You're never rushed into a decision, and you'll have all the information 
+          to proceed. You`re never rushed into a decision, and you`ll have all the information 
           you need to make an informed choice.
         </p>
 
@@ -320,12 +320,12 @@ export default function GynecologyPage() {
             American Society for Reproductive Medicine (ASRM)
           </a>
           . This ensures your care is supported by the latest clinical evidence and best practices 
-          in women's health.
+          in women`s health.
         </p>
 
         <p>
-          Whether you're coming in for a routine check-up, investigating a specific concern, 
-          or seeking a second opinion, you'll find the same thorough, compassionate, and 
+          Whether you`re coming in for a routine check-up, investigating a specific concern, 
+          or seeking a second opinion, you`ll find the same thorough, compassionate, and 
           evidence-based care that defines <strong>Divine IVF</strong>. Your health matters 
           — on its own terms, independent of any fertility journey.
         </p>

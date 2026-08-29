@@ -192,7 +192,7 @@ export default function EggDonorPage() {
           <strong>Egg donor IVF in Noida</strong> offers a compassionate and effective pathway to 
           parenthood for individuals and couples who may not be able to conceive using their own eggs. 
           This remarkable <strong>fertility treatment</strong> has helped countless people build their 
-          families — but it's a decision that deserves care, honesty, and time.
+          families — but it`s a decision that deserves care, honesty, and time.
         </p>
 
         <p>
@@ -236,9 +236,9 @@ export default function EggDonorPage() {
         </div>
 
         <p>
-          <strong>Donor egg IVF</strong> is often considered when a person's own eggs are unlikely 
+          <strong>Donor egg IVF</strong> is often considered when a person`s own eggs are unlikely 
           to result in a viable pregnancy — due to reduced ovarian reserve, previous unsuccessful 
-          <strong>IVF</strong> cycles using one's own eggs, premature ovarian insufficiency, 
+          <strong>IVF</strong> cycles using one`s own eggs, premature ovarian insufficiency, 
           cancer treatment affecting egg quality, or a known genetic condition. For same-sex male 
           couples, <strong>donor egg IVF</strong> with a gestational carrier offers a path to 
           genetic parenthood for one or both partners.
@@ -276,7 +276,7 @@ export default function EggDonorPage() {
         <p>
           At <strong>Divine IVF, Sector 76, Noida</strong>, the approach to <strong>donor egg IVF</strong> 
           is rooted in compassion, honesty, and individualised care. Dr. Rai understands that this is 
-          one of the most significant decisions you may ever make — and she's committed to supporting 
+          one of the most significant decisions you may ever make — and she`s committed to supporting 
           you through it at your own pace, without pressure.
         </p>
 

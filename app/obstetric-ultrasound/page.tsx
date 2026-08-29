@@ -187,15 +187,15 @@ export default function ObstetricUltrasoundPage() {
           <strong>Obstetric ultrasound in Noida</strong> is offered at <strong>Divine IVF, 
           Sector 76</strong> as part of comprehensive <Link href="/pregnancy-care" className="text-rose-600 font-semibold hover:underline">
           pregnancy care</Link>. <Link href="/doctor/dr-mandavi-rai" className="text-rose-600 font-semibold hover:underline">
-          Dr. Mandavi Rai</Link> provides ultrasound monitoring to track your baby's growth and 
-          wellbeing at every stage — from confirming the pregnancy to monitoring your baby's 
+          Dr. Mandavi Rai</Link> provides ultrasound monitoring to track your baby`s growth and 
+          wellbeing at every stage — from confirming the pregnancy to monitoring your baby`s 
           development right through to the final weeks.
         </p>
 
         <p>
           <strong>Obstetric ultrasound</strong> is one of the most important tools in pregnancy 
           care. It allows you to see your baby in real time, provides reassurance about your 
-          baby's health, and helps identify any potential concerns early when they can be 
+          baby`s health, and helps identify any potential concerns early when they can be 
           addressed most effectively.
         </p>
 
@@ -236,16 +236,16 @@ export default function ObstetricUltrasoundPage() {
 
         <ul className="list-disc pl-5 space-y-2 text-ink-500">
           <li>
-            <strong>Early Dating Scan (6-10 weeks)</strong> — Confirms the pregnancy location (ensuring it's in the uterus), estimates the gestational age and due date, and checks for the baby's heartbeat.
+            <strong>Early Dating Scan (6-10 weeks)</strong> — Confirms the pregnancy location (ensuring it`s in the uterus), estimates the gestational age and due date, and checks for the baby`s heartbeat.
           </li>
           <li>
-            <strong>Nuchal Translucency Scan (11-14 weeks)</strong> — Measures the fluid at the back of the baby's neck as part of first-trimester screening, combined with maternal blood tests.
+            <strong>Nuchal Translucency Scan (11-14 weeks)</strong> — Measures the fluid at the back of the baby`s neck as part of first-trimester screening, combined with maternal blood tests.
           </li>
           <li>
-            <strong>Anomaly Scan (18-22 weeks)</strong> — A detailed scan checking the baby's anatomy, including the brain, spine, heart, abdomen, and limbs.
+            <strong>Anomaly Scan (18-22 weeks)</strong> — A detailed scan checking the baby`s anatomy, including the brain, spine, heart, abdomen, and limbs.
           </li>
           <li>
-            <strong>Growth Scans (Third Trimester)</strong> — Monitor your baby's size, position, amniotic fluid levels, and placental position as you approach delivery.
+            <strong>Growth Scans (Third Trimester)</strong> — Monitor your baby`s size, position, amniotic fluid levels, and placental position as you approach delivery.
           </li>
         </ul>
 
@@ -265,7 +265,7 @@ export default function ObstetricUltrasoundPage() {
             </li>
             <li className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500 font-bold">18-22 Weeks</span>
-              <span>Anomaly Scan — Detailed anatomy scan of your baby's development</span>
+              <span>Anomaly Scan — Detailed anatomy scan of your baby`s development</span>
             </li>
             <li className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500 font-bold">Third Trimester</span>
@@ -309,8 +309,8 @@ export default function ObstetricUltrasoundPage() {
         </p>
 
         <p>
-          Whether you're having your first scan to confirm your pregnancy, the detailed anomaly 
-          scan to check your baby's development, or a growth scan in the final weeks, you can 
+          Whether you`re having your first scan to confirm your pregnancy, the detailed anomaly 
+          scan to check your baby`s development, or a growth scan in the final weeks, you can 
           expect the same thorough, compassionate, and evidence-based care that defines 
           <strong>Divine IVF</strong>.
         </p>

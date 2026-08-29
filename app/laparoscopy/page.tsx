@@ -194,7 +194,7 @@ export default function LaparoscopyPage() {
         </p>
 
         <p>
-          <strong>Laparoscopy</strong> is often described as the 'gold standard' for diagnosing 
+          <strong>Laparoscopy</strong> is often described as the gold standard for diagnosing 
           conditions like endometriosis because it allows direct visualisation of the pelvic 
           organs — unlike scans or blood tests, which can only suggest the presence of a 
           condition. The high-definition camera provides clear, detailed images that can 
@@ -334,7 +334,7 @@ export default function LaparoscopyPage() {
         </p>
 
         <p>
-          Whether you're having <strong>laparoscopy</strong> as part of a <Link href="/fertility-investigation" className="text-rose-600 font-semibold hover:underline">
+          Whether you`re having <strong>laparoscopy</strong> as part of a <Link href="/fertility-investigation" className="text-rose-600 font-semibold hover:underline">
           fertility investigation</Link>, for pelvic pain assessment, or for treatment of a 
           specific condition, you can expect the same thorough, compassionate, and 
           evidence-based care that defines <strong>Divine IVF</strong>.

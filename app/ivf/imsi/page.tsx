@@ -272,7 +272,7 @@ export default function ImsiPage() {
 
         <p>
           At <strong>Divine IVF, Sector 76, Noida</strong>, the approach to <strong>IMSI</strong> is 
-          evidence-based and personalised. Dr. Rai carefully reviews each couple's complete history 
+          evidence-based and personalised. Dr. Rai carefully reviews each couple`s complete history 
           — including <Link href="/male-infertility" className="text-rose-600 font-semibold hover:underline">
           male fertility evaluation</Link> results, previous treatment outcomes, and individual circumstances 
           — to determine whether <strong>IMSI</strong> offers a meaningful advantage over standard 

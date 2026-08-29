@@ -199,7 +199,7 @@ export default function CesareanDeliveryPage() {
           procedure where your baby is delivered through an incision in your abdomen and 
           uterus. While many women deliver vaginally, cesarean delivery is the safest option 
           for many pregnancies — and it's important to understand that a cesarean is not a 
-          "failure" or a "lesser" way to give birth. It's a safe, established medical procedure 
+          failure or a lesser way to give birth. It's a safe, established medical procedure 
           that can be the best choice for you and your baby.
         </p>
 
@@ -243,7 +243,7 @@ export default function CesareanDeliveryPage() {
             <strong>Planned (Elective) Cesarean</strong> — When specific medical indications are identified during pregnancy, such as placenta previa (placenta covering the cervix), certain fetal positions (breech or transverse), or maternal medical conditions.
           </li>
           <li>
-            <strong>Unplanned (Emergency) Cesarean</strong> — When labour isn't progressing safely, when fetal distress is detected, or when other complications arise during labour.
+            <strong>Unplanned (Emergency) Cesarean</strong> — When labour isn`t progressing safely, when fetal distress is detected, or when other complications arise during labour.
           </li>
           <li>
             <strong>Previous Cesarean</strong> — Some women choose or are advised to have a repeat cesarean, though vaginal birth after cesarean (VBAC) is possible in many cases.
@@ -322,7 +322,7 @@ export default function CesareanDeliveryPage() {
         </p>
 
         <p>
-          Whether you're planning a cesarean in advance or it becomes necessary during labour, 
+          Whether you`re planning a cesarean in advance or it becomes necessary during labour, 
           Dr. Rai is committed to providing clear communication, compassionate support, and 
           excellent surgical care — ensuring the safest possible outcome for you and your baby.
         </p>

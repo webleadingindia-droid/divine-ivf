@@ -237,7 +237,7 @@ export default function NormalDeliveryPage() {
             <strong>First Stage (Labour)</strong> — The cervix dilates from 0 to 10 centimetres. This stage includes early labour (mild, irregular contractions) and active labour (stronger, more frequent contractions). This is typically the longest stage of labour.
           </li>
           <li>
-            <strong>Second Stage (Delivery)</strong> — You're fully dilated and begin pushing to deliver your baby. This stage can last from a few minutes to several hours. Dr. Rai and the care team will guide and support you through this stage.
+            <strong>Second Stage (Delivery)</strong> — You`re fully dilated and begin pushing to deliver your baby. This stage can last from a few minutes to several hours. Dr. Rai and the care team will guide and support you through this stage.
           </li>
           <li>
             <strong>Third Stage (Placental Delivery)</strong> — After your baby is born, the placenta is delivered. This usually happens within 5-30 minutes and is typically the shortest and easiest stage.
@@ -308,7 +308,7 @@ export default function NormalDeliveryPage() {
         </p>
 
         <p>
-          Whether this is your first baby or you're adding to your family, you can expect 
+          Whether this is your first baby or you`re adding to your family, you can expect 
           the same thorough, compassionate, and evidence-based care that defines 
           <strong>Divine IVF</strong> — supporting you through every stage of labour, 
           delivery, and the precious moments that follow.

@@ -284,7 +284,7 @@ export default function AboutPage() {
                     <div className="absolute -top-10 -right-10 w-32 h-32 bg-rose-100/30 rounded-full blur-2xl"></div>
                     <Quote className="h-5 w-5 text-rose-400 mb-3 relative z-10" />
                     <p className="text-sm text-ink-600 leading-relaxed relative z-10 italic">
-                      "Every consultation starts the same way: understanding your history before recommending anything. Not every patient needs IVF immediately — some respond to simpler treatment, others benefit from advanced techniques from the outset. Getting that judgement right, early, is central to how we work."
+                      Every consultation starts the same way: understanding your history before recommending anything. Not every patient needs IVF immediately — some respond to simpler treatment, others benefit from advanced techniques from the outset. Getting that judgement right, early, is central to how we work.
                     </p>
                     <div className="mt-4 flex items-center gap-3 relative z-10">
                       <div className="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center">

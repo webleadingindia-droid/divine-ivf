@@ -227,7 +227,7 @@ export default function LitTherapyPage() {
           evaluation. Dr. Rai reviews your fertility history, ovarian reserve testing (AMH, AFC), 
           hormonal assessment, uterine evaluation (ultrasound, <Link href="/hysteroscopy" className="text-rose-600 font-semibold hover:underline">
           hysteroscopy</Link>), and any previous treatment outcomes. This thorough approach 
-          ensures that the therapy is only considered when there's a clinical indication that 
+          ensures that the therapy is only considered when there`s a clinical indication that 
           immunological factors may be involved.
         </p>
 
@@ -275,7 +275,7 @@ export default function LitTherapyPage() {
         <p>
           At <strong>Divine IVF, Sector 76, Noida</strong>, the approach to <strong>targeted 
           LIT Therapy</strong> is evidence-based and transparent. Dr. Rai discusses openly 
-          with patients what is and isn't established about the therapy's role in their 
+          with patients what is and isn`t established about the therapy`s role in their 
           specific case. The therapy is never recommended as a standalone add-on or without 
           proper clinical indication.
         </p>

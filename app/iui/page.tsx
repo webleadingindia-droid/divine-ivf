@@ -174,7 +174,7 @@ export default function IuiPage() {
           <strong>IUI treatment in Noida</strong> offers couples a gentle, accessible entry point into 
           <strong>fertility treatment</strong>. Unlike <Link href="/ivf" className="text-rose-600 font-semibold hover:underline">IVF</Link>, 
           which involves retrieving eggs and creating embryos in the lab, <strong>intrauterine insemination</strong> 
-          works with your body's natural cycle — simply placing prepared sperm closer to the egg at the optimal time.
+          works with your body`s natural cycle — simply placing prepared sperm closer to the egg at the optimal time.
         </p>
 
         <p>
@@ -218,7 +218,7 @@ export default function IuiPage() {
 
         <p>
           For many couples, <strong>IUI treatment</strong> represents the sweet spot between natural conception 
-          and more intensive interventions. It's particularly effective for couples with mild <strong>male infertility</strong>, 
+          and more intensive interventions. It`s particularly effective for couples with mild <strong>male infertility</strong>, 
           unexplained <strong>fertility</strong> challenges, or those using <strong>donor sperm</strong>. The 
           <strong>artificial insemination</strong> procedure bypasses cervical mucus barriers and delivers a 
           concentrated sample of healthy sperm directly to the uterus — significantly improving the chances 
@@ -227,7 +227,7 @@ export default function IuiPage() {
 
         <p>
           <strong>Intrauterine insemination</strong> is also a valuable diagnostic tool. If three to six cycles 
-          of well-timed <strong>IUI</strong> don't result in pregnancy, it may suggest that more advanced 
+          of well-timed <strong>IUI</strong> don`t result in pregnancy, it may suggest that more advanced 
           <strong>fertility treatment</strong> like <Link href="/ivf" className="text-rose-600 font-semibold hover:underline">IVF</Link> 
           is needed — information that helps guide the next steps of your journey.
         </p>

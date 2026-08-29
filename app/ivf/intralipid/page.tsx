@@ -186,7 +186,7 @@ export default function IntralipidPage() {
           <Link href="/fertility-investigation" className="text-rose-600 font-semibold hover:underline">
           fertility investigation</Link> and detailed consultation with <Link href="/doctor/dr-mandavi-rai" className="text-rose-600 font-semibold hover:underline">
           Dr. Mandavi Rai</Link>. Unlike standard fertility treatments, intralipid therapy is not 
-          something that's recommended without thorough evaluation — it's considered only after 
+          something that`s recommended without thorough evaluation — it`s considered only after 
           reviewing your complete history, previous treatment outcomes, and specific immunological 
           markers.
         </p>
@@ -226,13 +226,13 @@ export default function IntralipidPage() {
           The science behind <strong>intralipid therapy</strong> is based on the understanding that 
           the immune system plays a complex role in implantation and early pregnancy. In some patients, 
           certain immune responses — particularly natural killer (NK) cell activity — may be overactive, 
-          potentially interfering with the embryo's ability to implant or survive early pregnancy.
+          potentially interfering with the embryo`s ability to implant or survive early pregnancy.
         </p>
 
         <p>
           <strong>Intralipid therapy</strong> is thought to help by modulating these immune responses. 
           The fat emulsion may bind to certain immune cells and reduce their activity, creating a more 
-          favourable environment for embryo implantation. However, it's important to understand that 
+          favourable environment for embryo implantation. However, it`s important to understand that 
           the evidence base for intralipid therapy is still evolving, and its use should always be 
           carefully considered on a case-by-case basis.
         </p>
@@ -268,8 +268,8 @@ export default function IntralipidPage() {
 
         <p>
           At <strong>Divine IVF, Sector 76, Noida</strong>, the approach to <strong>intralipid therapy</strong> 
-          is evidence-based and transparent. Dr. Rai discusses openly with patients what is and isn't 
-          established about the therapy's role in their specific case. The therapy is never recommended 
+          is evidence-based and transparent. Dr. Rai discusses openly with patients what is and isn`t 
+          established about the therapy`s role in their specific case. The therapy is never recommended 
           as a standalone add-on or without proper clinical indication.
         </p>
 

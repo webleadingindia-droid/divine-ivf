@@ -180,7 +180,7 @@ export default function PicsiPage() {
 
         <p>
           <strong>PICSI treatment in Noida</strong> represents an innovative approach to sperm 
-          selection that mimics nature's own quality control process. At <strong>Divine IVF, 
+          selection that mimics nature`s own quality control process. At <strong>Divine IVF, 
           Sector 76</strong>, <Link href="/doctor/dr-mandavi-rai" className="text-rose-600 font-semibold hover:underline">
           Dr. Mandavi Rai</Link> offers this advanced <strong>sperm selection</strong> technique 
           for patients where standard <Link href="/ivf/icsi" className="text-rose-600 font-semibold hover:underline">
@@ -191,7 +191,7 @@ export default function PicsiPage() {
           The science behind <strong>PICSI</strong> is based on the natural process of fertilisation. 
           In nature, sperm must bind to the zona pellucida (the outer layer of the egg) before 
           fertilisation can occur. Hyaluronan is a key component of this binding process. Sperm 
-          that can bind to hyaluronan are more mature and have better DNA integrity — they're 
+          that can bind to hyaluronan are more mature and have better DNA integrity — they`re 
           the sperm that would naturally have the best chance of achieving fertilisation.
         </p>
 
@@ -276,7 +276,7 @@ export default function PicsiPage() {
         <p>
           At <strong>Divine IVF, Sector 76, Noida</strong>, the approach to <strong>PICSI</strong> 
           is evidence-based and personalised. Dr. Rai ensures that this advanced technique is 
-          offered only when there's a clinical indication suggesting it may be beneficial — 
+          offered only when there`s a clinical indication suggesting it may be beneficial — 
           never as a routine add-on without proper evaluation.
         </p>
 

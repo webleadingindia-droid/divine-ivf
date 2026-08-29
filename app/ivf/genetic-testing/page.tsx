@@ -190,7 +190,7 @@ export default function GeneticTestingPage() {
           The journey to <strong>genetic testing</strong> typically begins with a comprehensive 
           <Link href="/fertility-investigation" className="text-rose-600 font-semibold hover:underline">
           fertility investigation</Link> and consultation with <Link href="/doctor/dr-mandavi-rai" className="text-rose-600 font-semibold hover:underline">
-          Dr. Mandavi Rai</Link>. Together, you'll explore your medical history, family history, 
+          Dr. Mandavi Rai</Link>. Together, you`ll explore your medical history, family history, 
           age, and previous pregnancy outcomes to determine whether <strong>PGT</strong> is appropriate 
           for your situation.
         </p>
@@ -230,7 +230,7 @@ export default function GeneticTestingPage() {
           For couples with a known family history of a genetic condition, <strong>PGT-M</strong> 
           (Preimplantation Genetic Testing for Monogenic disorders) can be life-changing. This 
           testing allows embryos to be screened for specific single-gene disorders such as cystic 
-          fibrosis, thalassemia, Huntington's disease, or other inherited conditions. By identifying 
+          fibrosis, thalassemia, Huntington`s disease, or other inherited conditions. By identifying 
           embryos that do not carry the genetic condition, couples can reduce the risk of passing 
           on serious genetic diseases to their children.
         </p>
@@ -239,7 +239,7 @@ export default function GeneticTestingPage() {
           For women of advanced maternal age (typically over 37) or those with recurrent pregnancy 
           loss, <strong>PGT-A</strong> (Preimplantation Genetic Testing for Aneuploidy) may be 
           recommended. As women age, the risk of chromosomal abnormalities in eggs increases — 
-          leading to embryos with too many or too few chromosomes. These embryos often don't 
+          leading to embryos with too many or too few chromosomes. These embryos often don`t 
           implant or result in miscarriage. <strong>PGT-A</strong> can identify chromosomally 
           normal embryos, potentially improving implantation rates and reducing the risk of miscarriage.
         </p>
@@ -256,7 +256,7 @@ export default function GeneticTestingPage() {
             </li>
             <li className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500 font-bold">PGT-M</span>
-              <span>Screens for specific single-gene disorders when there's a known family history. Used for conditions like cystic fibrosis, thalassemia, Huntington's disease, and more.</span>
+              <span>Screens for specific single-gene disorders when there`s a known family history. Used for conditions like cystic fibrosis, thalassemia, Huntington`s disease, and more.</span>
             </li>
             <li className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500 font-bold">PGT-SR</span>

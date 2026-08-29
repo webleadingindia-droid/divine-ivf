@@ -244,7 +244,7 @@ export default function SpermRetrievalPage() {
             <strong>TESA (Testicular Sperm Aspiration)</strong> — A fine needle is inserted through the skin into the testicle to aspirate tissue containing sperm. This technique can be used for both obstructive and non-obstructive azoospermia.
           </li>
           <li>
-            <strong>TESE (Testicular Sperm Extraction)</strong> — A small incision is made in the testicle to remove a small amount of testicular tissue, which is then processed in the lab to find sperm. This technique is typically used for non-obstructive azoospermia when TESA isn't successful.
+            <strong>TESE (Testicular Sperm Extraction)</strong> — A small incision is made in the testicle to remove a small amount of testicular tissue, which is then processed in the lab to find sperm. This technique is typically used for non-obstructive azoospermia when TESA isn`t successful.
           </li>
         </ul>
 
@@ -263,7 +263,7 @@ export default function SpermRetrievalPage() {
           <ul className="space-y-3">
             <li className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500 font-bold">PESA</span>
-              <span>~90-100% success rate in obstructive azoospermia — sperm is almost always found when there's a physical blockage.</span>
+              <span>~90-100% success rate in obstructive azoospermia — sperm is almost always found when there`s a physical blockage.</span>
             </li>
             <li className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500 font-bold">TESA</span>

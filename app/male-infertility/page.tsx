@@ -184,7 +184,7 @@ export default function MaleInfertilityPage() {
           Dr. Mandavi Rai</Link> follows a different approach — one that treats both partners as equals 
           from the very beginning of the <Link href="/fertility-investigation" className="text-rose-600 font-semibold hover:underline">
           fertility investigation</Link>. This means a <strong>male fertility evaluation</strong> is 
-          performed alongside the female partner's assessment, providing a complete picture of what's 
+          performed alongside the female partner`s assessment, providing a complete picture of what`s 
           happening and what <strong>fertility treatment</strong> — if any — makes sense next.
         </p>
 
@@ -300,7 +300,7 @@ export default function MaleInfertilityPage() {
           Depending on what the <strong>male infertility evaluation</strong> reveals, treatment may range 
           from lifestyle modifications and medication to <Link href="/iui" className="text-rose-600 font-semibold hover:underline">
           IUI</Link> for mild male factors, or <Link href="/ivf" className="text-rose-600 font-semibold hover:underline">
-          IVF with ICSI</Link> for more significant findings. Where sperm isn't present in the ejaculate, 
+          IVF with ICSI</Link> for more significant findings. Where sperm isn`t present in the ejaculate, 
           surgical sperm retrieval techniques can allow sperm to be collected directly for use in ICSI — 
           offering hope even in cases of non-obstructive azoospermia.
         </p>

@@ -194,7 +194,7 @@ export default function HysteroscopyPage() {
         </p>
 
         <p>
-          <strong>Hysteroscopy</strong> is often described as the 'gold standard' for evaluating 
+          <strong>Hysteroscopy</strong> is often described as the gold standard for evaluating 
           the uterine cavity because it provides direct visualisation — unlike ultrasound or 
           HSG, which can only suggest the presence of abnormalities. The high-definition camera 
           provides clear, detailed images that can reveal polyps, fibroids, adhesions, and other 
@@ -245,7 +245,7 @@ export default function HysteroscopyPage() {
             <strong>Submucosal Fibroids</strong> — Fibroids that bulge into the uterine cavity, affecting the uterine environment
           </li>
           <li>
-            <strong>Uterine Adhesions</strong> — Scar tissue (Asherman's syndrome) that can reduce the uterine cavity
+            <strong>Uterine Adhesions</strong> — Scar tissue (Asherman`s syndrome) that can reduce the uterine cavity
           </li>
           <li>
             <strong>Uterine Septum</strong> — A congenital abnormality dividing the uterine cavity
@@ -334,7 +334,7 @@ export default function HysteroscopyPage() {
         </p>
 
         <p>
-          Whether you're having <strong>hysteroscopy</strong> as part of a <Link href="/fertility-investigation" className="text-rose-600 font-semibold hover:underline">
+          Whether you`re having <strong>hysteroscopy</strong> as part of a <Link href="/fertility-investigation" className="text-rose-600 font-semibold hover:underline">
           fertility investigation</Link>, for abnormal bleeding assessment, or for treatment of 
           a specific uterine condition, you can expect the same thorough, compassionate, and 
           evidence-based care that defines <strong>Divine IVF</strong>.
