@@ -166,8 +166,8 @@ export default function EraPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-[4/3]">
             <Image
-              src="https://images.unsplash.com/photo-1579154204845-15a696c8e6f4?q=80&w=1200&auto=format&fit=crop"
-              alt="ERA testing and endometrial analysis at Divine IVF Noida"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/OHxsbbUIOcQn7zP1Na8k/image.png"
+              alt="Blood test for hormonal assessment during fertility investigation at Divine IVF Noida"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -175,8 +175,8 @@ export default function EraPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-[4/3]">
             <Image
-              src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=1200&auto=format&fit=crop"
-              alt="Endometrial biopsy for ERA testing at Divine IVF Clinic Noida"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/ihoqxAWpk2sngcSobHAv/image.png"
+              alt="Ultrasound scan during fertility evaluation at Divine IVF Clinic in Sector 76 Noida"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
