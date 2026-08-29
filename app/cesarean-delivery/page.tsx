@@ -198,8 +198,8 @@ export default function CesareanDeliveryPage() {
           A <strong>cesarean delivery</strong> (also known as a C-section) is a surgical 
           procedure where your baby is delivered through an incision in your abdomen and 
           uterus. While many women deliver vaginally, cesarean delivery is the safest option 
-          for many pregnancies — and it's important to understand that a cesarean is not a 
-          failure or a lesser way to give birth. It's a safe, established medical procedure 
+          for many pregnancies — and it`s important to understand that a cesarean is not a 
+          failure or a lesser way to give birth. It`s a safe, established medical procedure 
           that can be the best choice for you and your baby.
         </p>
 

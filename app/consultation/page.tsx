@@ -166,7 +166,7 @@ export default function ConsultationPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-ink-900">Book Your Consultation</h3>
-                    <p className="text-xs text-ink-400">Fill in the details and we'll reach out</p>
+                    <p className="text-xs text-ink-400">Fill in the details and we`ll reach out</p>
                   </div>
                 </div>
 
