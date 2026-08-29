@@ -62,7 +62,7 @@ export function DoctorSection() {
           </h2>
           
           <p className="text-base md:text-lg text-ink-500 mt-3 max-w-2xl mx-auto font-light tracking-wide">
-            Best Gynaecologist &amp; IVF Doctor in Noida
+            Best IVF &amp; Gynaecologist Doctor in Noida
           </p>
         </div>
 
