@@ -46,7 +46,7 @@ export default function SpermRetrievalPage() {
       intro="When sperm isn't present in the ejaculate, surgical retrieval can allow sperm to be collected directly from the testes or epididymis for use in ICSI — offering hope for biological parenthood even in cases of azoospermia."
       heroImage="https://images.unsplash.com/photo-1622902046580-2b47f47f5471?q=80&w=1200&auto=format&fit=crop"
       heroAlt="Sperm retrieval procedure at Divine IVF, Noida"
-      secondaryImage="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=1200&auto=format&fit=crop"
+      secondaryImage="https://plain-apac-prod-public.komododecks.com/202608/29/44zaH8kJRjOoRCqyCDM2/image.webp"
       secondaryImageAlt="Laboratory processing of retrieved sperm at Divine IVF Clinic, Noida"
       whatItIs={[
         "Sperm retrieval techniques are minor surgical procedures used to collect sperm directly from the testes (testicles) or epididymis (the tube where sperm mature and are stored). These techniques are used when no sperm is found in a semen sample — a condition known as azoospermia.",
@@ -205,7 +205,7 @@ export default function SpermRetrievalPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/44zaH8kJRjOoRCqyCDM2/image.webp"
               alt="Laboratory processing of retrieved sperm at Divine IVF Clinic Noida"
               fill
               className="object-cover"
@@ -214,7 +214,7 @@ export default function SpermRetrievalPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/pRdWPryJcEFaMajpMv47/image.webp"
               alt="Consultation for sperm retrieval with Dr. Mandavi Rai at Divine IVF Noida"
               fill
               className="object-cover"
@@ -223,7 +223,7 @@ export default function SpermRetrievalPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/k0D4Ufj5KatKSZhS85VD/image.webp"
               alt="Sperm preparation for ICSI after retrieval at Divine IVF Noida"
               fill
               className="object-cover"

@@ -203,7 +203,7 @@ export default function GynecologyPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/44zaH8kJRjOoRCqyCDM2/image.webp"
               alt="Gynaecological examination room at Divine IVF Clinic Noida"
               fill
               className="object-cover"
@@ -212,7 +212,7 @@ export default function GynecologyPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/pRdWPryJcEFaMajpMv47/image.webp"
               alt="Women's health consultation with Dr. Mandavi Rai at Divine IVF Noida"
               fill
               className="object-cover"

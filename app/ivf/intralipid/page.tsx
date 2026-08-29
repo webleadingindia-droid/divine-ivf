@@ -46,7 +46,7 @@ export default function IntralipidPage() {
       intro="Intralipid therapy is an intravenous infusion considered in select fertility cases where immunological factors may be playing a role — administered as part of an individualised treatment plan, not as a routine add-on."
       heroImage="https://images.unsplash.com/photo-1584982935372-1c0a3a3f7dcb?q=80&w=1200&auto=format&fit=crop"
       heroAlt="Intralipid therapy intravenous infusion at Divine IVF, Noida"
-      secondaryImage="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop"
+      secondaryImage="https://plain-apac-prod-public.komododecks.com/202608/29/k0D4Ufj5KatKSZhS85VD/image.webp"
       secondaryImageAlt="Pre-infusion preparation for Intralipid therapy at Divine IVF Clinic, Noida"
       whatItIs={[
         "Intralipid is a sterile fat emulsion, typically made from soybean oil, egg phospholipids, and glycerin, that is administered intravenously. In fertility care, it has been used as an adjunct therapy in specific contexts where an immunological factor is being considered as potentially contributing to recurrent implantation failure or recurrent pregnancy loss.",
@@ -195,7 +195,7 @@ export default function IntralipidPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/44zaH8kJRjOoRCqyCDM2/image.webp"
               alt="Infusion preparation for Intralipid therapy at Divine IVF Clinic Noida"
               fill
               className="object-cover"
@@ -204,7 +204,7 @@ export default function IntralipidPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/pRdWPryJcEFaMajpMv47/image.webp"
               alt="Consultation for Intralipid therapy with Dr. Mandavi Rai at Divine IVF Noida"
               fill
               className="object-cover"
@@ -213,7 +213,7 @@ export default function IntralipidPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/k0D4Ufj5KatKSZhS85VD/image.webp"
               alt="Immunological assessment for Intralipid therapy at Divine IVF Noida"
               fill
               className="object-cover"

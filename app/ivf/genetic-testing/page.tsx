@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Divine IVF",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop",
+        url: "https://plain-apac-prod-public.komododecks.com/202608/29/k0D4Ufj5KatKSZhS85VD/image.webp",
         width: 1200,
         height: 630,
         alt: "Genetic testing of embryos at Divine IVF, Noida",
@@ -44,7 +44,7 @@ export default function GeneticTestingPage() {
       titlePlain="Genetic Testing"
       titleAccent="of Embryos"
       intro="In appropriate cases, embryos can be screened before transfer as part of an individualised IVF plan — one additional layer of information, not a routine step for everyone."
-      heroImage="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop"
+      heroImage="https://plain-apac-prod-public.komododecks.com/202608/29/k0D4Ufj5KatKSZhS85VD/image.webp"
       heroAlt="Embryology laboratory preparing for genetic testing at Divine IVF, Noida"
       secondaryImage="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=1200&auto=format&fit=crop"
       secondaryImageAlt="Embryo biopsy for genetic testing at Divine IVF Clinic, Noida"
@@ -199,7 +199,7 @@ export default function GeneticTestingPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/44zaH8kJRjOoRCqyCDM2/image.webp"
               alt="Embryo biopsy procedure for genetic testing at Divine IVF Clinic Noida"
               fill
               className="object-cover"
@@ -208,7 +208,7 @@ export default function GeneticTestingPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/pRdWPryJcEFaMajpMv47/image.webp"
               alt="Fertility consultation for genetic testing with Dr. Mandavi Rai at Divine IVF Noida"
               fill
               className="object-cover"

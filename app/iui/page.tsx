@@ -45,7 +45,7 @@ export default function IuiPage() {
       intro="Intrauterine insemination (IUI) places specially prepared sperm directly into the uterus around the time of ovulation — often considered before moving to more involved treatment like IVF."
       heroImage="https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1200&auto=format&fit=crop"
       heroAlt="Doctor discussing IUI treatment with a couple at Divine IVF, Noida"
-      secondaryImage="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop"
+      secondaryImage="https://plain-apac-prod-public.komododecks.com/202608/29/k0D4Ufj5KatKSZhS85VD/image.webp"
       secondaryImageAlt="IUI procedure preparation at Divine IVF Clinic, Noida"
       whatItIs={[
         "IUI treatment in Noida (Intrauterine Insemination) is a fertility procedure where sperm is washed, concentrated, and placed directly into the uterus using a thin catheter. The procedure is timed precisely around ovulation to maximise the chances of fertilisation.",
@@ -189,7 +189,7 @@ export default function IuiPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/44zaH8kJRjOoRCqyCDM2/image.webp"
               alt="Sperm preparation for IUI treatment at Divine IVF Clinic Noida"
               fill
               className="object-cover"
@@ -198,7 +198,7 @@ export default function IuiPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/pRdWPryJcEFaMajpMv47/image.webp"
               alt="IUI consultation with Dr. Mandavi Rai at Divine IVF Sector 76 Noida"
               fill
               className="object-cover"
@@ -207,7 +207,7 @@ export default function IuiPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/k0D4Ufj5KatKSZhS85VD/image.webp"
               alt="IUI procedure preparation at Divine IVF Clinic Noida"
               fill
               className="object-cover"

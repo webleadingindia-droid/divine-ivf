@@ -45,7 +45,7 @@ export default function FertilityInvestigationPage() {
       intro="A structured evaluation for both partners builds an accurate picture of what's happening — and what treatment, if any, makes sense next."
       heroImage="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?q=80&w=1200&auto=format&fit=crop"
       heroAlt="Doctor discussing fertility investigation results with a couple at Divine IVF, Noida"
-      secondaryImage="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop"
+      secondaryImage="https://plain-apac-prod-public.komododecks.com/202608/29/k0D4Ufj5KatKSZhS85VD/image.webp"
       secondaryImageAlt="Hormonal blood test during fertility investigation at Divine IVF, Noida"
       whatItIs={[
         "Fertility investigation in Noida is the process of identifying what may be contributing to difficulty conceiving, through a combination of history-taking, examination and targeted tests for both partners. This fertility evaluation is the foundation of all fertility treatment.",
@@ -164,7 +164,7 @@ export default function FertilityInvestigationPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/44zaH8kJRjOoRCqyCDM2/image.webp"
               alt="Semen analysis for male fertility investigation at Divine IVF Clinic Noida"
               fill
               className="object-cover"
@@ -173,7 +173,7 @@ export default function FertilityInvestigationPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/pRdWPryJcEFaMajpMv47/image.webp"
               alt="Fertility consultation with Dr. Mandavi Rai at Divine IVF Sector 76 Noida"
               fill
               className="object-cover"
@@ -182,7 +182,7 @@ export default function FertilityInvestigationPage() {
           </div>
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=1200&auto=format&fit=crop"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/k0D4Ufj5KatKSZhS85VD/image.webp"
               alt="Hormonal blood test during fertility investigation at Divine IVF Noida"
               fill
               className="object-cover"
