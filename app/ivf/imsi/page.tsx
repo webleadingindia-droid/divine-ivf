@@ -159,7 +159,7 @@ export default function ImsiPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-[4/3]">
             <Image
-              src="https://plain-apac-prod-public.komododecks.com/202608/29/OHxsbbUIOcQn7zP1Na8k/image.png"
+              src="https://plain-apac-prod-public.komododecks.com/202608/29/yMbo9dEMxWHZX8fe6bdw/image.png"
               alt="Blood test for hormonal assessment during fertility investigation at Divine IVF Noida"
               fill
               className="object-cover"
