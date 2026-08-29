@@ -331,7 +331,7 @@ export default function AboutPage() {
                 <div>
                   <h2 className="text-2xl md:text-3xl text-ink-900 mb-4">Our Approach to Care</h2>
                   <p className="text-ink-400 leading-relaxed mb-6">
-                    Dr. Mandavi Rai believes there is no one-size-fits-all path to parenthood. Every patient's history, body, and journey is different, so their treatment should be too. Here's how we make that happen:
+                    Dr. Mandavi Rai believes there is no one-size-fits-all path to parenthood. Every patient`s history, body, and journey is different, so their treatment should be too. Here`s how we make that happen:
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-start gap-4 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30 hover:border-rose-200 transition-all">
