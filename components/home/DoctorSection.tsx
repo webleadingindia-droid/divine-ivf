@@ -117,7 +117,7 @@ export function DoctorSection() {
                 <div className="absolute bottom-4 left-4 right-4 flex flex-wrap items-center gap-2">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/95 backdrop-blur-sm rounded-full text-[10px] font-semibold text-rose-600 shadow-lg">
                     <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
-                    4.9 (200+ Reviews)
+                    4.9 (300+ Reviews)
                   </span>
                   <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-rose-600/95 backdrop-blur-sm rounded-full text-[10px] font-semibold text-white shadow-lg">
                     <BadgeCheck className="h-3.5 w-3.5" />
