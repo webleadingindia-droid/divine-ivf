@@ -243,7 +243,8 @@ export function DoctorSection() {
                 trusted Fertility &amp; IVF Specialist in Noida and Delhi NCR with extensive
                 experience in fertility and assisted reproductive medicine. She has walked
                 alongside couples through the most hopeful—and difficult—chapters of their
-                lives.
+                lives. With over 15 years of experience and 10 years dedicated to infertility,
+                she brings a compassionate, evidence-based approach to every patient&apos;s journey.
               </p>
             </div>
 
@@ -260,15 +261,14 @@ export function DoctorSection() {
 
               <div className="space-y-1.5 max-h-[200px] overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-rose-200 scrollbar-track-transparent">
                 {[
-                  "PG Executive Program in Hospital Management – IIM Kashipur & Max Healthcare (2024–2025)",
-                  "Fellowship in Reproductive Medicine – CIMAR, Kochi (2017–2018)",
-                  "DMRE (Diploma in Reproductive Medicine & Embryology) – International School of Medicine, Germany (2016)",
-                  "Fellowship in Assisted Reproduction Technique (FART) – World Laparoscopy Hospital, New Delhi (2018)",
-                  "Basic Training in Robotic Surgery, DMAS & FMAS – World Laparoscopy Hospital, New Delhi (2018)",
-                  "DMAS & FMAS (Minimal Access Surgery) – World Laparoscopy Hospital, New Delhi (2018)",
-                  "ICOG Certified Fellowship in Endoscopy – Manchanda's Endoscopic Center, New Delhi (2018)",
-                  "Diploma in Obstetrics & Gynaecology – HIHT University, Dehradun (2012–2014)",
-                  "MBBS – HIHT University, Dehradun (2008–2011)",
+                  "M.S. OBGY – MGM Institute of Health Sciences, Mumbai (2013)",
+                  "MBBS – Bharati Vidyapeeth University, Pune (2005)",
+                  "Fellowship in Reproductive Medicine – CREST, National University Health System, Singapore (2017–2019)",
+                  "Masters in Minimal Access Surgery (M.MAS) – Gold Medalist, World Laparoscopy Hospital, Gurgaon (2016)",
+                  "Post-Graduation Diploma in Hospital and Health Management – IGNOU, New Delhi (2020)",
+                  "Post Graduate Diploma in Sexual Health and Reproductive Medicine – University of South Wales, UK (2020)",
+                  "Diploma in Ultrasound – Randhawa Institute of Ultrasound Training, Delhi (2015)",
+                  "FICOG – Fellow of the Indian College of Obstetricians and Gynecologists",
                 ].map((cred, index) => (
                   <div
                     key={index}
@@ -294,14 +294,13 @@ export function DoctorSection() {
 
               <div className="space-y-1.5 max-h-[200px] overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-rose-200 scrollbar-track-transparent">
                 {[
-                  "Senior Consultant – IVF & Reproductive Medicine – Cloudnine Hospital, Gurugram (Jul 2023–Present)",
-                  "Visiting Consultant – Infertility – Motherhood Hospital, Gurugram (2025–Present)",
-                  "Chief Consultant & Centre Head – IVF & Wings IVF & Orthus Health, New Delhi (Jul 2022–Jul 2023)",
-                  "Consultant – IVF Specialist – Milan Fertility Centre, Delhi & Gurugram (Jan 2021–Jul 2022)",
-                  "Director & Consultant – IVF & Gynaecology – The Fertility (Own Practice), Gurugram (Jul 2020–Present)",
-                  "Consultant – IVF Specialist – W Pratishka Hospital, Gurugram (Jan 2020–Dec 2020)",
-                  "Visiting Consultant – Infertility & Gynaecology – Max Hospital, Gurugram (Apr 2019–Present)",
-                  "Consultant-IVF Specialist – Myra IVF Center, Gurugram (June 2019-Aug 2019)",
+                  "Center Head & Senior Consultant IVF Specialist – INDIRA IVF, Noida Center (Present)",
+                  "Senior Consultant & IVF Specialist – INDIRA IVF, Raj Nagar, Ghaziabad",
+                  "Senior Consultant & IVF Specialist – INDIRA IVF, Patel Nagar, New Delhi",
+                  "Senior Resident – ESIC Hospital & Medical College, Faridabad",
+                  "Senior Resident – Lady Hardinge Medical College, New Delhi",
+                  "Senior Resident – Max Super Speciality Hospital, Saket, Delhi",
+                  "Junior Resident – Safdarjung Hospital, New Delhi",
                 ].map((exp, index) => (
                   <div
                     key={index}
