@@ -34,19 +34,19 @@ const heroImages = [
   {
     alt: "IVF laboratory and medical professionals",
     images: {
-      mobile: "https://plain-apac-prod-public.komododecks.com/202608/18/xV5JDkRAIrrdz6ll9vIC/image.jpg",
-      tablet: "https://plain-apac-prod-public.komododecks.com/202608/18/xV5JDkRAIrrdz6ll9vIC/image.jpg",
-      desktop: "https://plain-apac-prod-public.komododecks.com/202608/18/OXq6ChgNsdQRTSmz77tc/image.png",
-      large: "https://plain-apac-prod-public.komododecks.com/202608/18/OXq6ChgNsdQRTSmz77tc/image.png",
+      mobile: "https://plain-apac-prod-public.komododecks.com/202609/01/lkvopNhXkSa4dxBuVHsb/image.jpg",
+      tablet: "https://plain-apac-prod-public.komododecks.com/202609/01/lkvopNhXkSa4dxBuVHsb/image.jpg",
+      desktop: "https://plain-apac-prod-public.komododecks.com/202609/01/f2kbb0ZKapDl77FjtUIZ/image.jpg",
+      large: "https://plain-apac-prod-public.komododecks.com/202609/01/f2kbb0ZKapDl77FjtUIZ/image.jpg",
     }
   },
   {
     alt: "Fertility clinic consultation room",
     images: {
-      mobile: "https://plain-apac-prod-public.komododecks.com/202608/18/e8Txo2bfDUbSHqHxcCAx/image.jpg",
-      tablet: "https://plain-apac-prod-public.komododecks.com/202608/18/e8Txo2bfDUbSHqHxcCAx/image.jpg",
-      desktop: "https://plain-apac-prod-public.komododecks.com/202608/18/dqmHEqBm0heFtUivEdWL/image.png",
-      large: "https://plain-apac-prod-public.komododecks.com/202608/18/dqmHEqBm0heFtUivEdWL/image.png",
+      mobile: "https://plain-apac-prod-public.komododecks.com/202609/01/Eys7qgGsF7OaXBx7fOy5/image.jpg",
+      tablet: "https://plain-apac-prod-public.komododecks.com/202609/01/Eys7qgGsF7OaXBx7fOy5/image.jpg",
+      desktop: "https://plain-apac-prod-public.komododecks.com/202609/01/66qsJKdTVoa8rUyQCa1w/image.jpg",
+      large: "https://plain-apac-prod-public.komododecks.com/202609/01/66qsJKdTVoa8rUyQCa1w/image.jpg",
     }
   },
 ];

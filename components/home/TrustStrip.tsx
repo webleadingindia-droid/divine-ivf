@@ -1,4 +1,4 @@
-// components/layout/TrustStrip.tsx (Seamless Loop)
+// components/layout/TrustStrip.tsx (Seamless Loop with Speed Control)
 "use client";
 
 import { HeartPulse, Microscope, UserRound, Stethoscope, Baby } from "lucide-react";
@@ -13,11 +13,14 @@ const categories = [
   { icon: Baby, label: "Pregnancy Care" },
 ];
 
+// ⚡ SPEED CONTROL - Adjust this value (lower = slower, higher = faster)
+// Recommended range: 0.3 (slow) to 2.5 (fast)
+const SCROLL_SPEED = 0.7; // ← Change this number to control speed
+
 export function TrustStrip() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
   const animationRef = useRef<number | null>(null);
-  const scrollSpeed = 1.1;
 
   useEffect(() => {
     const container = scrollContainerRef.current;
@@ -30,7 +33,7 @@ export function TrustStrip() {
         if (container.scrollLeft >= maxScroll) {
           container.scrollLeft = 0;
         } else {
-          container.scrollLeft += scrollSpeed;
+          container.scrollLeft += SCROLL_SPEED; // ← Uses the speed variable
         }
       }
       animationRef.current = requestAnimationFrame(autoScroll);

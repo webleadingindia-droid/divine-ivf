@@ -207,9 +207,9 @@ export function Introduction() {
           </div>
           
           <h2 className="text-4xl md:text-[2.3rem] leading-[1.1] text-ink-900">
-            Advanced Fertility Care.{" "}
+            Ethical Care.{" "}
             <span className="relative font-serif italic text-rose-600">
-              Personalised for Your Parenthood Journey.
+              Trusted Results.
               <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-rose-300 to-rose-500 rounded-full"></span>
               <span className="absolute -bottom-2 left-0 w-1/3 h-1.5 bg-gradient-to-r from-rose-500 to-rose-600 rounded-full animate-pulse-slow"></span>
             </span>
@@ -269,11 +269,14 @@ export function Introduction() {
               Explore Divine IVF
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
-            
-            <div className="flex items-center gap-2 text-sm text-ink-400 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full border border-rose-100/50">
-              <Shield className="h-4 w-4 text-rose-400" />
-              <span>100% Confidential</span>
-            </div>
+            <a
+              href="/consultation"
+              className="flex items-center gap-2 text-sm text-rose-400 bg-white/60 backdrop-blur-sm px-4 py-3 rounded-full border border-rose-400/100"
+            >
+              <Sparkles className="h-4 w-4" />
+              Book Consultation
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
         </div>
       </div>

@@ -111,9 +111,9 @@ export function WhyChoose() {
             <span>Why Divine IVF</span>
           </div>
           <h2 className="text-3xl md:text-[2.6rem] leading-tight text-ink-900">
-            Built around{' '}
+            Ethical Care.{' '}
             <span className="font-serif italic bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">
-              how you`re actually cared for
+              Trusted Results.
             </span>
           </h2>
           <div className="flex items-center justify-center gap-3 mt-4">
@@ -172,7 +172,7 @@ export function WhyChoose() {
             <span className="h-4 w-px bg-rose-200" />
             <div className="flex items-center gap-2">
               <Baby className="h-4 w-4 text-rose-500" />
-              <span className="text-xs text-ink-600">500+ Happy Families</span>
+              <span className="text-xs text-ink-600">3000+ Happy Families</span>
             </div>
           </div>
         </div>

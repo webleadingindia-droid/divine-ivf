@@ -1,8 +1,8 @@
-// components/layout/MobileActionBar.tsx (Pill Design)
+// components/layout/MobileActionBar.tsx (Clean Modern Premium)
 "use client";
 
 import Link from "next/link";
-import { Phone, CalendarHeart, MessageCircle } from "lucide-react";
+import { Phone, CalendarHeart, MessageCircle, ChevronRight } from "lucide-react";
 import { clinic } from "@/data/clinic";
 
 export function MobileActionBar() {
@@ -11,46 +11,47 @@ export function MobileActionBar() {
 
   return (
     <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40">
-      <div className="flex justify-center pb-3 px-3">
-        <div className="bg-white/90 backdrop-blur-2xl rounded-full border border-white/30 shadow-2xl shadow-black/10 px-2.5 py-1.5 flex items-center justify-between gap-1 max-w-md w-full">
-          {/* Call */}
+      <div className="flex justify-center pb-5 px-4">
+        <div className="bg-white/90 backdrop-blur-xl rounded-2xl border border-white/30 shadow-xl shadow-black/5 px-1.5 py-1.5 flex items-center gap-1 max-w-sm w-full">
+          
+          {/* Call Button */}
           <a
             href={clinic.phoneHref}
-            className="group flex items-center gap-1.5 px-3 py-2 rounded-full hover:bg-rose-50/80 transition-all duration-300 active:scale-95"
+            className="group flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl hover:bg-gray-50/80 transition-all duration-200 active:scale-95 flex-1"
           >
-            <div className="p-0.5 rounded-full bg-gradient-to-br from-rose-100 to-rose-50">
-              <Phone className="h-3.5 w-3.5 text-rose-500" />
-            </div>
-            <span className="text-[10px] font-medium text-gray-600 group-hover:text-rose-600 transition-colors">Call</span>
+            <Phone className="h-4 w-4 text-gray-400 group-hover:text-blue-500 transition-colors" />
+            <span className="text-[11px] font-medium text-gray-500 group-hover:text-blue-600 transition-colors">Call</span>
           </a>
 
           {/* Divider */}
-          <div className="w-px h-6 bg-gray-200/50"></div>
+          <div className="w-px h-7 bg-gray-100"></div>
 
-          {/* WhatsApp */}
+          {/* WhatsApp Button - Subtle Highlight */}
           <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-1.5 px-3 py-2 rounded-full hover:bg-emerald-50/80 transition-all duration-300 active:scale-95"
+            className="group flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100/70 transition-all duration-200 active:scale-95 flex-[1.3]"
           >
-            <div className="p-0.5 rounded-full bg-gradient-to-br from-emerald-100 to-emerald-50">
-              <MessageCircle className="h-3.5 w-3.5 text-emerald-500" />
+            <div className="p-1 rounded-full bg-emerald-500/10 group-hover:bg-emerald-500/20 transition-colors">
+              <MessageCircle className="h-4 w-4 text-emerald-600 group-hover:text-emerald-700 transition-colors" />
             </div>
-            <span className="text-[10px] font-medium text-gray-600 group-hover:text-emerald-600 transition-colors">WhatsApp</span>
+            <div className="flex items-center gap-1.5">
+              <span className="text-[11px] font-semibold text-emerald-700 group-hover:text-emerald-800 transition-colors">WhatsApp</span>
+              <span className="text-[8px] font-medium text-emerald-500 bg-emerald-100 px-1.5 py-0.5 rounded-full">Chat</span>
+            </div>
           </a>
 
           {/* Divider */}
-          <div className="w-px h-6 bg-gray-200/50"></div>
+          <div className="w-px h-7 bg-gray-100"></div>
 
-          {/* Book Now */}
+          {/* Book Now Button */}
           <Link
             href="/consultation"
-            className="group flex items-center gap-1.5 px-4 py-2 rounded-full bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 transition-all duration-300 shadow-lg shadow-rose-500/30 hover:shadow-rose-500/40 active:scale-95 relative overflow-hidden"
+            className="group flex items-center gap-1.5 px-3 py-2.5 rounded-xl hover:bg-rose-50/80 transition-all duration-200 active:scale-95 flex-1"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-            <CalendarHeart className="h-3.5 w-3.5 text-white" />
-            <span className="text-[10px] font-bold text-white tracking-wide">Book Now</span>
+            <CalendarHeart className="h-4 w-4 text-gray-400 group-hover:text-rose-500 transition-colors" />
+            <span className="text-[11px] font-medium text-gray-500 group-hover:text-rose-600 transition-colors">Book</span>
           </Link>
         </div>
       </div>

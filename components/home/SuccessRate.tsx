@@ -127,12 +127,7 @@ export function SuccessRate() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8">
-          <div className="bg-gradient-to-br from-rose-500 to-pink-500 rounded-2xl p-4 text-white shadow-lg backdrop-blur-sm">
-            <p className="text-xs opacity-90">Overall Success</p>
-            <p className="text-2xl md:text-3xl font-bold mt-1">67.7%</p>
-            <p className="text-[10px] opacity-75">Average across ages</p>
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mb-8">
 
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 border border-rose-100/50 shadow-lg hover:shadow-xl transition-all hover:bg-white">
             <p className="text-xs text-ink-500">Total Patients</p>
@@ -141,17 +136,17 @@ export function SuccessRate() {
               <ArrowUpRight className="w-3 h-3" /> 12.5% growth
             </p>
           </div>
+          
+          <div className="bg-gradient-to-br from-rose-500 to-pink-500 rounded-2xl p-4 text-white shadow-lg backdrop-blur-sm">
+            <p className="text-xs opacity-90">Overall Success</p>
+            <p className="text-2xl md:text-3xl font-bold mt-1">67.7%</p>
+            <p className="text-[10px] opacity-75">Average across ages</p>
+          </div>
 
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 border border-rose-100/50 shadow-lg hover:shadow-xl transition-all hover:bg-white">
             <p className="text-xs text-ink-500">Success Trend</p>
             <p className="text-2xl md:text-3xl font-bold text-emerald-600 mt-1">+8.2%</p>
             <p className="text-[10px] text-ink-400">vs previous year</p>
-          </div>
-
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 border border-rose-100/50 shadow-lg hover:shadow-xl transition-all hover:bg-white">
-            <p className="text-xs text-ink-500">Active Treatments</p>
-            <p className="text-2xl md:text-3xl font-bold text-ink-900 mt-1">342</p>
-            <p className="text-[10px] text-ink-400">Currently ongoing</p>
           </div>
         </div>
 

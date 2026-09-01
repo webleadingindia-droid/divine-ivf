@@ -120,7 +120,7 @@ export function PatientStories() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-ink-900 leading-[1.15]">
-              Stories of Hope,{" "}
+              Real Stories, Real Hope:{" "}
               <span className="bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent font-serif italic">
                 Journeys to Parenthood
               </span>
@@ -271,7 +271,7 @@ export function PatientStories() {
 
         .testimonial-card-wrap {
           padding: 5px;
-          border: 2px solid pink;
+          border: 2px solid #7e4a53;
           border-radius: 30px;
           background: #c0788438;
         }
