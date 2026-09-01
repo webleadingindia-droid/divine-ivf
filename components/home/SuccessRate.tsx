@@ -5,9 +5,9 @@ import { Heart, Award, TrendingUp, CheckCircle, Sparkles, Baby, Star, Users, Arr
 
 export function SuccessRate() {
   const ageData = [
-    { age: "Under 30", rate: 78, color: "#F472B6", icon: Star, patients: "2.8K", label: "High" },
-    { age: "30 – 35", rate: 67, color: "#EC4899", icon: Heart, patients: "3.2K", label: "Good" },
-    { age: "35 – 40", rate: 58, color: "#DB2777", icon: Sparkles, patients: "2.1K", label: "Moderate" },
+    { age: "Age Under 30", rate: 78, color: "#F472B6", icon: Star, patients: "2.8K", label: "High" },
+    { age: "Age 30 – 35", rate: 67, color: "#EC4899", icon: Heart, patients: "3.2K", label: "Good" },
+    { age: "Age 35 – 40", rate: 58, color: "#DB2777", icon: Sparkles, patients: "2.1K", label: "Moderate" },
   ];
 
   return (
