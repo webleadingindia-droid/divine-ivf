@@ -290,7 +290,7 @@ export function DoctorSection() {
               </Button>
               <Button
                 href="/doctor/dr-mandavi-rai"
-                variant="outline"
+                variant="ghost"
                 className="border-white/40 text-white hover:bg-white/10 rounded-xl px-6 py-2.5 text-sm font-medium"
               >
                 View Full Profile
