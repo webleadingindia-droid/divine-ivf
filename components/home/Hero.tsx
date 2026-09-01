@@ -43,10 +43,10 @@ const heroImages = [
   {
     alt: "Fertility clinic consultation room",
     images: {
-      mobile: "https://plain-apac-prod-public.komododecks.com/202609/01/Eys7qgGsF7OaXBx7fOy5/image.jpg",
-      tablet: "https://plain-apac-prod-public.komododecks.com/202609/01/Eys7qgGsF7OaXBx7fOy5/image.jpg",
-      desktop: "https://plain-apac-prod-public.komododecks.com/202609/01/66qsJKdTVoa8rUyQCa1w/image.jpg",
-      large: "https://plain-apac-prod-public.komododecks.com/202609/01/66qsJKdTVoa8rUyQCa1w/image.jpg",
+      mobile: "https://plain-apac-prod-public.komododecks.com/202609/01/GH6bcWVnBaMGAYQXkYUr/image.jpg",
+      tablet: "https://plain-apac-prod-public.komododecks.com/202609/01/GH6bcWVnBaMGAYQXkYUr/image.jpg",
+      desktop: "https://plain-apac-prod-public.komododecks.com/202609/01/GFIZOQeQ3VVbMy6GOsU3/image.jpg",
+      large: "https://plain-apac-prod-public.komododecks.com/202609/01/GFIZOQeQ3VVbMy6GOsU3/image.jpg",
     }
   },
 ];
