@@ -133,7 +133,7 @@ export default function FaqsPage() {
           <div className="text-center mb-4">
             <p className="text-sm text-slate-500">
               Found <span className="font-semibold text-rose-600">{filteredItems.length}</span>{" "}
-              {filteredItems.length === 1 ? "result" : "results"} for "{searchQuery}"
+              {filteredItems.length === 1 ? "result" : "results"} for &quot;{searchQuery}&quot;
             </p>
           </div>
         )}
