@@ -299,7 +299,7 @@ export default function AboutPage() {
                     </p>
                     
                     <p className="text-sm sm:text-base text-ink-500 leading-relaxed mb-3 md:mb-4">
-                      Divine IVF is the outcome of Dr. Mandavi Rai's years of experience caring for patients with diverse fertility needs and challenges. Over time, these experiences have shaped an approach to fertility care that is thoughtful, individualised and grounded in sound clinical judgement.
+                      Divine IVF is the outcome of Dr. Mandavi Rai`s years of experience caring for patients with diverse fertility needs and challenges. Over time, these experiences have shaped an approach to fertility care that is thoughtful, individualised and grounded in sound clinical judgement.
                     </p>
                     
                     <p className="text-sm sm:text-base text-ink-500 leading-relaxed mb-3 md:mb-4">
@@ -349,7 +349,7 @@ export default function AboutPage() {
                   <h2 className="text-xl sm:text-2xl md:text-3xl text-ink-900 mb-3 md:mb-4">Our Approach to Care</h2>
                   
                   <p className="text-sm sm:text-base text-ink-500 leading-relaxed mb-4 md:mb-6">
-                    Dr. Mandavi Rai believes there is no one-size-fits-all path to parenthood. Every patient's history, body, and journey is different, so their treatment should be too. Here's how we make that happen:
+                    Dr. Mandavi Rai believes there is no one-size-fits-all path to parenthood. Every patient`s history, body, and journey is different, so their treatment should be too. Here`s how we make that happen:
                   </p>
                   
                   <div className="space-y-3 sm:space-y-4">

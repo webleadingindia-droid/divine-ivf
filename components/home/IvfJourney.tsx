@@ -101,7 +101,7 @@ export function IvfJourney() {
           <h2 className="text-3xl sm:text-4xl md:text-[2.6rem] font-bold text-ink-900 leading-[1.15] mb-4">
             Every IVF journey is unique.{' '}
             <span className="block sm:inline font-serif italic bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">
-              Here's what you can expect
+              Here`s what you can expect
             </span>
           </h2>
         </div>

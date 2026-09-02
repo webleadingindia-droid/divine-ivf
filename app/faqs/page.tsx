@@ -60,12 +60,12 @@ export default function FaqsPage() {
             </span>
             <br />
             <span className="text-2xl sm:text-3xl md:text-4xl font-light text-slate-500">
-              We've got answers.
+              We`ve got answers.
             </span>
           </h1>
 
           <p className="text-sm text-slate-500 mt-4 max-w-md mx-auto leading-relaxed">
-            Browse through our comprehensive FAQ or search for what you're looking for.
+            Browse through our comprehensive FAQ or search for what you`re looking for.
           </p>
         </div>
 
@@ -226,10 +226,10 @@ export default function FaqsPage() {
               <span>Still have questions?</span>
             </div>
             <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">
-              We're here to help you
+              We`re here to help you
             </h3>
             <p className="text-sm text-slate-500 max-w-md mx-auto mb-6">
-              Can't find what you're looking for? Reach out to our team for personalized assistance.
+              Can`t find what you`re looking for? Reach out to our team for personalized assistance.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link

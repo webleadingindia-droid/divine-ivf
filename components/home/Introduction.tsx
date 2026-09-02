@@ -346,7 +346,7 @@ export function Introduction() {
             </p>
 
             <p className="text-[13px] sm:text-[15px]">
-              Divine IVF is the outcome of Dr. Mandavi Rai's years of experience caring for patients with diverse fertility needs and challenges. Over time, these experiences have shaped an approach to fertility care that is thoughtful, individualised and grounded in sound clinical judgement.
+              Divine IVF is the outcome of Dr. Mandavi Rai`s years of experience caring for patients with diverse fertility needs and challenges. Over time, these experiences have shaped an approach to fertility care that is thoughtful, individualised and grounded in sound clinical judgement.
             </p>
           </div>
 
