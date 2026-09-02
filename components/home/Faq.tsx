@@ -3,14 +3,18 @@
 import { useState } from "react";
 import { faqCategories } from "@/data/faqs";
 import { SectionLabel } from "@/components/ui/SectionLabel";
-import { ChevronDown, HelpCircle, Sparkles, Heart, MessageCircle, Baby, Flower2 } from "lucide-react";
+import { ChevronDown, HelpCircle, Sparkles, Heart, MessageCircle, Baby, Flower2, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export function Faq() {
   const [openTab, setOpenTab] = useState(faqCategories[0].category);
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null); // 🔴 Auto-off: No question open by default
   const active = faqCategories.find((c) => c.category === openTab)!;
+
+  // Limit to first 4 questions per category
+  const displayItems = active.items.slice(0, 4);
+  const hasMore = active.items.length > 4;
 
   return (
     <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-pink-50 via-rose-50 to-white">
@@ -62,7 +66,7 @@ export function Faq() {
                   key={c.category}
                   onClick={() => {
                     setOpenTab(c.category);
-                    setOpenIndex(0);
+                    setOpenIndex(null); // 🔴 Reset to closed when changing tabs
                   }}
                   className={`rounded-full px-4 py-2 text-xs font-medium transition-all duration-300 ${
                     openTab === c.category
@@ -75,9 +79,9 @@ export function Faq() {
               ))}
             </div>
 
-            {/* FAQ Items */}
-            <div className="flex flex-col gap-2.5 max-h-[500px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-rose-200 scrollbar-track-transparent">
-              {active.items.map((item, i) => (
+            {/* FAQ Items - Limited to 4 */}
+            <div className="flex flex-col gap-2.5">
+              {displayItems.map((item, i) => (
                 <div
                   key={item.question}
                   className={`group rounded-xl bg-white border transition-all duration-300 ${
@@ -124,6 +128,26 @@ export function Faq() {
               ))}
             </div>
 
+            {/* 🔴 CTA Button - View All FAQs */}
+            <div className="mt-8 flex items-center justify-between">
+              <div className="flex items-center gap-2 text-xs text-ink-400">
+                <span className="w-1 h-1 rounded-full bg-rose-300" />
+                <span>{active.items.length} questions available</span>
+                {hasMore && (
+                  <span className="text-rose-400 font-medium">
+                    +{active.items.length - 4} more
+                  </span>
+                )}
+              </div>
+              
+              <Link
+                href="/faqs"
+                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-rose-500 to-pink-500 text-white text-sm font-medium shadow-lg shadow-rose-200 hover:shadow-xl hover:shadow-rose-300 hover:scale-105 transition-all duration-300 group"
+              >
+                <span>View All FAQs</span>
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
+            </div>
           </div>
 
           {/* Right Side - Image & Info */}

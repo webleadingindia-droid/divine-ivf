@@ -1,5 +1,5 @@
 "use client"
-import { UserRound, ClipboardList, Users2, FlaskConical, MessagesSquare, Heart, Baby, Sparkles, Shield, Star, ArrowRight } from "lucide-react";
+import { UserRound, ClipboardList, Users2, FlaskConical, MessagesSquare, Heart, Baby, Sparkles, Shield, Star, ArrowRight, Building2, CheckCircle2, CircleCheck } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const reasons = [
@@ -10,10 +10,10 @@ const reasons = [
     color: "rose",
     gradient: "from-rose-500 to-pink-500"
   },
-  { 
-    icon: ClipboardList, 
-    title: "Individualised Evaluation", 
-    text: "Investigations tailored to your history, not a one-size protocol.",
+  {
+    icon: ClipboardList,
+    title: "Individualised Evaluation",
+    text: "Investigations tailored to your history, not a one-size-fits-all protocol.",
     color: "purple",
     gradient: "from-purple-500 to-violet-500"
   },
@@ -38,6 +38,18 @@ const reasons = [
     color: "amber",
     gradient: "from-amber-500 to-orange-500"
   },
+];
+
+// One Stop Solution Features
+const oneStopFeatures = [
+  "Fertility Evaluation & Diagnosis",
+  "Ovulation Management & IUI",
+  "IVF & ICSI Treatments",
+  "Genetic Testing & Screening",
+  "Male Infertility Solutions",
+  "Gynaecology & Women's Health",
+  "Pregnancy Care & Support",
+  "Counselling & Emotional Support"
 ];
 
 const colorVariants = {
@@ -162,17 +174,64 @@ export function WhyChoose() {
           })}
         </div>
 
+        {/* One Stop Solution Banner */}
+        <div className="relative mt-8 md:mb-16 bg-gradient-to-r from-rose-50 via-white to-rose-50 rounded-2xl md:rounded-3xl border border-rose-200/50 shadow-lg overflow-hidden">
+          {/* Decorative Background */}
+          <div className="absolute inset-0 opacity-5">
+            <Building2 className="h-full w-full text-rose-400" />
+          </div>
+          
+          <div className="relative p-6 md:p-8 lg:p-10">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-8">
+              {/* Left - Icon & Title */}
+              <div className="flex items-start gap-4 lg:gap-6 flex-shrink-0">
+                <div className="p-3 md:p-4 rounded-2xl bg-gradient-to-br from-rose-500 to-pink-500 shadow-xl shadow-rose-500/30">
+                  <Building2 className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl md:text-2xl font-bold text-ink-900">
+                    One Stop Solution
+                  </h3>
+                  <p className="text-sm md:text-base text-ink-500 mt-1">
+                    All fertility services under one roof
+                  </p>
+                </div>
+              </div>
+
+              {/* Right - Features Grid */}
+              <div className="flex-1 grid grid-cols-2 sm:grid-cols-4 gap-2 md:gap-3">
+                {oneStopFeatures.map((feature, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-center gap-1.5 md:gap-2 bg-white/80 backdrop-blur-sm rounded-lg px-2.5 py-1.5 md:px-3 md:py-2 border border-rose-100/50 hover:border-rose-200 transition-all hover:shadow-md"
+                  >
+                    <CircleCheck className="h-3 w-3 md:h-3.5 md:w-3.5 text-rose-500 flex-shrink-0" />
+                    <span className="text-[9px] md:text-[10px] lg:text-xs text-ink-700 font-medium leading-tight">
+                      {feature}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom CTA */}
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-6 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-rose-200/50 shadow-lg">
+          <div className="inline-flex flex-wrap items-center justify-center gap-4 md:gap-6 px-4 md:px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-rose-200/50 shadow-lg">
             <div className="flex items-center gap-2">
               <Shield className="h-4 w-4 text-emerald-500" />
               <span className="text-xs text-ink-600">100% Transparent Care</span>
             </div>
-            <span className="h-4 w-px bg-rose-200" />
+            <span className="h-4 w-px bg-rose-200 hidden sm:block" />
             <div className="flex items-center gap-2">
               <Baby className="h-4 w-4 text-rose-500" />
               <span className="text-xs text-ink-600">3000+ Happy Families</span>
+            </div>
+            <span className="h-4 w-px bg-rose-200 hidden sm:block" />
+            <div className="flex items-center gap-2">
+              <Building2 className="h-4 w-4 text-blue-500" />
+              <span className="text-xs text-ink-600">Complete Fertility Hub</span>
             </div>
           </div>
         </div>

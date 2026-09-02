@@ -1,91 +1,79 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import {
-  Heart,
-  ArrowRight,
-  BadgeCheck,
-  Quote,
-  ExternalLink,
   Sparkles,
-  Syringe,
-  Activity,
-  Microscope,
-  Stethoscope,
-  TrendingUp,
+  Quote,
+  ArrowUpRight,
+  Ear,
+  ClipboardList,
+  Target,
+  HeartHandshake,
   GraduationCap,
   Briefcase,
-  Baby,
-  Users,
-  HeartHandshake,
   FlaskConical,
-  Calendar,
+  TrendingUp,
+  Users,
+  Stethoscope,
+  Activity,
+  Microscope,
+  BadgeCheck,
 } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+
+const approach = [
+  {
+    number: "01",
+    icon: Ear,
+    title: "We Listen First",
+    description: "Your story comes first. We take time to understand your history, concerns and previous experiences.",
+  },
+  {
+    number: "02",
+    icon: ClipboardList,
+    title: "Individualised Evaluation",
+    description: "Investigations tailored to your history, not a one-size-fits-all protocol.",
+  },
+  {
+    number: "03",
+    icon: Target,
+    title: "Experience That Guides",
+    description: "Years of treating diverse fertility journeys help us make thoughtful, evidence-based decisions.",
+  },
+  {
+    number: "04",
+    icon: HeartHandshake,
+    title: "Treat the Person, Not Just the Diagnosis",
+    description: "Because fertility is never just a report. We look at the whole picture.",
+  },
+];
 
 const expertise = [
-  { icon: Syringe, label: "Infertility & IVF" },
+  { icon: Stethoscope, label: "Infertility & IVF" },
   { icon: Activity, label: "Recurrent IVF Failure" },
-  { icon: TrendingUp, label: "Minimal Stimulation Protocols" },
-  { icon: Microscope, label: "Hysteroscopy" },
-  { icon: Stethoscope, label: "Laparoscopic Surgery" },
+  { icon: Microscope, label: "Minimal Stimulation Protocols" },
 ];
 
-const philosophyTags = ["Your history is different", "Your body is different", "Your journey is different"];
-
-const aboutPoints = [
-  { icon: Heart, text: "Behind every AMH report is a woman" },
-  { icon: Users, text: "Behind every semen analysis is a couple" },
-  { icon: Baby, text: "Behind every IVF cycle is a dream" },
-];
-
-// Chronological — earliest first
+// Real qualifications, chronological
 const education = [
-  { year: "2005", label: "MBBS", detail: "Bharati Vidyapeeth University, Pune" },
-  { year: "2013", label: "M.S. OBGY", detail: "MGM Institute of Health Sciences, Mumbai" },
-  { year: "2015", label: "Diploma in Ultrasound", detail: "Randhawa Institute of Ultrasound Training, Delhi" },
-  { year: "2016", label: "M.MAS — Gold Medalist", detail: "Minimal Access Surgery, World Laparoscopy Hospital, Gurgaon" },
-  { year: "2017–19", label: "Fellowship, Reproductive Medicine", detail: "CREST, National University Health System, Singapore" },
-  { year: "2020", label: "PG Diploma, Hospital & Health Management", detail: "IGNOU, New Delhi" },
-  { year: "2020", label: "PG Diploma, Sexual Health & Reproductive Medicine", detail: "University of South Wales, UK" },
+  "MBBS — Bharati Vidyapeeth University, Pune (2005)",
+  "M.S. OBGY — MGM Institute of Health Sciences, Mumbai (2013)",
+  "Diploma in Ultrasound — Randhawa Institute, Delhi (2015)",
+  "M.MAS, Minimal Access Surgery — Gold Medalist, World Laparoscopy Hospital (2016)",
+  "Fellowship, Reproductive Medicine — CREST, NUHS, Singapore (2017–18)",
+  "PG Diploma, Hospital & Health Management — IGNOU (2020)",
+  "PG Diploma, Sexual & Reproductive Medicine — Univ. of South Wales, UK (2020)",
 ];
 
-const experience = [
-  {
-    role: "Center Head & Senior Consultant — IVF Specialist",
-    place: "Indira IVF, Noida",
-    detail: "Currently leads the Noida center.",
-  },
-  {
-    role: "Senior Consultant — IVF Specialist",
-    place: "Indira IVF, Raj Nagar, Ghaziabad",
-    detail: "Drove about 200% growth in embryo transfer cases and set up formal tie-ups with other OPD centres.",
-  },
-  {
-    role: "Senior Consultant — IVF Specialist",
-    place: "Indira IVF, Patel Nagar, New Delhi",
-    detail: "Contributed to the organization reaching 50,000 successful IVF cycles; chosen to lead the Noida centre.",
-  },
-  {
-    role: "Senior Resident",
-    place: "ESIC Hospital & Medical College, Faridabad",
-    detail: "Extensive medico-legal experience and surgeries on complicated cases.",
-  },
-  {
-    role: "Senior Resident",
-    place: "Lady Hardinge Medical College, New Delhi",
-    detail: "Treated high-risk pregnancies with life-threatening complications; gained hospital administration experience.",
-  },
-  {
-    role: "Senior Resident",
-    place: "Max Super Speciality Hospital, Saket, Delhi",
-    detail: "Corporate hospital patient-care experience with exposure to complex cases.",
-  },
-  {
-    role: "Junior Resident",
-    place: "Safdarjung Hospital, New Delhi",
-    detail: "Extensive normal deliveries, medico-legal cases and clinical complications.",
-  },
+// Condensed one-line summary of her real work history, most recent first
+const experienceHighlights = [
+  "Center Head & Senior Consultant, IVF — Indira IVF, Noida",
+  "Senior Consultant, IVF — Indira IVF, Raj Nagar, Ghaziabad (~200% growth in ET cases)",
+  "Senior Consultant, IVF — Indira IVF, Patel Nagar, New Delhi (50,000+ IVF cycles milestone)",
+  "Senior Resident — ESIC Hospital & Medical College, Faridabad",
+  "Senior Resident — Lady Hardinge Medical College, New Delhi",
+  "Senior Resident — Max Super Speciality Hospital, Saket, Delhi",
+  "Junior Resident — Safdarjung Hospital, New Delhi",
 ];
 
 const trust = [
@@ -97,215 +85,216 @@ const trust = [
 
 export function DoctorSection() {
   return (
-    <section className="relative py-12 md:py-16 bg-gradient-to-b from-rose-50 via-pink-50/50 to-white">
+    <section className="relative py-10 md:py-14 bg-gradient-to-b from-rose-50/60 via-white to-white">
       <div className="container-page px-4 sm:px-6 relative z-10 max-w-7xl mx-auto">
 
-        {/* ===== Hero: framed photo + flowing intro (no box around text) ===== */}
-        <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8 lg:gap-12 items-start mb-8">
-          {/* Photo */}
-          <div className="relative">
-            <div className="absolute -top-3 -left-3 w-full h-full rounded-2xl bg-rose-200/60 hidden sm:block" />
-            <div className="relative rounded-2xl overflow-hidden shadow-xl h-[300px] lg:h-[320px]">
-              <Image
-                src="https://plain-apac-prod-public.komododecks.com/202608/22/yXZ3mTF4xafiMFQ1J05J/image.jpg"
-                alt="Dr. Mandavi Rai - Fertility & IVF Specialist"
-                fill
-                sizes="(max-width: 1024px) 100vw, 340px"
-                className="object-cover object-top"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
-              <div className="absolute top-4 left-4 flex flex-wrap gap-2">
-                <div className="bg-white/90 backdrop-blur-md rounded-xl px-3 py-1.5 shadow-lg">
-                  <p className="text-xs font-bold text-rose-700">15+ Years</p>
-                  <p className="text-[8px] uppercase tracking-widest text-ink-400">Experience</p>
-                </div>
-                <div className="bg-white/90 backdrop-blur-md rounded-xl px-3 py-1.5 shadow-lg">
-                  <p className="text-xs font-bold text-emerald-600">10+ Years</p>
-                  <p className="text-[8px] uppercase tracking-widest text-ink-400">Infertility Focus</p>
-                </div>
-              </div>
-              <div className="absolute bottom-4 left-4 right-4">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-rose-600 rounded-full text-xs font-semibold text-white shadow-lg">
-                  <BadgeCheck className="h-3.5 w-3.5" />
-                  Reproductive Medicine Specialist
+        {/* ===== Header ===== */}
+        <div className="text-center mb-6 md:mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-ink-900 leading-tight">
+            Dr. <span className="bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent">Mandavi Rai</span>
+          </h2>
+          <p className="text-sm sm:text-base text-ink-500 mt-1.5">
+            Best IVF &amp; Gynaecologist Doctor in Noida
+          </p>
+        </div>
+
+        {/* ===== Photo (overlaid quote) | About + Approach ===== */}
+        {/* Grid's default stretch behaviour makes the photo match the
+            right column's natural height exactly — no leftover gap either way. */}
+        <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-6 lg:gap-10">
+          {/* Left column — photo card */}
+          <div className="relative rounded-[28px] overflow-hidden shadow-2xl shadow-rose-900/10 ring-1 ring-white/60 min-h-[440px] lg:min-h-0 lg:h-full">
+            <Image
+              src="https://plain-apac-prod-public.komododecks.com/202608/22/yXZ3mTF4xafiMFQ1J05J/image.jpg"
+              alt="Dr. Mandavi Rai - Fertility & IVF Specialist"
+              fill
+              sizes="(max-width: 1024px) 100vw, 380px"
+              className="object-cover object-top"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/10" />
+
+            {/* Experience badge */}
+            <div className="absolute top-4 left-4 right-4">
+              <div className="inline-flex items-center gap-2.5 bg-white/95 backdrop-blur-md rounded-full pl-2 pr-4 py-1 shadow-lg">
+                <span className="h-7 w-7 rounded-full bg-rose-50 flex items-center justify-center">
+                  <Sparkles className="h-2.5 w-2.5 text-rose-500" />
+                </span>
+                <span className="text-xs font-semibold text-ink-900 leading-none">
+                  15+ Yrs Experience
                 </span>
               </div>
             </div>
+
+            {/* Quote card — overlaid on the image */}
+            <div className="absolute left-4 right-4 bottom-4">
+              <div className="relative bg-white/90 backdrop-blur-xl border border-white/60 rounded-2xl px-5 py-4 shadow-xl">
+                <Quote className="h-3 w-3 text-rose-400 mb-1.5" fill="currentColor" strokeWidth={0} />
+                <p className="text-[12px] italic text-ink-700 leading-relaxed">
+                  There is no one-size-fits-all path to parenthood. My role is to
+                  understand, guide and support you with the right care, at the right
+                  time.
+                </p>
+                <p className="text-xs font-semibold text-rose-600 mt-2">— Dr. Mandavi Rai</p>
+              </div>
+            </div>
           </div>
 
-          {/* Intro */}
-          <div>
-            <div className="flex items-center gap-2 text-rose-600 text-xs font-semibold mb-3">
+          {/* Right column */}
+          <div className="flex flex-col">
+            <div className="flex items-center gap-2 text-rose-600 text-xs font-bold tracking-wide mb-2">
               <Sparkles className="h-3.5 w-3.5" />
-              Meet your fertility specialist
+              ABOUT DR. MANDAVI RAI
             </div>
-
-            <h2 className="text-4xl sm:text-5xl font-bold text-ink-900 leading-[1.1]">
-              Dr. <span className="bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent">Mandavi Rai</span>
-            </h2>
-
-            <p className="text-base text-ink-600 font-medium mt-3">
-              Best IVF &amp; Fertility Doctor in Noida
-            </p>
-
-            <p className="text-sm sm:text-base text-ink-600 leading-relaxed mt-3 max-w-xl">
-              An IVF fertility specialist in Noida with a vision to improve the
-              reproductive outcomes of childless couples and individuals. Over 15 years
-              on this journey, with 10 years focused on infertility — after her MD in
-              Obstetrics &amp; Gynaecology from Mumbai and a fellowship in Reproductive
-              Medicine from NUS Singapore.
-            </p>
-
-            {/* Expertise — inline row with dividers, not pills in a box */}
-            <div className="flex flex-wrap gap-x-6 gap-y-2.5 mt-4 pt-4 border-t border-rose-100">
-              {expertise.map((item, i) => (
-                <div key={i} className="flex items-center gap-2">
-                  <item.icon className="h-4 w-4 text-rose-500" />
-                  <span className="text-xs font-medium text-ink-700">{item.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* ===== Philosophy — full width band, the one bold moment ===== */}
-        <div className="relative bg-gradient-to-br from-rose-500 to-pink-600 rounded-2xl px-8 sm:px-14 py-7 sm:py-8 mb-8 overflow-hidden">
-          <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full blur-3xl" />
-          <Quote className="relative h-6 w-6 text-white/50 mx-auto mb-2" />
-          <p className="relative text-lg sm:text-xl font-serif italic text-white leading-snug text-center max-w-2xl mx-auto">
-            &ldquo;There is no one-size-fits-all path to parenthood.&rdquo;
-          </p>
-          <div className="relative flex flex-wrap justify-center gap-2 mt-4">
-            {philosophyTags.map((text, i) => (
-              <span
-                key={i}
-                className="bg-white/15 backdrop-blur-sm rounded-full px-4 py-1.5 text-xs text-white border border-white/20"
-              >
-                {text}
+            <h3 className="text-xl sm:text-2xl font-bold text-ink-900 leading-tight mb-3">
+              Gynaecologist &amp; IVF Doctor
+              <span className="block font-serif italic text-ink-400 text-lg sm:text-xl font-medium mt-0.5">
+                Professional Journey
               </span>
-            ))}
-          </div>
-          <p className="relative text-sm text-white/90 font-semibold text-center mt-3">
-            So your treatment should be too.
-          </p>
-        </div>
+            </h3>
 
-        {/* ===== About — flowing, not boxed ===== */}
-        <div className="mb-8">
-          <h3 className="text-xl font-bold text-ink-900 mb-4">
-            A IVF &amp; Fertility Doctor&apos;s journey
-          </h3>
-
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6 lg:gap-10">
-            <p className="text-sm sm:text-base text-ink-600 leading-relaxed">
-              Over the years, Dr. Rai has developed a deep understanding of the pain
-              and anguish of people who are unable to conceive naturally, while
-              embracing the evolving science of reproduction and assisted fertility
-              care — bringing compassionate, evidence-based treatment to every
-              patient&apos;s day-to-day experience.
+            <p className="text-sm text-ink-600 leading-relaxed mb-2">
+              Dr. Mandavi Rai is an IVF fertility specialist in Noida with a vision to
+              improve the reproductive outcomes of childless couples and individuals.
+              She has been on this journey for over 15 years, with 10 years of focused
+              experience in infertility.
             </p>
-            <div className="space-y-2.5">
-              {aboutPoints.map((item, i) => (
-                <div key={i} className="flex items-start gap-2.5">
-                  <item.icon className="h-4 w-4 text-rose-500 mt-0.5 shrink-0" />
-                  <p className="text-sm text-ink-700 leading-snug">{item.text}</p>
-                </div>
+            <p className="text-sm text-ink-600 leading-relaxed mb-5">
+              After her MBBS from Pune and M.S. in Obstetrics &amp; Gynaecology from
+              Mumbai, she pursued a fellowship in Reproductive Medicine from NUS
+              Singapore. Over the years, she has come to understand the pain and
+              anguish of people who are unable to conceive naturally — while embracing
+              the evolving, ever more accessible science of assisted reproduction.
+            </p>
+
+            {/* Expertise tags */}
+            <div className="flex flex-wrap gap-2 mb-6">
+              {expertise.map((item) => (
+                <span
+                  key={item.label}
+                  className="inline-flex items-center gap-1.5 bg-white border border-rose-100 rounded-full pl-2.5 pr-3.5 py-1.5 text-xs font-medium text-ink-700 shadow-sm"
+                >
+                  <item.icon className="h-3.5 w-3.5 text-rose-500" />
+                  {item.label}
+                </span>
               ))}
+            </div>
+
+            <div className="flex items-center gap-2 text-rose-500 text-xs font-bold tracking-wide mb-3">
+              <HeartHandshake className="h-3.5 w-3.5" />
+              THE DIVINE APPROACH
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 flex-1">
+              {approach.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={item.number}
+                    className="group relative rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-rose-50/40 px-4 py-4 shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-rose-200 transition-all duration-300"
+                  >
+                    <span className="absolute top-3 right-3.5 text-[11px] font-bold text-rose-300/80 tracking-wider">
+                      {item.number}
+                    </span>
+                    <span className="inline-flex h-9 w-9 rounded-xl items-center justify-center bg-gradient-to-br from-rose-500 to-pink-500 shadow-sm shadow-rose-300/50 mb-3 group-hover:scale-105 transition-transform">
+                      <Icon className="h-4 w-4 text-white" />
+                    </span>
+                    <p className="text-xs font-semibold text-ink-900 leading-snug mb-1">
+                      {item.title}
+                    </p>
+                    <p className="text-[11px] text-ink-500 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
 
-        {/* ===== Two timelines: Education + Experience ===== */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-8">
-          {/* Education */}
+        {/* ===== Credentials card ===== */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-5 mt-7 bg-white rounded-3xl border border-rose-100 shadow-sm px-6 sm:px-8 py-6">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <GraduationCap className="h-4 w-4 text-rose-500" />
-              <h4 className="text-xs font-bold text-rose-600 tracking-wide">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="h-6 w-6 rounded-lg bg-rose-50 flex items-center justify-center">
+                <GraduationCap className="h-3.5 w-3.5 text-rose-500" />
+              </span>
+              <h4 className="text-[11px] font-bold text-rose-600 tracking-wide">
                 EDUCATION &amp; CREDENTIALS
               </h4>
             </div>
-            <div className="relative pl-6">
-              <div className="absolute left-[5px] top-1.5 bottom-1.5 w-px bg-rose-200" />
-              <div className="space-y-3.5">
-                {education.map((item, i) => (
-                  <div key={i} className="relative">
-                    <div className="absolute -left-6 top-1 h-2.5 w-2.5 rounded-full bg-rose-400" />
-                    <p className="text-[11px] font-semibold text-rose-500 mb-0.5">{item.year}</p>
-                    <p className="text-sm font-semibold text-ink-800">{item.label}</p>
-                    <p className="text-xs text-ink-500">{item.detail}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <span className="inline-flex items-center gap-1.5 mt-3 bg-rose-50 rounded-full px-3.5 py-1.5 text-[11px] font-medium text-rose-600 border border-rose-100">
-              <BadgeCheck className="h-3.5 w-3.5" />
-              FICOG — Fellow of the Indian College of Obstetricians and Gynecologists
+            <ul className="space-y-2">
+              {education.map((item) => (
+                <li key={item} className="flex items-start gap-2 text-xs text-ink-600 leading-snug">
+                  <span className="h-1.5 w-1.5 rounded-full bg-rose-300 mt-1.5 shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <span className="inline-flex items-center gap-1.5 mt-3 bg-rose-50 rounded-full px-3 py-1.5 text-[10px] font-medium text-rose-600 border border-rose-100">
+              <BadgeCheck className="h-3 w-3" />
+              FICOG — Fellow, Indian College of Obstetricians &amp; Gynecologists
             </span>
           </div>
 
-          {/* Experience */}
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Briefcase className="h-4 w-4 text-rose-500" />
-              <h4 className="text-xs font-bold text-rose-600 tracking-wide">
+          <div className="sm:border-l sm:border-rose-100 sm:pl-10">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="h-6 w-6 rounded-lg bg-rose-50 flex items-center justify-center">
+                <Briefcase className="h-3.5 w-3.5 text-rose-500" />
+              </span>
+              <h4 className="text-[11px] font-bold text-rose-600 tracking-wide">
                 EXPERIENCE HIGHLIGHTS
               </h4>
             </div>
-            <div className="relative pl-6">
-              <div className="absolute left-[5px] top-1.5 bottom-1.5 w-px bg-rose-200" />
-              <div className="space-y-3.5">
-                {experience.map((item, i) => (
-                  <div key={i} className="relative">
-                    <div className="absolute -left-6 top-1 h-2.5 w-2.5 rounded-full bg-rose-500" />
-                    <p className="text-sm font-semibold text-ink-800">{item.role}</p>
-                    <p className="text-xs text-rose-500 font-medium">{item.place}</p>
-                    <p className="text-xs text-ink-500 mt-0.5 leading-relaxed">{item.detail}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <ul className="space-y-2">
+              {experienceHighlights.map((item) => (
+                <li key={item} className="flex items-start gap-2 text-xs text-ink-600 leading-snug">
+                  <span className="h-1.5 w-1.5 rounded-full bg-rose-400 mt-1.5 shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        {/* ===== CTA banner with trust stats folded in ===== */}
-        <div className="bg-rose-600 rounded-2xl px-7 sm:px-10 py-6 sm:py-7 shadow-lg shadow-rose-500/20">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-5">
+        {/* ===== CTA banner ===== */}
+        <div className="relative overflow-hidden bg-gradient-to-r from-rose-600 to-pink-600 rounded-3xl px-6 sm:px-9 py-7 mt-6 shadow-xl shadow-rose-500/20">
+          <div className="absolute -top-16 -right-16 w-56 h-56 bg-white/10 rounded-full blur-3xl" />
+
+          <div className="relative flex flex-col gap-6">
             <div>
-              <p className="text-2xl font-bold text-white flex items-center gap-2">
-                <Calendar className="h-5 w-5" />
-                Ready to take the first step?
-              </p>
-              <p className="text-sm text-rose-100 mt-1.5">
+              <p className="text-lg sm:text-xl font-bold text-white">Ready to take the first step?</p>
+              <p className="text-xs sm:text-sm text-rose-100/90 mt-1 max-w-md">
                 Book your consultation with Dr. Mandavi Rai and start your journey to parenthood.
               </p>
             </div>
-            <div className="flex flex-wrap items-center gap-3">
-              <Button
-                href="/consultation"
-                className=" hover:bg-rose-50 text-rose-600 rounded-xl px-6 py-2.5 text-sm font-semibold"
-              >
-                Book Consultation
-              </Button>
-              <Button
-                href="/doctor/dr-mandavi-rai"
-                variant="ghost"
-                className="border-white/40 text-white hover:bg-white/10 rounded-xl px-6 py-2.5 text-sm font-medium"
-              >
-                View Full Profile
-                <ExternalLink className="h-3.5 w-3.5 ml-1.5" />
-              </Button>
-            </div>
-          </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-white/20">
-            {trust.map((item, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <item.icon className="h-4 w-4 text-white/80 shrink-0" />
-                <span className="text-xs font-medium text-white/90">{item.label}</span>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+                {trust.map((item) => (
+                  <div key={item.label} className="flex items-center gap-1.5">
+                    <item.icon className="h-3.5 w-3.5 text-white/80" />
+                    <span className="text-[11px] font-medium text-white/90 whitespace-nowrap">{item.label}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+
+              <div className="flex items-center gap-3 sm:ml-auto">
+                <Link
+                  href="/consultation"
+                  className="inline-flex items-center justify-center gap-1.5 bg-white text-rose-600 rounded-xl px-5 py-2.5 text-sm font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                >
+                  Book Consultation
+                </Link>
+                <Link
+                  href="/doctor/dr-mandavi-rai"
+                  className="inline-flex items-center justify-center gap-1.5 border border-white/40 text-white rounded-xl px-5 py-2.5 text-sm font-medium hover:bg-white/10 transition-colors duration-300"
+                >
+                  View Full Profile
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

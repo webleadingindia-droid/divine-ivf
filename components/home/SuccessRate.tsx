@@ -158,9 +158,9 @@ export function SuccessRate() {
                 <Award className="w-6 h-6 text-white" />
               </div>
               <div>
-                <p className="text-2xl font-bold text-rose-600">92%+</p>
+                <p className="text-2xl font-bold text-rose-600">94%+</p>
                 <p className="text-sm font-semibold text-ink-800">Patient Satisfaction</p>
-                <p className="text-xs text-ink-500">5,000+ reviews</p>
+                <p className="text-xs text-ink-500">300+ reviews</p>
               </div>
             </div>
           </div>
@@ -175,7 +175,7 @@ export function SuccessRate() {
                 ))}
               </div>
               <div>
-                <p className="text-sm font-semibold text-ink-800">8,000+ Families</p>
+                <p className="text-sm font-semibold text-ink-800">3,000+ Families</p>
                 <p className="text-xs text-ink-500">Trusted worldwide</p>
               </div>
             </div>
