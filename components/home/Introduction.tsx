@@ -161,7 +161,7 @@ export function Introduction() {
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
-          <div className="relative aspect-[4/3] sm:aspect-[4/4] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl shadow-rose-500/20 bg-ink-900">
+          <div className="relative aspect-[3/3] sm:aspect-[4/4] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl shadow-rose-500/20 bg-ink-900">
 
             {!showVideo ? (
               <>
