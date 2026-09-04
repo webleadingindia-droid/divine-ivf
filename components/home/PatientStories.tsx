@@ -101,7 +101,7 @@ export function PatientStories() {
     const el = scrollerRef.current;
     if (!el) return;
     const card = el.querySelector<HTMLElement>("[data-card]");
-    const amount = card ? card.offsetWidth + 20 : 280;
+    const amount = card ? card.offsetWidth + 24 : 300;
     el.scrollBy({ left: direction * amount, behavior: "smooth" });
   };
 
@@ -166,7 +166,7 @@ export function PatientStories() {
                 <div
                   key={t.id}
                   data-card
-                  className="testimonial-card-wrap group relative shrink-0 w-[72%] xs:w-[250px] sm:w-[260px] lg:w-[240px] snap-center"
+                  className="testimonial-card-wrap group relative shrink-0 w-[78%] xs:w-[280px] sm:w-[290px] md:w-[310px] lg:w-[320px] snap-center"
                 >
                   <div className="water-glow" aria-hidden="true" />
 
@@ -202,7 +202,7 @@ export function PatientStories() {
                             alt={`${t.name}'s testimonial`}
                             fill
                             unoptimized
-                            sizes="(max-width: 640px) 72vw, 260px"
+                            sizes="(max-width: 640px) 78vw, 320px"
                             className="object-cover transition-transform duration-700 group-hover:scale-105"
                             priority={false}
                           />
