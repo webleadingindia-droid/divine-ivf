@@ -171,7 +171,7 @@ export default function ObstetricUltrasoundPage() {
           Obstetric Ultrasound in Noida
         </h1>
         <p className="text-lg text-ink-600 -mt-2">
-          Regular ultrasound monitoring through pregnancy helps track your baby's growth and wellbeing at each stage — from confirming the pregnancy to monitoring your baby`s development right through to the final weeks.
+          Regular ultrasound monitoring through pregnancy helps track your baby`s growth and wellbeing at each stage — from confirming the pregnancy to monitoring your baby`s development right through to the final weeks.
         </p>
         {/* ============================================= */}
 
