@@ -21,7 +21,7 @@ export const primaryNav: NavItem[] = [
         description: "Meet your fertility specialist",
       },
       {
-        label: "Clinic Approach",
+        label: "Hospital Approach",
         href: "/about",
         description: "How we plan personalised care",
       },
@@ -168,11 +168,11 @@ export const primaryNav: NavItem[] = [
         label: "Videos",
         href: "/videos",
       },
+      {
+        label: "Contact",
+        href: "/contact",
+      },
     ],
   },
 
-  {
-    label: "Contact",
-    href: "/contact",
-  },
 ];

@@ -3,9 +3,57 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { X, ChevronDown, Phone } from "lucide-react";
+import { X, ChevronDown, Phone, Star } from "lucide-react";
 import { primaryNav } from "@/data/navigation";
 import { clinic } from "@/data/clinic";
+
+// Small inline Google "G" logo (multi-color), no extra asset needed
+function GoogleG({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.9-2.26 5.36-4.78 7.02v5.84h7.73c4.51-4.18 7.09-10.36 7.09-17.33z"
+        fill="#4285F4"
+      />
+      <path
+        d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6.84c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.9H2.51v6.22C6.44 42.62 14.62 48 24 48z"
+        fill="#34A853"
+      />
+      <path
+        d="M10.53 28.75c-.48-1.45-.76-3-.76-4.75s.28-3.3.76-4.75v-6.22H2.51A23.99 23.99 0 000 24c0 3.9.93 7.6 2.51 10.97l8.02-6.22z"
+        fill="#FBBC05"
+      />
+      <path
+        d="M24 9.52c3.53 0 6.7 1.21 9.19 3.6l6.85-6.85C35.93 2.31 30.47 0 24 0 14.62 0 6.44 5.38 2.51 13.03l8.02 6.22c1.9-5.68 7.21-9.73 13.47-9.73z"
+        fill="#EA4335"
+      />
+    </svg>
+  );
+}
+
+// Redesigned mobile Google review card
+function GoogleReviewCard() {
+  return (
+    <div className="mx-5 mt-4 flex items-center gap-3 rounded-2xl border border-bloom-border bg-white px-4 py-3 shadow-soft">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-bloom-50">
+        <GoogleG className="h-5 w-5" />
+      </div>
+      <div className="flex-1 leading-tight">
+        <div className="flex items-center gap-1.5">
+          <span className="text-sm font-bold text-ink-900">4.9</span>
+          <div className="flex items-center gap-0.5">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star key={i} className="h-3 w-3 fill-amber-400 text-amber-400" />
+            ))}
+          </div>
+        </div>
+        <div className="text-xs font-medium text-ink-500 mt-0.5">
+          Rated by 300+ Couples on Google
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -88,6 +136,9 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
             Book Consultation
           </Link>
         </div>
+
+        <GoogleReviewCard />
+
       </div>
     </div>
   );
