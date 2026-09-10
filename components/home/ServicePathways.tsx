@@ -87,10 +87,6 @@ export function ServicePathways() {
                     <Icon className="h-5 w-5 text-rose-600" />
                   </div>
 
-                  <div className="absolute top-4 right-4 px-2.5 py-1 bg-white/90 backdrop-blur-sm rounded-lg text-xs font-medium text-rose-600 shadow-lg">
-                    {group.totalServices} Services
-                  </div>
-
                   <div className="absolute bottom-4 left-4 right-4">
                     <h3 className="text-xl font-bold text-white drop-shadow-lg">
                       {group.title}
