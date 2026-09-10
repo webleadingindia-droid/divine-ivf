@@ -175,11 +175,7 @@ export function WhyChoose() {
         </div>
 
         {/* One Stop Solution Banner */}
-        <div className="relative mt-8 md:mb-16 bg-gradient-to-r from-rose-50 via-white to-rose-50 rounded-2xl md:rounded-3xl border border-rose-200/50 shadow-lg overflow-hidden">
-          {/* Decorative Background */}
-          <div className="absolute inset-0 opacity-5">
-            <Building2 className="h-full w-full text-rose-400" />
-          </div>
+        <div className="relative mt-8 md:mb-16 bg-[#ffe7f0] rounded-2xl md:rounded-3xl border border-rose-200/50 shadow-lg overflow-hidden">
           
           <div className="relative p-6 md:p-8 lg:p-10">
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-8">
@@ -203,7 +199,7 @@ export function WhyChoose() {
                 {oneStopFeatures.map((feature, index) => (
                   <div 
                     key={index}
-                    className="flex items-center gap-1.5 md:gap-2 bg-white/80 backdrop-blur-sm rounded-lg px-2.5 py-1.5 md:px-3 md:py-2 border border-rose-100/50 hover:border-rose-200 transition-all hover:shadow-md"
+                    className="flex items-center gap-1.5 md:gap-2 bg-white/80 backdrop-blur-sm rounded-lg px-2.5 py-1.5 md:px-3 md:py-2 border border-rose-200/100 hover:border-rose-400 transition-all hover:shadow-md"
                   >
                     <CircleCheck className="h-3 w-3 md:h-3.5 md:w-3.5 text-rose-500 flex-shrink-0" />
                     <span className="text-[9px] md:text-[10px] lg:text-xs text-ink-700 font-medium leading-tight">

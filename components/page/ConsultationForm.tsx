@@ -1,143 +1,134 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle2 } from "lucide-react";
-import { clinic } from "@/data/clinic";
-
-// STATIC SITE — FRONTEND-ONLY FORM.
-// There is no backend, database or API route in this project, so this form
-// does not send data anywhere. On submit we simply show a confirmation
-// message directing the person to call/email/WhatsApp directly.
-//
-// To wire this up for real in the future, replace handleSubmit with either:
-//   1) a fetch() call to a form service (e.g. Formspree, Getform, Basin), or
-//   2) a Next.js Server Action / API route once the project has a backend, or
-//   3) a `mailto:` link build from the field values as a lightweight fallback.
-
-const reasons = [
-  "Fertility Investigation",
-  "IVF",
-  "IUI",
-  "Advanced IVF (ICSI / PICSI / IMSI / ERA)",
-  "Male Fertility",
-  "Gynecology",
-  "Pregnancy Care",
-  "Other",
-];
+import emailjs from "@emailjs/browser";
+import { Send, CheckCircle, AlertCircle } from "lucide-react";
 
 export function ConsultationForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // No backend is connected — see comment above. We only update local UI state.
-    setSubmitted(true);
-  }
+    setStatus("sending");
 
-  if (submitted) {
-    return (
-      <div className="flex flex-col items-center text-center py-10">
-        <CheckCircle2 className="h-12 w-12 text-rose-600 mb-4" />
-        <h3 className="text-lg font-semibold text-ink-900 mb-2">Thank you</h3>
-        <p className="text-sm text-ink-400 leading-relaxed max-w-sm">
-          This form isn&apos;t connected to a booking system yet. Please call{" "}
-          <a href={clinic.phoneHref} className="text-rose-600 font-semibold">{clinic.phone}</a> or
-          email{" "}
-          <a href={clinic.emailHref} className="text-rose-600 font-semibold">{clinic.email}</a>{" "}
-          directly, and mention the details you entered.
-        </p>
-      </div>
-    );
-  }
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const name = formData.get("from_name") as string;
+    const email = formData.get("from_email") as string;
+    const phone = formData.get("phone") as string;
+    const treatment = formData.get("treatment") as string;
+    const preferredDate = formData.get("preferred_date") as string;
+    const originalMessage = formData.get("message") as string;
+
+    // Extra fields ko message ke andar merge kar do
+    const combinedMessage = `
+Treatment Interested In: ${treatment || "Not specified"}
+Preferred Date: ${preferredDate || "Not specified"}
+
+Additional Message: ${originalMessage || "None"}
+    `.trim();
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_ADMIN_TEMPLATE_ID!,
+        {
+          from_name: name,
+          from_email: email,
+          phone: phone,
+          message: combinedMessage,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+
+      setStatus("success");
+      form.reset();
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      setStatus("error");
+    }
+  };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium text-ink-900 mb-2">Name</label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            required
-            className="w-full rounded-xl border border-bloom-border bg-bloom-50 px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400/70 focus:border-rose-400 focus:bg-white outline-none transition-colors"
-            placeholder="Your full name"
-          />
-        </div>
-        <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-ink-900 mb-2">Phone</label>
-          <input
-            id="phone"
-            name="phone"
-            type="tel"
-            required
-            className="w-full rounded-xl border border-bloom-border bg-bloom-50 px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400/70 focus:border-rose-400 focus:bg-white outline-none transition-colors"
-            placeholder="+91"
-          />
-        </div>
-      </div>
+    <form onSubmit={handleSubmit} className="space-y-3">
+      <input
+        type="text"
+        name="from_name"
+        placeholder="Your Name"
+        required
+        className="w-full px-4 py-2.5 rounded-xl border border-rose-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent text-sm"
+      />
 
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium text-ink-900 mb-2">Email</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          required
-          className="w-full rounded-xl border border-bloom-border bg-bloom-50 px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400/70 focus:border-rose-400 focus:bg-white outline-none transition-colors"
-          placeholder="you@example.com"
-        />
-      </div>
+      <input
+        type="email"
+        name="from_email"
+        placeholder="Your Email"
+        required
+        className="w-full px-4 py-2.5 rounded-xl border border-rose-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent text-sm"
+      />
 
-      <div>
-        <label htmlFor="reason" className="block text-sm font-medium text-ink-900 mb-2">Reason for consultation</label>
-        <select
-          id="reason"
-          name="reason"
-          required
-          defaultValue=""
-          className="w-full rounded-xl border border-bloom-border bg-bloom-50 px-4 py-3 text-sm text-ink-900 focus:border-rose-400 focus:bg-white outline-none transition-colors"
-        >
-          <option value="" disabled>Select a reason</option>
-          {reasons.map((r) => (
-            <option key={r} value={r}>{r}</option>
-          ))}
-        </select>
-      </div>
+      <input
+        type="text"
+        name="phone"
+        placeholder="Phone Number"
+        required
+        className="w-full px-4 py-2.5 rounded-xl border border-rose-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent text-sm"
+      />
 
-      <fieldset>
-        <legend className="block text-sm font-medium text-ink-900 mb-2">Preferred contact method</legend>
-        <div className="flex gap-6">
-          {["Phone Call", "WhatsApp", "Email"].map((method, i) => (
-            <label key={method} className="flex items-center gap-2 text-sm text-ink-600">
-              <input type="radio" name="contactMethod" value={method} defaultChecked={i === 0} className="accent-rose-600" />
-              {method}
-            </label>
-          ))}
-        </div>
-      </fieldset>
+      <select
+        name="treatment"
+        required
+        className="w-full px-4 py-2.5 rounded-xl border border-rose-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent text-sm"
+      >
+        <option value="">Select Treatment Interested In</option>
+        <option value="IVF">IVF</option>
+        <option value="IUI">IUI</option>
+        <option value="Fertility Consultation">Fertility Consultation</option>
+        <option value="Laparoscopic Surgery">Laparoscopic Surgery</option>
+        <option value="Other">Other</option>
+      </select>
 
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium text-ink-900 mb-2">Message (optional)</label>
-        <textarea
-          id="message"
-          name="message"
-          rows={4}
-          className="w-full rounded-xl border border-bloom-border bg-bloom-50 px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400/70 focus:border-rose-400 focus:bg-white outline-none transition-colors resize-none"
-          placeholder="Anything you'd like Dr. Rai to know beforehand"
-        />
-      </div>
+      <input
+        type="date"
+        name="preferred_date"
+        className="w-full px-4 py-2.5 rounded-xl border border-rose-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent text-sm"
+      />
+
+      <textarea
+        name="message"
+        placeholder="Tell us about your concern... (optional)"
+        rows={3}
+        className="w-full px-4 py-2.5 rounded-xl border border-rose-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent text-sm resize-none"
+      />
 
       <button
         type="submit"
-        className="mt-2 rounded-full bg-rose-600 px-6 py-3.5 text-sm font-semibold text-white shadow-soft hover:bg-rose-500 hover:shadow-lift transition-all"
+        disabled={status === "sending"}
+        className="w-full py-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2 disabled:opacity-60"
       >
-        Request Consultation
+        {status === "sending" ? (
+          "Sending..."
+        ) : (
+          <>
+            Book Consultation
+            <Send className="h-4 w-4" />
+          </>
+        )}
       </button>
-      <p className="text-xs text-ink-400 text-center">
-        This form does not submit to a live booking system yet — you&apos;ll see a
-        confirmation with direct contact details after submitting.
-      </p>
+
+      {status === "success" && (
+        <p className="flex items-center gap-1.5 text-sm text-green-600">
+          <CheckCircle className="h-4 w-4" />
+          Request sent successfully! You'll also receive a confirmation email shortly.
+        </p>
+      )}
+      {status === "error" && (
+        <p className="flex items-center gap-1.5 text-sm text-red-600">
+          <AlertCircle className="h-4 w-4" />
+          Something went wrong. Please try again or call us directly.
+        </p>
+      )}
     </form>
   );
 }

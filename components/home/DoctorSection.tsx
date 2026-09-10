@@ -105,7 +105,7 @@ export function DoctorSection() {
           {/* Left column — photo card */}
           <div className="relative rounded-[28px] overflow-hidden shadow-2xl shadow-rose-900/10 ring-1 ring-white/60 min-h-[440px] lg:min-h-0 lg:h-full">
             <Image
-              src="https://plain-apac-prod-public.komododecks.com/202608/22/yXZ3mTF4xafiMFQ1J05J/image.jpg"
+              src="https://plain-apac-prod-public.komododecks.com/202609/08/CDBKdEp8rE4QX4kMEGcA/image.jpg"
               alt="Dr. Mandavi Rai - Fertility & IVF Specialist"
               fill
               sizes="(max-width: 1024px) 100vw, 380px"
@@ -163,7 +163,7 @@ export function DoctorSection() {
               After her MBBS from Pune and M.S. in Obstetrics &amp; Gynaecology from
               Mumbai, she pursued a fellowship in Reproductive Medicine from NUS
               Singapore. Over the years, she has come to understand the pain and
-              anguish of people who are unable to conceive naturally — while embracing
+              anguish of people who are unable to conceive naturally, while embracing
               the evolving, ever more accessible science of assisted reproduction.
             </p>
 
@@ -191,18 +191,18 @@ export function DoctorSection() {
                 return (
                   <div
                     key={item.number}
-                    className="group relative rounded-2xl border border-rose-100 bg-gradient-to-b from-white to-rose-50/40 px-4 py-4 shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-rose-200 transition-all duration-300"
+                    className="group relative rounded-2xl border border-rose-100 bg-[#ec4899] px-4 py-4 shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-rose-200 transition-all duration-300"
                   >
                     <span className="absolute top-3 right-3.5 text-[11px] font-bold text-rose-300/80 tracking-wider">
                       {item.number}
                     </span>
-                    <span className="inline-flex h-9 w-9 rounded-xl items-center justify-center bg-gradient-to-br from-rose-500 to-pink-500 shadow-sm shadow-rose-300/50 mb-3 group-hover:scale-105 transition-transform">
-                      <Icon className="h-4 w-4 text-white" />
+                    <span className="inline-flex h-9 w-9 rounded-xl items-center justify-center bg-gradient-to-br from-rose-100 to-pink-300 shadow-sm shadow-rose-300/50 mb-3 group-hover:scale-105 transition-transform">
+                      <Icon className="h-4 w-4 text-[#ec4899]" />
                     </span>
-                    <p className="text-xs font-semibold text-ink-900 leading-snug mb-1">
+                    <p className="text-xs font-semibold text-white leading-snug mb-1">
                       {item.title}
                     </p>
-                    <p className="text-[11px] text-ink-500 leading-relaxed">
+                    <p className="text-[11px] text-white leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -282,7 +282,7 @@ export function DoctorSection() {
               <div className="flex items-center gap-3 sm:ml-auto">
                 <Link
                   href="/consultation"
-                  className="inline-flex items-center justify-center gap-1.5 bg-white text-rose-600 rounded-xl px-5 py-2.5 text-sm font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                  className="hover-shake inline-flex items-center justify-center gap-1.5 bg-white text-rose-600 rounded-xl px-5 py-2.5 text-sm font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
                 >
                   Book Consultation
                 </Link>

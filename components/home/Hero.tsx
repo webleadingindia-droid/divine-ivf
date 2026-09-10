@@ -34,19 +34,19 @@ const heroImages = [
   {
     alt: "IVF laboratory and medical professionals",
     images: {
-      mobile: "https://plain-apac-prod-public.komododecks.com/202609/01/lkvopNhXkSa4dxBuVHsb/image.jpg",
-      tablet: "https://plain-apac-prod-public.komododecks.com/202609/01/lkvopNhXkSa4dxBuVHsb/image.jpg",
-      desktop: "https://plain-apac-prod-public.komododecks.com/202609/01/f2kbb0ZKapDl77FjtUIZ/image.jpg",
-      large: "https://plain-apac-prod-public.komododecks.com/202609/01/f2kbb0ZKapDl77FjtUIZ/image.jpg",
+      mobile: "https://plain-apac-prod-public.komododecks.com/202609/08/A1Mv4lRRBjoi5YlwnWRa/image.jpg",
+      tablet: "https://plain-apac-prod-public.komododecks.com/202609/08/A1Mv4lRRBjoi5YlwnWRa/image.jpg",
+      desktop: "https://plain-apac-prod-public.komododecks.com/202609/08/F8GWt0dUB8EnLJFE3Fbu/image.jpg",
+      large: "https://plain-apac-prod-public.komododecks.com/202609/08/F8GWt0dUB8EnLJFE3Fbu/image.jpg",
     }
   },
   {
     alt: "Fertility clinic consultation room",
     images: {
-      mobile: "https://plain-apac-prod-public.komododecks.com/202609/01/GH6bcWVnBaMGAYQXkYUr/image.jpg",
-      tablet: "https://plain-apac-prod-public.komododecks.com/202609/01/GH6bcWVnBaMGAYQXkYUr/image.jpg",
-      desktop: "https://plain-apac-prod-public.komododecks.com/202609/01/GFIZOQeQ3VVbMy6GOsU3/image.jpg",
-      large: "https://plain-apac-prod-public.komododecks.com/202609/01/GFIZOQeQ3VVbMy6GOsU3/image.jpg",
+      mobile: "https://plain-apac-prod-public.komododecks.com/202609/08/dYuwauuOvyyBY5gr1bK6/image.jpg",
+      tablet: "https://plain-apac-prod-public.komododecks.com/202609/08/dYuwauuOvyyBY5gr1bK6/image.jpg",
+      desktop: "https://plain-apac-prod-public.komododecks.com/202609/08/ZAjfiDpgbeTmsbDfu1B7/image.jpg",
+      large: "https://plain-apac-prod-public.komododecks.com/202609/08/ZAjfiDpgbeTmsbDfu1B7/image.jpg",
     }
   },
 ];
@@ -121,7 +121,7 @@ export function Hero() {
               />
             </picture>
             {/* Dark overlay for better text readability */}
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-black/20" />
           </div>
         ))}
       </div>

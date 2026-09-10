@@ -1,9 +1,11 @@
-import type { Metadata } from "next";
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import emailjs from "@emailjs/browser";
 import { 
   MapPin, Phone, Mail, Clock, Calendar, User, 
-  MessageCircle, ArrowRight, Send, CheckCircle,
+  MessageCircle, ArrowRight, Send, CheckCircle, AlertCircle,
   Home, Building, Navigation, Heart, Shield,
   Award, Users, Star, Sparkles, ExternalLink
 } from "lucide-react";
@@ -11,13 +13,9 @@ import { Breadcrumb } from "@/components/page/Breadcrumb";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { clinic } from "@/data/clinic";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "/contact" },
-  title: "Contact Us | Divine IVF - Fertility Clinic in Noida",
-  description: "Contact Divine IVF in Sector 76, Noida. Get in touch for IVF, IUI, fertility treatments. Call +91 7678451808 or visit our clinic.",
-};
-
 export default function ContactPage() {
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
   const workingHours = [
     { day: "Monday - Friday", hours: "9:00 AM - 7:00 PM" },
     { day: "Saturday", hours: "9:00 AM - 5:00 PM" },
@@ -30,6 +28,28 @@ export default function ContactPage() {
     { icon: Award, text: "15+ Years Experience" },
     { icon: Users, text: "8000+ Happy Families" },
   ];
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    const form = e.currentTarget;
+
+    try {
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_ADMIN_TEMPLATE_ID!,
+        form,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+
+      setStatus("success");
+      form.reset();
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      setStatus("error");
+    }
+  };
 
   return (
     <>
@@ -65,7 +85,6 @@ export default function ContactPage() {
               our clinic — our team is ready to assist you with compassion and expertise.
             </p>
 
-            {/* Quick Stats */}
             <div className="flex flex-wrap items-center gap-6 mt-6">
               <div className="flex items-center gap-3 bg-white rounded-full px-5 py-2.5 shadow-sm border border-rose-100">
                 <div className="h-8 w-8 rounded-full bg-gradient-to-br from-rose-500 to-pink-500 flex items-center justify-center shadow-md">
@@ -82,7 +101,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-xs font-medium text-ink-400">Happy Patients</p>
-                  <p className="text-sm font-semibold text-ink-900">8,000+</p>
+                  <p className="text-sm font-semibold text-ink-900">3,000+</p>
                 </div>
               </div>
             </div>
@@ -208,51 +227,83 @@ export default function ContactPage() {
             </div>
 
             {/* Right Column - Map & Features */}
-            <div className="space-y-8">
-              {/* Map */}
-              <div className="rounded-3xl overflow-hidden shadow-xl border border-rose-100">
-                <iframe
-                  title="Divine IVF Location"
-                  className="h-full w-full min-h-[420px] md:min-h-[480px]"
-                  loading="lazy"
-                  src="https://maps.google.com/maps?q=Divine%20Women%20%26%20IVF%20Clinic%2C%20Sector%2076%2C%20Noida&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                />
-              </div>
+            <div className="space-y-8">              
 
-              {/* Quick Contact Form - Simplified */}
+              {/* Quick Contact Form */}
               <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-3xl p-6 md:p-8 border border-rose-100">
                 <h3 className="text-lg font-bold text-ink-900 mb-4 flex items-center gap-2">
                   <Send className="h-5 w-5 text-rose-500" />
                   Quick Message
                 </h3>
-                <form className="space-y-3">
+                <form onSubmit={handleSubmit} className="space-y-3">
                   <div className="grid grid-cols-2 gap-3">
                     <input
                       type="text"
+                      name="from_name"
                       placeholder="Your Name"
+                      required
                       className="px-4 py-2.5 rounded-xl border border-rose-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent text-sm"
                     />
                     <input
                       type="email"
+                      name="from_email"
                       placeholder="Your Email"
+                      required
                       className="px-4 py-2.5 rounded-xl border border-rose-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent text-sm"
                     />
                   </div>
                   <input
                     type="text"
+                    name="phone"
                     placeholder="Phone Number"
+                    required
                     className="w-full px-4 py-2.5 rounded-xl border border-rose-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent text-sm"
                   />
                   <textarea
+                    name="message"
                     placeholder="Your Message..."
                     rows={3}
+                    required
                     className="w-full px-4 py-2.5 rounded-xl border border-rose-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:border-transparent text-sm resize-none"
                   />
-                  <button className="w-full py-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2">
-                    Send Message
-                    <Send className="h-4 w-4" />
+                  <button
+                    type="submit"
+                    disabled={status === "sending"}
+                    className="w-full py-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold rounded-xl hover:shadow-lg transition-all flex items-center justify-center gap-2 disabled:opacity-60"
+                  >
+                    {status === "sending" ? (
+                      "Sending..."
+                    ) : (
+                      <>
+                        Send Message
+                        <Send className="h-4 w-4" />
+                      </>
+                    )}
                   </button>
+
+                  {status === "success" && (
+                    <p className="flex items-center gap-1.5 text-sm text-green-600">
+                      <CheckCircle className="h-4 w-4" />
+                      Message sent successfully! You'll also receive a confirmation email shortly.
+                    </p>
+                  )}
+                  {status === "error" && (
+                    <p className="flex items-center gap-1.5 text-sm text-red-600">
+                      <AlertCircle className="h-4 w-4" />
+                      Something went wrong. Please try again or call us directly.
+                    </p>
+                  )}
                 </form>
+              </div>
+
+              {/* Map */}
+              <div className="rounded-3xl overflow-hidden shadow-xl border border-rose-100">
+                <iframe
+                  title="Divine IVF Location"
+                  className="h-full w-full min-h-[320px] md:min-h-[280px]"
+                  loading="lazy"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.0475375523174!2d77.3829702!3d28.568335200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce44f4d1b2a95%3A0x7b2022187b5e7b96!2sDr.%20Mandavi%20Rai-%20Divine%20Women%20%26%20IVF%20Clinic%20%7C%20Top%20IVF%20Doctor%20in%20Noida%20%7C%20Best%20Gynecologist%20in%20Noida%20%7C%20Best%20Laparoscopic%20Surgeon!5e0!3m2!1sen!2sin!4v1789023422411!5m2!1sen!2sin"
+                />
               </div>
 
               {/* Features */}
@@ -305,6 +356,7 @@ export default function ContactPage() {
               Book Consultation
               <ArrowRight className="h-4 w-4" />
             </Link>
+            
             <a
               href="tel:+917678451808"
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-full border border-white/30 hover:bg-white/30 transition-all"

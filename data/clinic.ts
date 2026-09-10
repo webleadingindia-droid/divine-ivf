@@ -3,9 +3,7 @@ export const clinic = {
   name: "Divine Ivf",
   doctorName: "Dr. Mandavi Rai",
   addressLines: [
-    "Shop Number 13, First Floor,",
-    "Street 76 Market, Sector 76,",
-    "Noida, Uttar Pradesh, India",
+    "Shop No. 13, 1st Floor, Street 76 Market, Sector 76, Noida",
   ],
   addressShort: "Sector 76, Noida",
   phone: "+91 7678451808",

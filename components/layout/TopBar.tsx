@@ -60,18 +60,6 @@ export function TopBar() {
             <span className="font-medium hidden xl:inline">{clinic.email}</span>
           </a>
 
-          <div className="h-5 w-px bg-white/20"></div>
-
-          {/* WhatsApp - New! */}
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center gap-2 px-3 py-1 bg-green-500/20 hover:bg-green-500/30 rounded-full transition-all duration-200 border border-green-400/30 hover:border-green-400/50"
-          >
-            <MessageCircle className="h-3.5 w-3.5 text-green-300 group-hover:scale-110 transition-transform" />
-            <span className="font-medium text-green-100">WhatsApp</span>
-          </a>
         </div>
       </div>
     </div>

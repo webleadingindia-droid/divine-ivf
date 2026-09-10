@@ -9,36 +9,36 @@ const columns = [
     title: "Fertility Care",
     links: [
       { label: "IVF", href: "/ivf" },
-      { label: "IUI", href: "/iui" },
-      { label: "Fertility Investigation", href: "/fertility-investigation" },
-      { label: "Egg Donor IVF", href: "/egg-donor" },
+      { label: "IUI", href: "/iui-treatment-in-noida" },
+      { label: "Fertility Investigation", href: "/fertility-investigation-in-noida" },
+      { label: "Egg Donor IVF", href: "/egg-donor-ivf-in-noida" },
     ],
   },
   {
     title: "Advanced IVF",
     links: [
-      { label: "ICSI", href: "/ivf/icsi" },
-      { label: "PICSI", href: "/ivf/picsi" },
-      { label: "IMSI", href: "/ivf/imsi" },
-      { label: "ERA", href: "/ivf/era" },
-      { label: "Genetic Testing", href: "/ivf/genetic-testing" },
+      { label: "ICSI", href: "/ivf/icsi-treatment-in-noida" },
+      { label: "PICSI", href: "/ivf/picsi-treatment-in-noida" },
+      { label: "IMSI", href: "/ivf/imsi-treatment-in-noida" },
+      { label: "ERA", href: "/ivf/era-test-in-noida" },
+      { label: "Genetic Testing", href: "/ivf/genetic-testing-in-ivf-noida" },
     ],
   },
   {
     title: "Women's & Pregnancy Care",
     links: [
-      { label: "Gynecology", href: "/gynecology" },
-      { label: "Hysteroscopy", href: "/hysteroscopy" },
-      { label: "Laparoscopy", href: "/laparoscopy" },
+      { label: "Gynecology", href: "/gynaecological-care-in-noida" },
+      { label: "Hysteroscopy", href: "/hysteroscopy-in-noida" },
+      { label: "Laparoscopy", href: "/laparoscopy-in-noida" },
       { label: "Obstetric Ultrasound", href: "/obstetric-ultrasound" },
-      { label: "Delivery Care", href: "/normal-delivery" },
+      { label: "Delivery Care", href: "/normal-vaginal-delivery-in-noida" },
     ],
   },
   {
     title: "Clinic",
     links: [
       { label: "Dr. Mandavi Rai", href: "/doctor/dr-mandavi-rai" },
-      { label: "Resources", href: "/resources" },
+      { label: "Blogs", href: "/blog" },
       { label: "Patient Stories", href: "/patient-stories" },
       { label: "Gallery", href: "/gallery" },
       { label: "Contact", href: "/contact" },
@@ -92,7 +92,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 pt-8 border-t border-bloom-border grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-ink-400">
+        <div className="mt-12 pt-8 border-t border-bloom-border gap-4 text-sm text-ink-400 justify-between grid lg:flex">
           <a href={clinic.mapsUrl} target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 hover:text-rose-600">
             <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
             <span>{clinic.addressLines.join(" ")}</span>

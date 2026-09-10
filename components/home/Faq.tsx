@@ -193,7 +193,7 @@ export function Faq() {
             <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-2xl p-4 border border-rose-100/50">
               <div className="flex items-center gap-4">
                 <div className="text-center">
-                  <p className="text-2xl font-bold text-rose-600">500+</p>
+                  <p className="text-2xl font-bold text-rose-600">3000+</p>
                   <p className="text-[10px] text-ink-400">IVF Cycles</p>
                 </div>
                 <div className="w-px h-10 bg-rose-200" />

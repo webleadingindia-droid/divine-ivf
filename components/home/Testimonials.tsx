@@ -170,21 +170,6 @@ export function Testimonials() {
 
         </div>
 
-        {/* Trust Badge */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
-          <div className="flex items-center gap-2 text-xs text-white drop-shadow-lg bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20">
-            <Heart className="h-3.5 w-3.5 text-rose-200 fill-rose-200" />
-            <span>Trusted by 8,000+ families</span>
-          </div>
-          <div className="flex items-center gap-2 text-xs text-white drop-shadow-lg bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20">
-            <Calendar className="h-3.5 w-3.5 text-rose-200" />
-            <span>Since 2010</span>
-          </div>
-          <div className="flex items-center gap-2 text-xs text-white drop-shadow-lg bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20">
-            <User className="h-3.5 w-3.5 text-rose-200" />
-            <span>300+ happy families</span>
-          </div>
-        </div>
       </div>
     </section>
   );

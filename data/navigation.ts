@@ -30,11 +30,11 @@ export const primaryNav: NavItem[] = [
 
   {
     label: "Fertility Care",
-    href: "/fertility",
+    href: "/services",
     children: [
       {
         label: "Fertility Investigation",
-        href: "/fertility-investigation",
+        href: "/fertility-investigation-in-noida",
         description: "Understanding what's happening",
       },
       {
@@ -44,90 +44,90 @@ export const primaryNav: NavItem[] = [
       },
       {
         label: "IUI",
-        href: "/iui",
+        href: "/iui-treatment-in-noida",
         description: "Intrauterine Insemination",
       },
       {
         label: "Egg Donor IVF",
-        href: "/egg-donor",
+        href: "/egg-donor-ivf-in-noida",
         description: "Donor egg pathways",
       },
       {
         label: "Male Infertility",
-        href: "/male-infertility",
+        href: "/male-infertility-treatment-in-noida",
       },
       {
         label: "Sperm Retrieval Techniques",
-        href: "/sperm-retrieval",
+        href: "/sperm-retrieval-in-noida",
       },
 
       // Advanced IVF
       {
         label: "ICSI",
-        href: "/ivf/icsi",
+        href: "/ivf/icsi-treatment-in-noida",
       },
       {
         label: "PICSI",
-        href: "/ivf/picsi",
+        href: "/ivf/picsi-treatment-in-noida",
       },
       {
         label: "IMSI",
-        href: "/ivf/imsi",
+        href: "/ivf/imsi-treatment-in-noida",
       },
       {
         label: "ERA",
-        href: "/ivf/era",
+        href: "/ivf/era-test-in-noida",
         description: "Endometrial Receptivity Analysis",
       },
       {
         label: "Genetic Testing of Embryos",
-        href: "/ivf/genetic-testing",
+        href: "/ivf/genetic-testing-in-ivf-noida",
       },
       {
         label: "Embryo Glue",
-        href: "/ivf/embryo-glue",
+        href: "/ivf/embryo-glue-in-noida",
       },
       {
         label: "Intralipid Therapy",
-        href: "/ivf/intralipid",
+        href: "/ivf/intralipid-therapy-in-noida",
       },
       {
         label: "LIT — Lymphocyte Immunization Therapy",
-        href: "/ivf/lit",
+        href: "/ivf/lymphocyte-immunization-therapy-in-noida",
       },
     ],
   },
 
   {
     label: "Women's Health",
-    href: "/gynecology",
+    href: "/services",
     children: [
       {
         label: "Gynecology",
-        href: "/gynecology",
+        href: "/gynaecological-care-in-noida",
       },
       {
         label: "Hysteroscopy",
-        href: "/hysteroscopy",
+        href: "/hysteroscopy-in-noida",
       },
       {
         label: "Laparoscopy",
-        href: "/laparoscopy",
+        href: "/laparoscopy-in-noida",
       },
       {
         label: "PRP for Fertility",
-        href: "/prp",
+        href: "/prp-for-fertility-in-noida",
       },
       {
         label: "LIT — Ovary & Uterus",
-        href: "/lit-therapy",
+        href: "/lit-therapy-ovary-uterus-in-noida",
       },
     ],
   },
 
   {
     label: "Pregnancy Care",
-    href: "/pregnancy-care",
+    href: "/services",
     children: [
       {
         label: "Obstetric Ultrasound",
@@ -135,18 +135,18 @@ export const primaryNav: NavItem[] = [
       },
       {
         label: "Normal Vaginal Delivery",
-        href: "/normal-delivery",
+        href: "/normal-vaginal-delivery-in-noida",
       },
       {
         label: "Cesarean Delivery",
-        href: "/cesarean-delivery",
+        href: "/cesarean-delivery-in-noida",
       },
     ],
   },
 
   {
     label: "Resources",
-    href: "/resources",
+    href: "/blog",
     children: [
       {
         label: "Blog",

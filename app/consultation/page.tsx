@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function ConsultationPage() {
   const features = [
     { icon: Shield, text: "100% Confidential Consultation" },
-    { icon: Users, text: "8000+ Happy Families" },
+    { icon: Users, text: "3000+ Happy Families" },
     { icon: Award, text: "15+ Years Experience" },
     { icon: Clock, text: "Same Day Response" },
   ];

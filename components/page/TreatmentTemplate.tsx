@@ -166,12 +166,12 @@ export function TreatmentTemplate({
                 </span>
               </div>
 
-              <h1 className="text-3xl md:text-[2.75rem] leading-[1.12] font-bold text-ink-900 mb-5">
+              <h2 className="text-3xl md:text-[2.75rem] leading-[1.12] font-bold text-ink-900 mb-5">
                 {titlePlain}{" "}
                 <span className="font-serif italic text-transparent bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text">
                   {titleAccent}
                 </span>
-              </h1>
+              </h2>
 
               <p className="text-base text-ink-500 leading-relaxed max-w-xl mb-8">{intro}</p>
 

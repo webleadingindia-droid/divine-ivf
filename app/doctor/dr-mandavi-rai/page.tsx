@@ -223,7 +223,7 @@ export default function DoctorPage() {
               <div className="relative aspect-[5/5] rounded-3xl overflow-hidden shadow-2xl shadow-rose-500/20">
                 {/* Image */}
                 <Image
-                  src="https://plain-apac-prod-public.komododecks.com/202608/13/uDJ20RmMzJIItIpPZ2iH/image.webp"
+                  src="https://plain-apac-prod-public.komododecks.com/202609/08/CDBKdEp8rE4QX4kMEGcA/image.jpg"
                   alt={doctorData.name}
                   fill
                   className="object-cover"
