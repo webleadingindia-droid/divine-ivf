@@ -275,7 +275,7 @@ export default function LitTherapyPage() {
             
             <div>
               <h3 className="font-semibold text-ink-900">Why Has LIT Been Proposed in Fertility Treatment?</h3>
-              <p className="text-ink-600 text-sm">LIT was developed around theories that some miscarriages or implantation failures may involve an abnormal maternal immune response. The proposed idea was that exposure to lymphocytes from the male partner might help modify the woman's immune response to pregnancy.</p>
+              <p className="text-ink-600 text-sm">LIT was developed around theories that some miscarriages or implantation failures may involve an abnormal maternal immune response. The proposed idea was that exposure to lymphocytes from the male partner might help modify the woman`s immune response to pregnancy.</p>
               <p className="text-ink-600 text-sm mt-2">However, reproduction and maternal-fetal immune tolerance are complex. Current scientific evidence has not established LIT as an effective routine treatment for recurrent miscarriage.</p>
             </div>
             
@@ -324,7 +324,7 @@ export default function LitTherapyPage() {
           <p className="text-sm text-ink-500 mt-3">In some cases, no definite cause is identified. LIT has historically been proposed for unexplained recurrent pregnancy loss, but current major guidelines do not support its routine clinical use.</p>
           
           <h3 className="font-semibold text-ink-900 text-sm mt-4">What Is Recurrent Pregnancy Loss?</h3>
-          <p className="text-ink-600 text-sm">Recurrent pregnancy loss generally refers to repeated spontaneous pregnancy losses. Modern clinical evaluation may begin after two pregnancy losses depending on the patient's history and clinical circumstances. A structured evaluation can help identify potentially treatable causes before unproven immune therapies are considered.</p>
+          <p className="text-ink-600 text-sm">Recurrent pregnancy loss generally refers to repeated spontaneous pregnancy losses. Modern clinical evaluation may begin after two pregnancy losses depending on the patient`s history and clinical circumstances. A structured evaluation can help identify potentially treatable causes before unproven immune therapies are considered.</p>
         </div>
 
         {/* LIT for Recurrent Implantation Failure / LIT After Failed IVF */}

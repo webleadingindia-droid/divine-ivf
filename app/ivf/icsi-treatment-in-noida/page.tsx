@@ -463,7 +463,7 @@ export default function IcsiTreatmentPage() {
             
             <div>
               <h3 className="font-semibold text-ink-900">Step 11 – Pregnancy Test</h3>
-              <p className="text-ink-600 text-sm mt-1">A pregnancy test is performed after the embryo transfer according to your doctor's instructions.</p>
+              <p className="text-ink-600 text-sm mt-1">A pregnancy test is performed after the embryo transfer according to your doctor`s instructions.</p>
             </div>
           </div>
         </div>
@@ -528,7 +528,7 @@ export default function IcsiTreatmentPage() {
               </ul>
             </div>
           </div>
-          <p className="text-sm text-ink-500 mt-3">Your fertility specialist will decide which approach is more suitable based on semen parameters and the couple's fertility history.</p>
+          <p className="text-sm text-ink-500 mt-3">Your fertility specialist will decide which approach is more suitable based on semen parameters and the couple`s fertility history.</p>
         </div>
 
         {/* ICSI Success Rate */}
@@ -726,7 +726,7 @@ export default function IcsiTreatmentPage() {
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
-              <div><strong className="text-ink-900">Personalised Fertility Evaluation</strong> — The decision to use ICSI is based on the couple's fertility profile rather than using the same treatment approach for everyone.</div>
+              <div><strong className="text-ink-900">Personalised Fertility Evaluation</strong> — The decision to use ICSI is based on the couple`s fertility profile rather than using the same treatment approach for everyone.</div>
             </li>
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
@@ -799,7 +799,7 @@ export default function IcsiTreatmentPage() {
           <h2 className="text-2xl font-bold mb-3">Book an ICSI Consultation in Noida</h2>
           <p className="text-rose-100 max-w-2xl mx-auto">
             If you have severe male-factor infertility, low sperm count, poor sperm motility, previous IVF fertilisation failure, or have been advised to consider ICSI, a detailed fertility evaluation is the first step.
-            At Divine IVF, Sector 76, Noida, Dr. Mandavi Rai provides personalised IVF and ICSI treatment planning according to the couple's individual fertility profile.
+            At Divine IVF, Sector 76, Noida, Dr. Mandavi Rai provides personalised IVF and ICSI treatment planning according to the couple`s individual fertility profile.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
             <Link

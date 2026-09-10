@@ -256,7 +256,7 @@ export default function EggDonorIVFPage() {
             <strong>Egg Donor IVF</strong>, also known as <strong>Donor Egg IVF</strong>, is a type of IVF treatment in which eggs obtained from an eligible donor are fertilised with sperm in an embryology laboratory.
           </p>
           <p className="text-ink-600 mt-2">
-            The resulting embryo may then be transferred into the recipient woman's uterus.
+            The resulting embryo may then be transferred into the recipient woman`s uterus.
           </p>
           <p className="text-ink-600 mt-2">
             The treatment may involve:
@@ -268,7 +268,7 @@ export default function EggDonorIVFPage() {
             <li>Sperm preparation</li>
             <li>Fertilisation through IVF or ICSI</li>
             <li>Embryo culture</li>
-            <li>Preparation of the recipient's endometrium</li>
+            <li>Preparation of the recipient`s endometrium</li>
             <li>Embryo transfer</li>
             <li>Pregnancy testing</li>
           </ul>
@@ -283,7 +283,7 @@ export default function EggDonorIVFPage() {
           <div className="space-y-4 mt-3">
             <div>
               <h3 className="font-semibold text-ink-900">Very Low Ovarian Reserve</h3>
-              <p className="text-ink-600 text-sm">Women with significantly reduced ovarian reserve may produce very few eggs despite ovarian stimulation. In such cases, donor eggs may be discussed when treatment with the patient's own eggs has a low expected response.</p>
+              <p className="text-ink-600 text-sm">Women with significantly reduced ovarian reserve may produce very few eggs despite ovarian stimulation. In such cases, donor eggs may be discussed when treatment with the patient`s own eggs has a low expected response.</p>
             </div>
             
             <div>
@@ -362,7 +362,7 @@ export default function EggDonorIVFPage() {
           <div className="space-y-4">
             <div>
               <h3 className="font-semibold text-ink-900">Who Can Be an Egg Donor in India?</h3>
-              <p className="text-ink-600 text-sm">Under the ART regulatory framework, donor eligibility is subject to legal requirements. The ART Act specifies criteria relating to the donor's age, reproductive history and permitted frequency of oocyte donation. Patients should not independently arrange or recruit donors outside the permitted ART system. The fertility clinic and registered ART bank are responsible for ensuring that donor-related requirements are followed.</p>
+              <p className="text-ink-600 text-sm">Under the ART regulatory framework, donor eligibility is subject to legal requirements. The ART Act specifies criteria relating to the donor`s age, reproductive history and permitted frequency of oocyte donation. Patients should not independently arrange or recruit donors outside the permitted ART system. The fertility clinic and registered ART bank are responsible for ensuring that donor-related requirements are followed.</p>
             </div>
             
             <div>
@@ -371,7 +371,7 @@ export default function EggDonorIVFPage() {
             </div>
             
             <div>
-              <h3 className="font-semibold text-ink-900">Is the Egg Donor's Identity Disclosed?</h3>
+              <h3 className="font-semibold text-ink-900">Is the Egg Donor`s Identity Disclosed?</h3>
               <p className="text-ink-600 text-sm">Donor information is subject to confidentiality and legal record-keeping requirements. The donor and recipient should not attempt to independently exchange identities outside the permitted framework. Relevant records must be maintained as required by law while preserving confidentiality.</p>
             </div>
           </div>
@@ -418,7 +418,7 @@ export default function EggDonorIVFPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                 <div className="bg-ink-50/50 rounded-xl p-3">
                   <h4 className="font-bold text-sm text-ink-900">IVF With Own Eggs</h4>
-                  <p className="text-xs text-ink-600 mt-1">The patient's ovaries are stimulated and her own eggs are retrieved. Treatment outcome depends on female age, ovarian reserve, egg quality, and ovarian response.</p>
+                  <p className="text-xs text-ink-600 mt-1">The patient`s ovaries are stimulated and her own eggs are retrieved. Treatment outcome depends on female age, ovarian reserve, egg quality, and ovarian response.</p>
                 </div>
                 <div className="bg-rose-50/50 rounded-xl p-3 border border-rose-100/50">
                   <h4 className="font-bold text-sm text-ink-900">Egg Donor IVF</h4>
@@ -524,8 +524,8 @@ export default function EggDonorIVFPage() {
             <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
             Is the Recipient Genetically Related to the Baby?
           </h3>
-          <p className="text-ink-600 text-sm">In egg donor IVF, the genetic contribution from the egg comes from the donor. If sperm from the recipient's male partner is used, the baby may have a genetic relationship to the male partner.</p>
-          <p className="text-ink-600 text-sm mt-2">The woman carrying the pregnancy provides the uterine environment but does not contribute the egg's nuclear genetic material.</p>
+          <p className="text-ink-600 text-sm">In egg donor IVF, the genetic contribution from the egg comes from the donor. If sperm from the recipient`s male partner is used, the baby may have a genetic relationship to the male partner.</p>
+          <p className="text-ink-600 text-sm mt-2">The woman carrying the pregnancy provides the uterine environment but does not contribute the egg`s nuclear genetic material.</p>
           <p className="text-sm text-ink-500 mt-2">Patients should discuss the genetic implications carefully before treatment.</p>
         </div>
 
@@ -560,7 +560,7 @@ export default function EggDonorIVFPage() {
               Pregnancy-related medical complications
             </div>
           </div>
-          <p className="text-sm text-ink-500 mt-3">Pregnancy risk also depends on the recipient's age and general health.</p>
+          <p className="text-sm text-ink-500 mt-3">Pregnancy risk also depends on the recipient`s age and general health.</p>
         </div>
 
         {/* Egg Donor IVF Cost */}
@@ -662,7 +662,7 @@ export default function EggDonorIVFPage() {
             </div>
             <div className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500">•</span>
-              How is the recipient's uterus prepared?
+              How is the recipient`s uterus prepared?
             </div>
             <div className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500">•</span>
@@ -689,7 +689,7 @@ export default function EggDonorIVFPage() {
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
-              <div><strong className="text-ink-900">Personalised Fertility Assessment</strong> — Donor egg treatment is considered only after reviewing the patient's ovarian reserve, age, reproductive history and previous fertility treatment.</div>
+              <div><strong className="text-ink-900">Personalised Fertility Assessment</strong> — Donor egg treatment is considered only after reviewing the patient`s ovarian reserve, age, reproductive history and previous fertility treatment.</div>
             </li>
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

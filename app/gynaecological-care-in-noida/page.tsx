@@ -201,7 +201,7 @@ export default function GynaecologicalCarePage() {
           Gynaecological Care in Noida
         </h1>
         <p className="text-lg text-ink-600 -mt-2">
-          Personalised women's health and gynaecological care for menstrual, hormonal, reproductive and fertility-related concerns at Divine IVF, Sector 76, Noida.
+          Personalised women`s health and gynaecological care for menstrual, hormonal, reproductive and fertility-related concerns at Divine IVF, Sector 76, Noida.
         </p>
         {/* ============================================= */}
 
@@ -267,7 +267,7 @@ export default function GynaecologicalCarePage() {
             <li>Sexual and reproductive health</li>
             <li>Menopause</li>
           </ul>
-          <p className="text-ink-600 text-sm mt-3">A gynaecologist can help evaluate symptoms, provide preventive care and manage both short-term and long-term women's health concerns.</p>
+          <p className="text-ink-600 text-sm mt-3">A gynaecologist can help evaluate symptoms, provide preventive care and manage both short-term and long-term women`s health concerns.</p>
         </div>
 
         {/* When Should You Visit a Gynaecologist */}
@@ -380,7 +380,7 @@ export default function GynaecologicalCarePage() {
             
             <div>
               <h3 className="font-semibold text-ink-900">Ovarian Cysts</h3>
-              <p className="text-ink-600 text-sm">Ovarian cysts are fluid-filled structures that can develop within or on the ovaries. Many are benign and may resolve without treatment. Some cysts may require closer evaluation if they persist, grow, cause pain, have unusual ultrasound features, or occur after menopause. Treatment depends on the type of cyst and the patient's age and symptoms.</p>
+              <p className="text-ink-600 text-sm">Ovarian cysts are fluid-filled structures that can develop within or on the ovaries. Many are benign and may resolve without treatment. Some cysts may require closer evaluation if they persist, grow, cause pain, have unusual ultrasound features, or occur after menopause. Treatment depends on the type of cyst and the patient`s age and symptoms.</p>
             </div>
             
             <div>
@@ -429,7 +429,7 @@ export default function GynaecologicalCarePage() {
           <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
             <Image
               src="https://plain-apac-prod-public.komododecks.com/202609/08/CDBKdEp8rE4QX4kMEGcA/image.jpg"
-              alt="Women's health consultation with Dr. Mandavi Rai at Divine IVF Noida"
+              alt="Women`s health consultation with Dr. Mandavi Rai at Divine IVF Noida"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -510,7 +510,7 @@ export default function GynaecologicalCarePage() {
             
             <div>
               <h3 className="font-semibold text-ink-900">Adolescent Gynaecological Care</h3>
-              <p className="text-ink-600 text-sm">Teenagers may also experience gynaecological concerns such as very irregular periods, excessively painful periods, heavy bleeding, PCOS symptoms, delayed menstruation, and hormonal concerns. Evaluation should be age-appropriate and sensitive to the patient's needs.</p>
+              <p className="text-ink-600 text-sm">Teenagers may also experience gynaecological concerns such as very irregular periods, excessively painful periods, heavy bleeding, PCOS symptoms, delayed menstruation, and hormonal concerns. Evaluation should be age-appropriate and sensitive to the patient`s needs.</p>
             </div>
           </div>
         </div>
@@ -645,7 +645,7 @@ export default function GynaecologicalCarePage() {
             </li>
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
-              <div><strong className="text-ink-900">Women's Health and Fertility Care</strong> — Gynaecological concerns and fertility-related issues can be evaluated within the same care setting.</div>
+              <div><strong className="text-ink-900">Women`s Health and Fertility Care</strong> — Gynaecological concerns and fertility-related issues can be evaluated within the same care setting.</div>
             </li>
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
@@ -674,7 +674,7 @@ export default function GynaecologicalCarePage() {
         <div className="bg-gradient-to-br from-rose-600 to-rose-700 rounded-2xl p-8 text-white text-center mt-8">
           <h2 className="text-2xl font-bold mb-3">Book a Gynaecology Consultation in Noida</h2>
           <p className="text-rose-100 max-w-2xl mx-auto">
-            If you are experiencing irregular periods, PCOS symptoms, heavy bleeding, pelvic pain, fertility problems, fibroids, ovarian cysts or another women's health concern, an accurate diagnosis is the first step.
+            If you are experiencing irregular periods, PCOS symptoms, heavy bleeding, pelvic pain, fertility problems, fibroids, ovarian cysts or another women`s health concern, an accurate diagnosis is the first step.
             At Divine IVF, Sector 76, Noida, Dr. Mandavi Rai provides personalised gynaecological and fertility care based on your individual health needs.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">

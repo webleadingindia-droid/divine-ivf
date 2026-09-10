@@ -339,7 +339,7 @@ export default function IvfTreatmentPage() {
             
             <div>
               <h3 className="font-semibold text-ink-900">Repeated IUI Failure</h3>
-              <p className="text-ink-600 text-sm">If properly selected <Link href="/iui-treatment-in-noida" className="text-rose-600 font-semibold hover:underline">IUI</Link> cycles have been unsuccessful, IVF may be the next treatment option depending on the couple's fertility profile.</p>
+              <p className="text-ink-600 text-sm">If properly selected <Link href="/iui-treatment-in-noida" className="text-rose-600 font-semibold hover:underline">IUI</Link> cycles have been unsuccessful, IVF may be the next treatment option depending on the couple`s fertility profile.</p>
             </div>
             
             <div>

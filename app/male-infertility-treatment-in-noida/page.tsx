@@ -456,7 +456,7 @@ export default function MaleInfertilityTreatmentPage() {
             </div>
             <div className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500">•</span>
-              Your partner's fertility tests are normal but pregnancy has not occurred
+              Your partner`s fertility tests are normal but pregnancy has not occurred
             </div>
             <div className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500">•</span>
@@ -491,7 +491,7 @@ export default function MaleInfertilityTreatmentPage() {
               Previous semen analysis showed abnormalities
             </div>
           </div>
-          <p className="text-sm text-ink-500 mt-3">Male fertility testing should generally be considered as part of the couple's overall <Link href="/fertility-investigation-in-noida" className="text-rose-600 font-semibold hover:underline">fertility evaluation</Link>.</p>
+          <p className="text-sm text-ink-500 mt-3">Male fertility testing should generally be considered as part of the couple`s overall <Link href="/fertility-investigation-in-noida" className="text-rose-600 font-semibold hover:underline">fertility evaluation</Link>.</p>
         </div>
 
         {/* Male Fertility Tests */}
@@ -630,7 +630,7 @@ export default function MaleInfertilityTreatmentPage() {
             </li>
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
-              <div><strong className="text-ink-900">Personalised Treatment Planning</strong> — Treatment is selected according to fertility test results and the couple's reproductive history.</div>
+              <div><strong className="text-ink-900">Personalised Treatment Planning</strong> — Treatment is selected according to fertility test results and the couple`s reproductive history.</div>
             </li>
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

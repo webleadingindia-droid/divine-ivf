@@ -463,7 +463,7 @@ export default function SpermRetrievalPage() {
             
             <div>
               <h3 className="font-semibold text-ink-900">Can Retrieved Sperm Be Frozen?</h3>
-              <p className="text-ink-600 text-sm">Yes, sperm obtained through retrieval procedures may sometimes be cryopreserved for future fertility treatment. Whether freezing is appropriate depends on the number of sperm retrieved, sperm quality, cause of azoospermia, IVF treatment timing, and laboratory recommendations. In some non-obstructive azoospermia cases, retrieval may be coordinated closely with the female partner's IVF cycle because only very limited sperm may be found.</p>
+              <p className="text-ink-600 text-sm">Yes, sperm obtained through retrieval procedures may sometimes be cryopreserved for future fertility treatment. Whether freezing is appropriate depends on the number of sperm retrieved, sperm quality, cause of azoospermia, IVF treatment timing, and laboratory recommendations. In some non-obstructive azoospermia cases, retrieval may be coordinated closely with the female partner`s IVF cycle because only very limited sperm may be found.</p>
             </div>
           </div>
         </div>
@@ -545,7 +545,7 @@ export default function SpermRetrievalPage() {
           <div className="space-y-4">
             <div>
               <h3 className="font-semibold text-ink-900">Sperm Retrieval After Vasectomy</h3>
-              <p className="text-ink-600 text-sm">Men who have undergone vasectomy may sometimes use surgically retrieved sperm with IVF-ICSI instead of vasectomy reversal. The appropriate option depends on time since vasectomy, female partner's age, female fertility status, couple's treatment goals, and surgical considerations. Both sperm retrieval with ICSI and vasectomy reversal may be discussed where appropriate.</p>
+              <p className="text-ink-600 text-sm">Men who have undergone vasectomy may sometimes use surgically retrieved sperm with IVF-ICSI instead of vasectomy reversal. The appropriate option depends on time since vasectomy, female partner`s age, female fertility status, couple`s treatment goals, and surgical considerations. Both sperm retrieval with ICSI and vasectomy reversal may be discussed where appropriate.</p>
             </div>
             
             <div>

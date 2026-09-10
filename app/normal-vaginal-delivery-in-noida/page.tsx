@@ -239,7 +239,7 @@ export default function NormalVaginalDeliveryPage() {
           </p>
           <ul className="list-disc list-inside text-ink-600 mt-2 space-y-1">
             <li><strong>First Stage (Labour)</strong> — The cervix dilates from 0 to 10 centimetres, with contractions becoming stronger and more frequent</li>
-            <li><strong>Second Stage (Delivery)</strong> — You're fully dilated and begin pushing to deliver your baby</li>
+            <li><strong>Second Stage (Delivery)</strong> — You`re fully dilated and begin pushing to deliver your baby</li>
             <li><strong>Third Stage (Placental Delivery)</strong> — After your baby is born, the placenta is delivered</li>
           </ul>
           <p className="text-ink-600 mt-2">
@@ -328,7 +328,7 @@ export default function NormalVaginalDeliveryPage() {
             
             <div className="bg-white rounded-xl p-4 border border-rose-200 shadow-sm">
               <h3 className="font-bold text-sm text-ink-900">Second Stage — Delivery</h3>
-              <p className="text-sm text-ink-600 mt-1">You're fully dilated and begin pushing to deliver your baby. This stage can last from a few minutes to several hours. Dr. Rai and the care team will guide and support you through this stage.</p>
+              <p className="text-sm text-ink-600 mt-1">You`re fully dilated and begin pushing to deliver your baby. This stage can last from a few minutes to several hours. Dr. Rai and the care team will guide and support you through this stage.</p>
             </div>
             
             <div className="bg-white rounded-xl p-4 border border-ink-100/50">
@@ -399,20 +399,20 @@ export default function NormalVaginalDeliveryPage() {
           </ul>
         </div>
 
-        {/* Considerations / What Happens If Labour Doesn't Progress */}
+        {/* Considerations / What Happens If Labour Doesn`t Progress */}
         <div className="bg-rose-50/30 rounded-2xl p-6 border border-rose-100/50">
           <h2 className="text-lg font-bold text-ink-900 mb-3">Important Considerations</h2>
           
           <div className="space-y-4">
             <div>
-              <h3 className="font-semibold text-ink-900 text-sm">What Happens If Labour Doesn't Progress?</h3>
-              <p className="text-ink-600 text-sm">If labour doesn't progress as expected, Dr. Rai will discuss your options with you. This may involve:</p>
+              <h3 className="font-semibold text-ink-900 text-sm">What Happens If Labour Doesn`t Progress?</h3>
+              <p className="text-ink-600 text-sm">If labour doesn`t progress as expected, Dr. Rai will discuss your options with you. This may involve:</p>
               <ul className="list-disc list-inside text-sm text-ink-600 mt-2 space-y-1">
                 <li>Additional monitoring of you and your baby</li>
                 <li>Interventions to help labour progress (such as amniotomy or oxytocin)</li>
                 <li>If necessary — a change of plan to cesarean delivery</li>
               </ul>
-              <p className="text-ink-600 text-sm mt-2">You'll be kept informed throughout and involved in all decisions.</p>
+              <p className="text-ink-600 text-sm mt-2">You`ll be kept informed throughout and involved in all decisions.</p>
             </div>
             
             <div>
@@ -435,7 +435,7 @@ export default function NormalVaginalDeliveryPage() {
           <div className="space-y-3">
             <div>
               <h3 className="font-semibold text-ink-900 text-sm">Discuss Your Birth Preferences</h3>
-              <p className="text-ink-600 text-sm">As your due date approaches, discuss your birth preferences with Dr. Rai, including pain relief options and who you'd like present. This conversation helps ensure your preferences are respected while keeping safety as the top priority.</p>
+              <p className="text-ink-600 text-sm">As your due date approaches, discuss your birth preferences with Dr. Rai, including pain relief options and who you`d like present. This conversation helps ensure your preferences are respected while keeping safety as the top priority.</p>
             </div>
             
             <div>
@@ -450,7 +450,7 @@ export default function NormalVaginalDeliveryPage() {
             
             <div>
               <h3 className="font-semibold text-ink-900 text-sm">Involve Your Birth Partner</h3>
-              <p className="text-ink-600 text-sm">If you're planning to use a birth partner, bring them to the later pregnancy visits so they can understand the process and how they can support you during labour.</p>
+              <p className="text-ink-600 text-sm">If you`re planning to use a birth partner, bring them to the later pregnancy visits so they can understand the process and how they can support you during labour.</p>
             </div>
             
             <div>
@@ -520,7 +520,7 @@ export default function NormalVaginalDeliveryPage() {
           <h2 className="text-2xl font-bold mb-3">Book a Normal Delivery Consultation in Noida</h2>
           <p className="text-rose-100 max-w-2xl mx-auto">
             If you are planning a normal vaginal delivery and want compassionate, personalised pregnancy care in Noida, Dr. Mandavi Rai at Divine IVF is here to support you.
-            From birth planning to labour care and postnatal support, you'll receive the highest quality care for you and your baby.
+            From birth planning to labour care and postnatal support, you`ll receive the highest quality care for you and your baby.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
             <Link

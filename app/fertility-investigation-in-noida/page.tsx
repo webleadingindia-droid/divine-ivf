@@ -358,7 +358,7 @@ export default function FertilityInvestigationPage() {
         {/* Fertility Tests for Men */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
           <h2 className="text-xl font-bold text-ink-900 mb-4">Fertility Tests for Men</h2>
-          <p className="text-ink-600 mb-3">Male fertility evaluation is an important part of a couple's fertility assessment. Fertility investigation should generally not focus only on the female partner.</p>
+          <p className="text-ink-600 mb-3">Male fertility evaluation is an important part of a couple`s fertility assessment. Fertility investigation should generally not focus only on the female partner.</p>
           
           <div>
             <h3 className="font-semibold text-ink-900">Semen Analysis</h3>

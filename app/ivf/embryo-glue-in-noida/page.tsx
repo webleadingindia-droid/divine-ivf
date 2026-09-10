@@ -432,7 +432,7 @@ export default function EmbryoGluePage() {
             
             <div>
               <h3 className="font-semibold text-ink-900">Embryo Glue vs Assisted Hatching</h3>
-              <p className="text-ink-600 text-sm">Embryo Glue changes the medium surrounding the embryo before transfer. Assisted Hatching involves manipulation of the embryo's outer layer with the intention of helping it hatch. These procedures have different proposed mechanisms and evidence bases.</p>
+              <p className="text-ink-600 text-sm">Embryo Glue changes the medium surrounding the embryo before transfer. Assisted Hatching involves manipulation of the embryo`s outer layer with the intention of helping it hatch. These procedures have different proposed mechanisms and evidence bases.</p>
             </div>
             
             <div>

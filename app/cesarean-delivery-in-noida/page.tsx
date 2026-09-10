@@ -273,7 +273,7 @@ export default function CesareanDeliveryPage() {
             A Cesarean delivery (C-section) is an operation in which a baby is delivered through surgical incisions made in:
           </p>
           <ul className="list-disc list-inside text-ink-600 mt-2 space-y-1">
-            <li>The mother's abdomen</li>
+            <li>The mother`s abdomen</li>
             <li>The uterus</li>
           </ul>
           <p className="text-ink-600 mt-2">
@@ -493,7 +493,7 @@ export default function CesareanDeliveryPage() {
                 <li>Current pregnancy</li>
                 <li>Fetal presentation</li>
                 <li>Other maternal or fetal conditions</li>
-                <li>Facility's ability to perform emergency Cesarean if needed</li>
+                <li>Facility`s ability to perform emergency Cesarean if needed</li>
               </ul>
               <p className="text-ink-600 text-sm mt-2">This decision should be made with an obstetrician.</p>
             </div>
@@ -560,7 +560,7 @@ export default function CesareanDeliveryPage() {
             <div>
               <h3 className="font-semibold text-ink-900">How Long Does C-Section Recovery Take?</h3>
               <p className="text-ink-600 text-sm">Initial healing usually takes several weeks. Recovery varies depending on planned vs emergency surgery, maternal health, surgical complications, previous Cesareans, infection, blood loss, and individual healing.</p>
-              <p className="text-ink-600 text-sm mt-2">Patients should follow their obstetrician's instructions regarding walking, lifting, exercise, driving, sexual activity, and wound care.</p>
+              <p className="text-ink-600 text-sm mt-2">Patients should follow their obstetrician`s instructions regarding walking, lifting, exercise, driving, sexual activity, and wound care.</p>
             </div>
             
             <div>

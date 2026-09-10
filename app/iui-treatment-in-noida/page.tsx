@@ -389,7 +389,7 @@ export default function IuiTreatmentPage() {
             
             <div>
               <h3 className="font-semibold text-ink-900">Step 7 – Pregnancy Test</h3>
-              <p className="text-ink-600 text-sm mt-1">A pregnancy test is usually advised approximately two weeks after the IUI procedure or according to your doctor's instructions.</p>
+              <p className="text-ink-600 text-sm mt-1">A pregnancy test is usually advised approximately two weeks after the IUI procedure or according to your doctor`s instructions.</p>
             </div>
           </div>
         </div>
@@ -405,7 +405,7 @@ export default function IuiTreatmentPage() {
             </div>
             <div className="bg-rose-50/50 rounded-xl p-4 border border-rose-100/50">
               <h3 className="font-semibold text-ink-900">Stimulated IUI</h3>
-              <p className="text-ink-600 text-sm mt-1">In some patients, fertility medicines may be used to stimulate follicle development. Ultrasound monitoring is performed to help identify the right time for IUI. The appropriate protocol depends on the patient's fertility profile.</p>
+              <p className="text-ink-600 text-sm mt-1">In some patients, fertility medicines may be used to stimulate follicle development. Ultrasound monitoring is performed to help identify the right time for IUI. The appropriate protocol depends on the patient`s fertility profile.</p>
             </div>
           </div>
         </div>
@@ -418,7 +418,7 @@ export default function IuiTreatmentPage() {
             <div className="bg-white rounded-xl p-4 border border-ink-100/50">
               <h3 className="font-bold text-ink-900 text-rose-600">IUI</h3>
               <ul className="space-y-1 mt-2 text-sm text-ink-600">
-                <li>• Fertilisation takes place inside the woman's body</li>
+                <li>• Fertilisation takes place inside the woman`s body</li>
                 <li>• Prepared sperm is inserted into the uterus</li>
                 <li>• The procedure is relatively simple</li>
                 <li>• It is less invasive than IVF</li>
@@ -513,7 +513,7 @@ export default function IuiTreatmentPage() {
               Additional investigations if necessary
             </li>
           </ul>
-          <p className="text-sm text-ink-500 mt-3">Because every patient's fertility condition is different, it is better to obtain a personalised cost estimate after fertility evaluation.</p>
+          <p className="text-sm text-ink-500 mt-3">Because every patient`s fertility condition is different, it is better to obtain a personalised cost estimate after fertility evaluation.</p>
         </div>
 
         {/* Why Choose Divine IVF */}

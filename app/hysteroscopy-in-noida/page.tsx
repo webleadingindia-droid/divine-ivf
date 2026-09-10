@@ -697,7 +697,7 @@ export default function HysteroscopyPage() {
           </div>
           
           <h3 className="font-semibold text-ink-900 text-sm mt-4">Hysteroscopy and Embryo Transfer</h3>
-          <p className="text-ink-600 text-sm">A normal uterine cavity can be important for embryo implantation. If hysteroscopy identifies a treatable cavity abnormality, treatment may be completed before embryo transfer. The timing of future IVF or frozen embryo transfer depends on the procedure performed, endometrial healing, fertility plan, and doctor's recommendation.</p>
+          <p className="text-ink-600 text-sm">A normal uterine cavity can be important for embryo implantation. If hysteroscopy identifies a treatable cavity abnormality, treatment may be completed before embryo transfer. The timing of future IVF or frozen embryo transfer depends on the procedure performed, endometrial healing, fertility plan, and doctor`s recommendation.</p>
         </div>
 
         {/* Hysteroscopy Cost */}

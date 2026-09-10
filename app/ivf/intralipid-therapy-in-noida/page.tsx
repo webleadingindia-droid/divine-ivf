@@ -711,7 +711,7 @@ export default function IntralipidTherapyPage() {
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
-              <div><strong className="text-ink-900">Individualised Treatment Planning</strong> — Treatment decisions are based on each couple's fertility history rather than automatically adding optional therapies.</div>
+              <div><strong className="text-ink-900">Individualised Treatment Planning</strong> — Treatment decisions are based on each couple`s fertility history rather than automatically adding optional therapies.</div>
             </li>
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

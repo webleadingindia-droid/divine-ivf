@@ -655,7 +655,7 @@ export default function GeneticTestingInIVFPage() {
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
-              <div><strong className="text-ink-900">Personalised Fertility Assessment</strong> — Genetic testing is considered according to each couple's reproductive history and clinical findings rather than being routinely recommended to everyone.</div>
+              <div><strong className="text-ink-900">Personalised Fertility Assessment</strong> — Genetic testing is considered according to each couple`s reproductive history and clinical findings rather than being routinely recommended to everyone.</div>
             </li>
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

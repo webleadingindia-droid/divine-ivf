@@ -601,7 +601,7 @@ export default function ImsiTreatmentPage() {
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
-              <div><strong className="text-ink-900">Personalised Fertility Evaluation</strong> — Treatment planning is based on the couple's complete fertility profile.</div>
+              <div><strong className="text-ink-900">Personalised Fertility Evaluation</strong> — Treatment planning is based on the couple`s complete fertility profile.</div>
             </li>
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
@@ -667,7 +667,7 @@ export default function ImsiTreatmentPage() {
           <h2 className="text-2xl font-bold mb-3">Book an IMSI Consultation in Noida</h2>
           <p className="text-rose-100 max-w-2xl mx-auto">
             If you have severe male-factor infertility, poor sperm morphology, previous fertilisation failure, or unsuccessful IVF-ICSI treatment, discuss whether advanced sperm selection may be suitable for your case.
-            At Divine IVF, Sector 76, Noida, Dr. Mandavi Rai provides personalised fertility assessment and advanced IVF treatment planning according to each couple's individual fertility profile.
+            At Divine IVF, Sector 76, Noida, Dr. Mandavi Rai provides personalised fertility assessment and advanced IVF treatment planning according to each couple`s individual fertility profile.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
             <Link

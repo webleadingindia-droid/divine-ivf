@@ -632,7 +632,7 @@ export default function PicsiTreatmentPage() {
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
-              <div><strong className="text-ink-900">Personalised Fertility Evaluation</strong> — Advanced laboratory techniques are considered according to the couple's fertility profile.</div>
+              <div><strong className="text-ink-900">Personalised Fertility Evaluation</strong> — Advanced laboratory techniques are considered according to the couple`s fertility profile.</div>
             </li>
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

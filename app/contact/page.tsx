@@ -284,7 +284,7 @@ export default function ContactPage() {
                   {status === "success" && (
                     <p className="flex items-center gap-1.5 text-sm text-green-600">
                       <CheckCircle className="h-4 w-4" />
-                      Message sent successfully! You'll also receive a confirmation email shortly.
+                      Message sent successfully! You`ll also receive a confirmation email shortly.
                     </p>
                   )}
                   {status === "error" && (

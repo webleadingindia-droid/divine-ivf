@@ -171,7 +171,7 @@ export default function ObstetricUltrasoundPage() {
           Obstetric Ultrasound in Noida
         </h1>
         <p className="text-lg text-ink-600 -mt-2">
-          Regular ultrasound monitoring through pregnancy helps track your baby's growth and wellbeing at each stage — from confirming the pregnancy to monitoring your baby's development right through to the final weeks.
+          Regular ultrasound monitoring through pregnancy helps track your baby's growth and wellbeing at each stage — from confirming the pregnancy to monitoring your baby`s development right through to the final weeks.
         </p>
         {/* ============================================= */}
 
@@ -224,10 +224,10 @@ export default function ObstetricUltrasoundPage() {
             Obstetric ultrasound uses high-frequency sound waves to create detailed images of your baby throughout pregnancy. This non-invasive, painless procedure is used to confirm pregnancy dates, monitor fetal growth, check for structural abnormalities, and assess the wellbeing of both mother and baby at key stages.
           </p>
           <p className="text-ink-600 mt-2">
-            Different scans serve different purposes at different stages of pregnancy. An early dating scan confirms the pregnancy location and estimates the due date. A detailed anomaly scan (typically performed around 18-22 weeks) checks for structural abnormalities. Later growth scans monitor your baby's size, position, and wellbeing as you approach delivery.
+            Different scans serve different purposes at different stages of pregnancy. An early dating scan confirms the pregnancy location and estimates the due date. A detailed anomaly scan (typically performed around 18-22 weeks) checks for structural abnormalities. Later growth scans monitor your baby`s size, position, and wellbeing as you approach delivery.
           </p>
           <p className="text-ink-600 mt-2">
-            At Divine IVF, Sector 76, Noida, Dr. Mandavi Rai provides obstetric ultrasound as part of comprehensive <Link href="/pregnancy-care" className="text-rose-600 font-semibold hover:underline">pregnancy care</Link> — whether you've conceived through fertility treatment or naturally.
+            At Divine IVF, Sector 76, Noida, Dr. Mandavi Rai provides obstetric ultrasound as part of comprehensive <Link href="/pregnancy-care" className="text-rose-600 font-semibold hover:underline">pregnancy care</Link> — whether you`ve conceived through fertility treatment or naturally.
           </p>
         </div>
 
@@ -249,7 +249,7 @@ export default function ObstetricUltrasoundPage() {
                 <span className="bg-rose-600 text-white text-xs font-bold px-2 py-1 rounded-full">11-14 Weeks</span>
                 <h3 className="font-bold text-sm text-ink-900">Nuchal Translucency Scan</h3>
               </div>
-              <p className="text-sm text-ink-600 mt-1">Measures the fluid at the back of the baby's neck as part of first-trimester screening for chromosomal conditions. Combined with maternal blood tests for comprehensive screening.</p>
+              <p className="text-sm text-ink-600 mt-1">Measures the fluid at the back of the baby`s neck as part of first-trimester screening for chromosomal conditions. Combined with maternal blood tests for comprehensive screening.</p>
             </div>
             
             <div className="bg-white rounded-xl p-4 border border-rose-200 shadow-sm">
@@ -257,7 +257,7 @@ export default function ObstetricUltrasoundPage() {
                 <span className="bg-rose-600 text-white text-xs font-bold px-2 py-1 rounded-full">18-22 Weeks</span>
                 <h3 className="font-bold text-sm text-ink-900">Anomaly Scan</h3>
               </div>
-              <p className="text-sm text-ink-600 mt-1">Detailed anatomy scan of your baby's development — checking the brain, spine, heart, abdomen, limbs, placenta, and amniotic fluid levels.</p>
+              <p className="text-sm text-ink-600 mt-1">Detailed anatomy scan of your baby`s development — checking the brain, spine, heart, abdomen, limbs, placenta, and amniotic fluid levels.</p>
             </div>
             
             <div className="bg-white rounded-xl p-4 border border-ink-100/50">
@@ -373,8 +373,8 @@ export default function ObstetricUltrasoundPage() {
         <div className="bg-rose-50/30 rounded-2xl p-6 border border-rose-100/50">
           <h2 className="text-lg font-bold text-ink-900 mb-3">What to Expect During Your Scan</h2>
           <p className="text-ink-600 text-sm">Ultrasound scans are non-invasive and generally quick — typically lasting 15-30 minutes depending on the type of scan.</p>
-          <p className="text-ink-600 text-sm mt-2">You'll lie on an examination table, and a small amount of gel is applied to your abdomen. A handheld probe (transducer) is then moved over your skin to capture images.</p>
-          <p className="text-ink-600 text-sm mt-2">You'll usually see the images in real time during your visit. There's no discomfort beyond mild pressure from the probe.</p>
+          <p className="text-ink-600 text-sm mt-2">You`ll lie on an examination table, and a small amount of gel is applied to your abdomen. A handheld probe (transducer) is then moved over your skin to capture images.</p>
+          <p className="text-ink-600 text-sm mt-2">You`ll usually see the images in real time during your visit. There`s no discomfort beyond mild pressure from the probe.</p>
           <p className="text-ink-600 text-sm mt-2">After the scan, Dr. Rai will explain the findings and what they mean for your pregnancy.</p>
         </div>
 
@@ -439,7 +439,7 @@ export default function ObstetricUltrasoundPage() {
             </li>
             <li className="flex items-start gap-2 text-sm text-ink-600">
               <span className="text-rose-500">•</span>
-              You may need to return for a repeat scan if the baby's position doesn't allow all measurements to be taken
+              You may need to return for a repeat scan if the baby`s position doesn`t allow all measurements to be taken
             </li>
           </ul>
         </div>
