@@ -191,7 +191,7 @@ export function DoctorSection() {
                 return (
                   <div
                     key={item.number}
-                    className="group relative rounded-2xl border border-rose-100 bg-[#ec4899] px-4 py-4 shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-rose-200 transition-all duration-300"
+                    className="group relative rounded-2xl border border-rose-100 bg-gradient-to-r from-rose-600 to-pink-600 px-4 py-4 shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-rose-200 transition-all duration-300"
                   >
                     <span className="absolute top-3 right-3.5 text-[11px] font-bold text-rose-300/80 tracking-wider">
                       {item.number}
