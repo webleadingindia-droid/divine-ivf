@@ -120,7 +120,7 @@ export function Faq() {
                     <div className="px-5 pb-4 pt-1 border-t border-rose-100/30">
                       <div className="flex items-start gap-3">
                         <div className="w-1 h-8 rounded-full bg-gradient-to-b from-rose-400 to-pink-400 flex-shrink-0" />
-                        <p className="text-sm text-ink-600 leading-relaxed">{item.answer}</p>
+                        <p className="text-sm text-ink-600 leading-relaxed text-justify">{item.answer}</p>
                       </div>
                     </div>
                   </div>

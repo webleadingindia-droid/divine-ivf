@@ -18,7 +18,7 @@ import {
 import { clinic } from "@/data/clinic";
 import { FAQAccordion } from "@/components/page/FAQAccordion";
 
-const SITE_URL = "https://www.divineivf.com";
+const SITE_URL = "http://divine-ivf.vercel.app";
 
 type Crumb = { label: string; href?: string };
 type ProcessStep = { title: string; description: string };
@@ -116,7 +116,27 @@ export function TreatmentTemplate({
     : null;
 
   return (
-    <>
+    <div className="treatment-page">
+      {/* 👇 Scoped style: sirf is template ke <p> justify honge */}
+      <style>{`
+        .treatment-page p {
+          text-align: justify;
+          text-justify: inter-word;
+          hyphens: auto;
+          -webkit-hyphens: auto;
+        }
+        .treatment-page aside p {
+          text-align: left;
+          hyphens: none;
+        }
+        @media (max-width: 640px) {
+          .treatment-page p {
+            text-align: left;
+            hyphens: none;
+          }
+        }
+      `}</style>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -214,7 +234,7 @@ export function TreatmentTemplate({
           {/* What it is */}
           <section>
             <h2 className="text-2xl md:text-3xl text-ink-900 mb-5">
-              What is {titlePlain.replace(/:$/, "")}?
+              What is {titlePlain.replace(/(?:\s+\S+){2}$/, "")}?
             </h2>
             <div className="space-y-4">
               {whatItIs.map((p, i) => (
@@ -265,8 +285,10 @@ export function TreatmentTemplate({
                   <li
                     key={b}
                     className="flex items-start gap-2 text-sm text-ink-600"
-                    dangerouslySetInnerHTML={{ __html: b }}
-                  />
+                  >
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ink-600" />
+                    <span dangerouslySetInnerHTML={{ __html: b }} />
+                  </li>
                 ))}
               </ul>
             </div>
@@ -283,8 +305,10 @@ export function TreatmentTemplate({
                   <li
                     key={c}
                     className="flex items-start gap-2 text-sm text-ink-600"
-                    dangerouslySetInnerHTML={{ __html: c }}
-                  />
+                  >
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ink-600" />
+                    <span dangerouslySetInnerHTML={{ __html: c }} />
+                  </li>
                 ))}
               </ul>
             </div>
@@ -424,9 +448,9 @@ export function TreatmentTemplate({
 
           {/* Related Services */}
           {related.length > 0 && (
-            <div className="bg-white rounded-2xl p-6 border border-rose-100">
-              <h3 className="text-sm font-semibold text-ink-900 mb-4 flex items-center gap-2">
-                <Star className="h-4 w-4 text-rose-600" />
+            <div className="bg-[#d62a75] rounded-2xl p-6 border border-rose-100">
+              <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
+                <Star className="h-4 w-4 text-white" />
                 Related Services
               </h3>
               <div className="space-y-3">
@@ -437,12 +461,12 @@ export function TreatmentTemplate({
                     className="group block rounded-xl px-3.5 py-3 hover:bg-rose-50/60 transition-colors border border-transparent hover:border-rose-100"
                   >
                     <div className="flex items-center justify-between">
-                      <span className="text-sm font-semibold text-ink-900 group-hover:text-rose-600 transition-colors">
+                      <span className="text-sm font-semibold text-white group-hover:text-white transition-colors">
                         {r.name}
                       </span>
                       <ArrowRight className="h-3.5 w-3.5 text-rose-400 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
                     </div>
-                    <p className="text-xs text-ink-400 mt-0.5">{r.blurb}</p>
+                    <p className="text-xs text-white mt-0.5">{r.blurb}</p>
                   </Link>
                 ))}
               </div>
@@ -458,12 +482,12 @@ export function TreatmentTemplate({
               </div>
               <div className="w-px bg-rose-100" />
               <div className="text-center">
-                <div className="text-2xl font-bold text-rose-600">5000+</div>
+                <div className="text-2xl font-bold text-rose-600">3000+</div>
                 <div className="text-[10px] text-ink-400 uppercase tracking-wider">Happy Families</div>
               </div>
               <div className="w-px bg-rose-100" />
               <div className="text-center">
-                <div className="text-2xl font-bold text-rose-600">98%</div>
+                <div className="text-2xl font-bold text-rose-600">70%+</div>
                 <div className="text-[10px] text-ink-400 uppercase tracking-wider">Success Rate</div>
               </div>
             </div>
@@ -505,6 +529,6 @@ export function TreatmentTemplate({
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

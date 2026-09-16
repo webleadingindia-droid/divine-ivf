@@ -12,7 +12,7 @@ const paths = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://www.divinewomenivfclinic.com";
+  const base = "http://divine-ivf.vercel.app";
   return paths.map((path) => ({
     url: `${base}${path}`,
     lastModified: new Date(),

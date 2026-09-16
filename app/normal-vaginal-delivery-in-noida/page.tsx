@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/normal-vaginal-delivery-in-noida" },
   title: "Normal Delivery in Noida | Vaginal Delivery & Pregnancy Care | Divine IVF",
   description:
-    "Looking for normal delivery in Noida? Consult Dr. Mandavi Rai at Divine IVF for vaginal birth planning, labour care, pain relief and personalised pregnancy care.",
+    "Looking for normal delivery   Consult Dr. Mandavi Rai at Divine IVF for vaginal birth planning, labour care, pain relief and personalised pregnancy care.",
   robots: { index: true, follow: true },
   keywords:
     "Normal Delivery in Noida, Normal Vaginal Delivery in Noida, Vaginal Delivery in Noida, Normal Birth in Noida, Normal Delivery Doctor in Noida, Vaginal Birth Doctor in Noida, Pregnancy Delivery in Noida, Pregnancy Delivery Doctor in Noida, Normal Delivery Hospital in Noida, Pregnancy Care in Noida, Labour and Delivery in Noida, Labour Pain Management in Noida, Painless Normal Delivery in Noida, Epidural for Normal Delivery in Noida, Induced Labour in Noida, Labour Induction in Noida, Assisted Vaginal Delivery in Noida, Vacuum Delivery in Noida, Forceps Delivery in Noida, Normal Delivery After IVF, IVF Pregnancy Normal Delivery, VBAC in Noida, Vaginal Birth After Cesarean in Noida, Obstetrician in Noida, Gynaecologist in Noida, Normal Delivery Cost in Noida",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Normal Delivery in Noida | Vaginal Delivery & Pregnancy Care | Divine IVF",
     description:
       "Personalised vaginal birth and labour planning in Noida with pregnancy monitoring, pain-relief options and safety-based delivery care.",
-    url: "https://www.divineivf.com/normal-vaginal-delivery-in-noida",
+    url: "http://divine-ivf.vercel.app/normal-vaginal-delivery-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -44,7 +44,7 @@ export default function NormalVaginalDeliveryPage() {
       titlePlain="Normal Vaginal Delivery in Noida"
       titleAccent="Personalised vaginal birth planning, labour care and pregnancy delivery"
       // =========================
-      intro="Looking for normal delivery in Noida? Consult Dr. Mandavi Rai at Divine IVF for vaginal birth planning, labour care, pain relief and personalised pregnancy care."
+      intro="Looking for normal delivery   Consult Dr. Mandavi Rai at Divine IVF for vaginal birth planning, labour care, pain relief and personalised pregnancy care."
       heroImage="https://plain-apac-prod-public.komododecks.com/202609/09/JZqWgmQWDm8HwVDbvJXg/image.png"
       heroAlt="Warm delivery care at Divine IVF, Noida"
       secondaryImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=1200&auto=format&fit=crop"
@@ -164,7 +164,7 @@ export default function NormalVaginalDeliveryPage() {
             "Yes — it's completely normal to feel nervous or scared about giving birth. Dr. Rai and the care team are here to support you, answer your questions, and help you feel as prepared and confident as possible. You're not alone in this journey.",
         },
         {
-          question: "What is the cost of normal delivery in Noida?",
+          question: "What is the cost of normal delivery  ",
           answer:
             "The cost of normal delivery varies depending on the hospital, duration of stay, pain relief options used, and any additional medical care required. Dr. Rai can provide more information about what to expect during your consultation.",
         },
@@ -370,31 +370,57 @@ export default function NormalVaginalDeliveryPage() {
 
         {/* Benefits of Normal Vaginal Delivery */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Benefits of Normal Vaginal Delivery</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">
+            Benefits of Normal Vaginal Delivery
+          </h2>
+
           <ul className="space-y-2">
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Shorter recovery time</strong> — Most women can return to normal activities within a few weeks
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Shorter recovery time
+              </strong>
+              Most women can return to normal activities within a few weeks
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Less invasive than cesarean</strong> — No surgical incisions, less bleeding, and lower risk of infection
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Less invasive than cesarean
+              </strong>
+              No surgical incisions, less bleeding, and lower risk of infection
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Earlier bonding</strong> — Immediate skin-to-skin contact is possible immediately after birth
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Earlier bonding
+              </strong>
+              Immediate skin-to-skin contact is possible immediately after birth
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Shorter hospital stay</strong> — Typically 1-2 days, compared to 2-4 days for cesarean delivery
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Shorter hospital stay
+              </strong>
+              Typically 1-2 days, compared to 2-4 days for cesarean delivery
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Lower risk of complications in future pregnancies</strong> — Vaginal birth is generally safer for future pregnancies than multiple cesareans
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Lower risk of complications in future pregnancies
+              </strong>
+              Vaginal birth is generally safer for future pregnancies than multiple cesareans
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Empowering experience</strong> — Many women find vaginal birth a powerful and positive experience
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Empowering experience
+              </strong>
+              Many women find vaginal birth a powerful and positive experience
             </li>
           </ul>
         </div>
@@ -486,7 +512,7 @@ export default function NormalVaginalDeliveryPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Normal Delivery in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Normal Delivery  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

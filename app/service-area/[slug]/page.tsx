@@ -5,9 +5,9 @@ import Image from "next/image";
 import { Breadcrumb } from "@/components/page/Breadcrumb";
 import { ConsultationBanner } from "@/components/page/ConsultationBanner";
 import {
+  MapPin,
   Clock,
   Calendar,
-  Tag,
   ArrowLeft,
   ArrowRight,
   Share2,
@@ -30,35 +30,49 @@ import {
 
 type Params = { slug: string };
 
+// ============ SITE CONFIG ============
+// NOTE: update these to match your real domain / clinic details.
+// They're used to fill the JSON-LD + microdata below.
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "http://divine-ivf.vercel.app";
+const CLINIC_PHONE = "+91-7678451808";
+const CLINIC_LOGO = `${SITE_URL}/logo.png`;
+const CLINIC_GEO = { latitude: "28.6139", longitude: "77.2090" }; // Delhi/NCR default
+
 // ============ TYPES ============
-interface BlogPost {
+interface InternalPage {
   id: number;
   title: string;
   slug: string;
   image: string;
-  category: string;
-  short_description: string;
+  short_description: string | null;
+}
+
+interface SingleInternalPage {
+  id: number;
+  title: string;
+  slug: string;
+  image: string;
+  short_description: string | null;
+  description: string[] | string;
+  location: string;
+  title_meta_keyword: string;
+  title_specialities: string;
+  meta_tags: string | null;
+  script_schema: string | null;
   created_at: string;
 }
 
-interface SingleBlogPost extends BlogPost {
-  meta_tags: string | null;
-  script_schema: string | null;
-  tags: string[];
-  description: string;
-  updated_at: string;
-}
-
-interface SingleBlogResponse {
+interface SingleInternalPageResponse {
   status: boolean;
   message: string;
-  data: SingleBlogPost;
+  data: SingleInternalPage;
 }
 
-interface BlogListResponse {
+interface InternalPagesResponse {
   status: boolean;
   message: string;
-  data: BlogPost[];
+  data: InternalPage[];
 }
 
 // ============ HELPERS ============
@@ -81,14 +95,154 @@ function calculateReadTime(html: string): string {
   return `${minutes} min read`;
 }
 
+function getDescriptionHtml(description: string[] | string): string {
+  if (Array.isArray(description)) return description.join("");
+  return description || "";
+}
+
+/** Resolve the keyword/location pair used across meta, schema & microdata */
+function getSeoTerms(post: SingleInternalPage) {
+  const keyword = post.title_meta_keyword || post.title;
+  const location = post.location;
+  const canonicalPath = `/service-area/${post.slug}`;
+  return { keyword, location, canonicalPath };
+}
+
+/** Builds the three JSON-LD schemas (MedicalClinic, FAQPage, BreadcrumbList) for a page */
+function buildSchemas(post: SingleInternalPage) {
+  const { keyword, location, canonicalPath } = getSeoTerms(post);
+  const pageUrl = `${SITE_URL}${canonicalPath}`;
+
+  const medicalClinicSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    name: `${keyword} IVF & Fertility Clinic in ${location}`,
+    url: pageUrl,
+    logo: CLINIC_LOGO,
+    image: post.image,
+    description: `IVF and fertility care in ${location} with personalized fertility evaluation, assisted reproductive treatment and reproductive healthcare services.`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: location,
+      addressCountry: "IN",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: CLINIC_GEO.latitude,
+      longitude: CLINIC_GEO.longitude,
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: CLINIC_PHONE,
+      contactType: "customer service",
+    },
+    medicalSpecialty: "Reproductive Endocrinology",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      opens: "09:00",
+      closes: "19:00",
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "IVF & Fertility Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "MedicalProcedure",
+            name: keyword,
+            description:
+              "Fertility evaluation and personalized reproductive healthcare based on individual clinical needs.",
+          },
+        },
+      ],
+    },
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `What is ${keyword} in ${location}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${keyword} refers to fertility or reproductive healthcare available in ${location}. The appropriate treatment depends on factors such as age, medical history, fertility evaluation and the underlying cause of infertility.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `Who may need fertility treatment in ${location}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Individuals or couples experiencing difficulty conceiving may benefit from a fertility evaluation. A fertility specialist can recommend appropriate investigations and treatment options based on individual circumstances.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: `How much does ${keyword} cost in ${location}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The cost varies depending on the treatment plan, investigations, medicines, procedures and individual clinical requirements. A consultation can help determine the appropriate treatment and associated costs.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: `How can I book a fertility consultation in ${location}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can contact the fertility clinic to schedule a consultation. The specialist can review your medical history, discuss your fertility concerns and recommend the next appropriate steps.",
+        },
+      },
+    ],
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${SITE_URL}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Service Area",
+        item: `${SITE_URL}/service-area`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: `${keyword} in ${location}`,
+        item: pageUrl,
+      },
+    ],
+  };
+
+  return { medicalClinicSchema, faqSchema, breadcrumbSchema };
+}
+
 // ============ STATIC PARAMS ============
 export async function generateStaticParams() {
   try {
-    const res = await fetch("https://ivfapi.webleadingindia.com/api/blogs", {
-      next: { revalidate: 60 },
-    });
+    const res = await fetch(
+      "https://ivfapi.webleadingindia.com/api/internal-pages",
+      { next: { revalidate: 60 } }
+    );
     if (!res.ok) return [];
-    const json: BlogListResponse = await res.json();
+    const json: InternalPagesResponse = await res.json();
     return (json.data || []).map((post) => ({ slug: post.slug }));
   } catch {
     return [];
@@ -103,23 +257,70 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   try {
     const res = await fetch(
-      `https://ivfapi.webleadingindia.com/api/blogs/${params.slug}`,
+      `https://ivfapi.webleadingindia.com/api/internal-pages/${params.slug}`,
       { next: { revalidate: 60 } }
     );
     if (!res.ok) return {};
 
-    const json: SingleBlogResponse = await res.json();
+    const json: SingleInternalPageResponse = await res.json();
     const post = json.data;
     if (!post) return {};
 
+    const { keyword, location, canonicalPath } = getSeoTerms(post);
+    const pageTitle = `${keyword} in ${location} | IVF & Fertility Clinic`;
+    const pageDescription =
+      post.short_description ||
+      `Looking for ${keyword} in ${location}? Explore personalized fertility care, IVF treatment, fertility evaluation and reproductive health services from experienced fertility specialists. Book a consultation.`;
+
     return {
-      title: post.title,
-      description: post.short_description,
-      alternates: { canonical: `/blog/${post.slug}` },
+      title: pageTitle,
+      description: pageDescription,
+      keywords: [
+        `${keyword} in ${location}`,
+        `IVF clinic in ${location}`,
+        `fertility clinic in ${location}`,
+        `fertility specialist ${location}`,
+        `IVF treatment ${location}`,
+        "infertility treatment",
+        "fertility treatment",
+        "IVF specialist",
+        "reproductive medicine",
+        "fertility doctor",
+      ],
+      authors: [{ name: `${location} IVF & Fertility Clinic` }],
+      robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          "max-snippet": -1,
+          "max-image-preview": "large",
+          "max-video-preview": -1,
+        },
+      },
+      alternates: { canonical: canonicalPath },
       openGraph: {
-        title: post.title,
-        description: post.short_description,
+        type: "website",
+        title: pageTitle,
+        description: `Personalized fertility care, IVF treatment and reproductive health services in ${location}. Consult experienced fertility specialists and explore treatment options based on your individual needs.`,
+        url: canonicalPath,
+        siteName: `${location} IVF & Fertility Clinic`,
         images: [post.image],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: pageTitle,
+        description: `Explore personalized ${keyword} and fertility care in ${location} with experienced fertility specialists and modern reproductive healthcare services.`,
+        images: [post.image],
+      },
+      // Geo tags — Next's Metadata type has no first-class field for these,
+      // so they go through `other` and render as plain <meta> tags in <head>.
+      other: {
+        "geo.region": "IN",
+        "geo.placename": location,
+        "geo.position": `${CLINIC_GEO.latitude};${CLINIC_GEO.longitude}`,
+        ICBM: `${CLINIC_GEO.latitude}, ${CLINIC_GEO.longitude}`,
       },
     };
   } catch {
@@ -130,42 +331,55 @@ export async function generateMetadata({
 export const revalidate = 60;
 
 // ============ MAIN PAGE ============
-export default async function BlogPostPage({ params }: { params: Params }) {
-  let post: SingleBlogPost | null = null;
+export default async function ServiceAreaDetailPage({
+  params,
+}: {
+  params: Params;
+}) {
+  let post: SingleInternalPage | null = null;
   try {
     const res = await fetch(
-      `https://ivfapi.webleadingindia.com/api/blogs/${params.slug}`,
+      `https://ivfapi.webleadingindia.com/api/internal-pages/${params.slug}`,
       { next: { revalidate: 60 } }
     );
     if (res.ok) {
-      const json: SingleBlogResponse = await res.json();
+      const json: SingleInternalPageResponse = await res.json();
       post = json.data;
     }
   } catch (error) {
-    console.error("Error fetching blog:", error);
+    console.error("Error fetching service area:", error);
   }
 
   if (!post) notFound();
 
-  // Related posts
-  let allPosts: BlogPost[] = [];
+  // Related pages
+  let allPages: InternalPage[] = [];
   try {
-    const res = await fetch("https://ivfapi.webleadingindia.com/api/blogs", {
-      next: { revalidate: 60 },
-    });
+    const res = await fetch(
+      "https://ivfapi.webleadingindia.com/api/internal-pages",
+      { next: { revalidate: 60 } }
+    );
     if (res.ok) {
-      const json: BlogListResponse = await res.json();
-      allPosts = json.data || [];
+      const json: InternalPagesResponse = await res.json();
+      allPages = json.data || [];
     }
   } catch (error) {
-    console.error("Error fetching related blogs:", error);
+    console.error("Error fetching related pages:", error);
   }
 
-  const relatedPosts = allPosts
-    .filter((p) => p.slug !== post!.slug && p.category === post!.category)
+  const relatedPages = allPages
+    .filter(
+      (p) =>
+        p.slug !== post!.slug &&
+        p.title.toLowerCase().includes(post!.location.toLowerCase())
+    )
     .slice(0, 3);
 
-  const readTime = calculateReadTime(post.description);
+  const descriptionHtml = getDescriptionHtml(post.description);
+  const readTime = calculateReadTime(descriptionHtml);
+  const { keyword: seoKeyword, location: seoLocation } = getSeoTerms(post);
+  const { medicalClinicSchema, faqSchema, breadcrumbSchema } =
+    buildSchemas(post);
 
   const services = [
     { name: "IVF Treatment", icon: Syringe, href: "/services/ivf", color: "rose" },
@@ -178,22 +392,107 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
   return (
     <>
+      {/* ============ STRUCTURED DATA (JSON-LD) ============
+          MedicalClinic + FAQPage + BreadcrumbList, built dynamically
+          from this page's title_meta_keyword / location / slug.
+      */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalClinicSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      {/* ============ MICRODATA (itemscope) — for AI/SEO parsers ============
+          Mirrors the visible content below in schema.org microdata form.
+          Visually hidden (sr-only) since the same info is already shown
+          on the page; meta[itemprop] is valid microdata content anywhere,
+          not just <head>.
+      */}
+      <div
+        itemScope
+        itemType="https://schema.org/MedicalClinic"
+        className="sr-only"
+        aria-hidden="true"
+      >
+        <meta
+          itemProp="name"
+          content={`${seoKeyword} IVF & Fertility Clinic in ${seoLocation}`}
+        />
+        <meta
+          itemProp="description"
+          content={`IVF and fertility care in ${seoLocation} including fertility evaluation, assisted reproductive treatment and personalized reproductive healthcare.`}
+        />
+        <meta itemProp="telephone" content={CLINIC_PHONE} />
+        <meta itemProp="image" content={post.image} />
+
+        <div
+          itemProp="address"
+          itemScope
+          itemType="https://schema.org/PostalAddress"
+        >
+          <meta itemProp="addressLocality" content={seoLocation} />
+          <meta itemProp="addressCountry" content="IN" />
+        </div>
+
+        <div itemProp="geo" itemScope itemType="https://schema.org/GeoCoordinates">
+          <meta itemProp="latitude" content={CLINIC_GEO.latitude} />
+          <meta itemProp="longitude" content={CLINIC_GEO.longitude} />
+        </div>
+
+        <div
+          itemProp="openingHoursSpecification"
+          itemScope
+          itemType="https://schema.org/OpeningHoursSpecification"
+        >
+          <meta
+            itemProp="dayOfWeek"
+            content="Monday Tuesday Wednesday Thursday Friday Saturday"
+          />
+          <meta itemProp="opens" content="09:00" />
+          <meta itemProp="closes" content="19:00" />
+        </div>
+
+        <meta itemProp="medicalSpecialty" content="Reproductive Endocrinology" />
+
+        <div
+          itemProp="availableService"
+          itemScope
+          itemType="https://schema.org/MedicalProcedure"
+        >
+          <meta itemProp="name" content={seoKeyword} />
+          <meta
+            itemProp="description"
+            content="Personalized fertility and reproductive healthcare services for individuals and couples seeking fertility evaluation and treatment."
+          />
+        </div>
+      </div>
+
       {/* ============================================================
-          CUSTOM CSS FOR DYNAMIC BLOG CONTENT
+          CUSTOM CSS FOR DYNAMIC HTML CONTENT
+          API se jo raw HTML aata hai usko yahan design kiya gaya hai
       ============================================================ */}
       <style
         dangerouslySetInnerHTML={{
           __html: `
             /* ---------- Base Content Wrapper ---------- */
-            .blog-content {
+            .service-content {
               color: #4b5563;
               line-height: 1.75;
               font-size: 1rem;
               word-wrap: break-word;
             }
 
-            /* ---------- H1 (hide first, page already has one) ---------- */
-            .blog-content h1 {
+            /* ---------- H1 (hide first, since page already has H1) ---------- */
+            .service-content h1 {
               font-size: 1.75rem;
               font-weight: 700;
               color: #111827;
@@ -202,7 +501,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             }
 
             /* ---------- H2 - Section Headings with Rose Accent ---------- */
-            .blog-content h2 {
+            .service-content h2 {
               position: relative;
               font-size: 1.5rem;
               font-weight: 700;
@@ -214,13 +513,13 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               border-left: 5px solid #f43f5e;
               border-radius: 0 12px 12px 0;
             }
-            .blog-content h2 span {
+            .service-content h2 span {
               color: #e11d48;
               font-weight: 800;
             }
 
             /* ---------- H3 - Sub Headings ---------- */
-            .blog-content h3 {
+            .service-content h3 {
               font-size: 1.2rem;
               font-weight: 600;
               color: #1f2937;
@@ -228,16 +527,21 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               line-height: 1.4;
             }
 
+            /* H3 with quotes = testimonial style */
+            .service-content h3:first-letter:is(“) {
+              color: #be123c;
+            }
+
             /* ---------- Paragraphs ---------- */
-            .blog-content p {
+            .service-content p {
               margin: 1rem 0;
               color: #4b5563;
               line-height: 1.75;
             }
 
-            /* First paragraph = Lead style */
-            .blog-content > p:first-of-type,
-            .blog-content > main > p:first-of-type {
+            /* First paragraph after H1 = Lead style */
+            .service-content > p:first-of-type,
+            .service-content > main > p:first-of-type {
               font-size: 1.1rem;
               color: #374151;
               font-weight: 500;
@@ -249,18 +553,20 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               box-shadow: 0 2px 12px rgba(244, 63, 94, 0.06);
             }
 
-            .blog-content strong {
+            /* Strong = dark bold */
+            .service-content strong {
               color: #111827;
               font-weight: 700;
             }
 
-            .blog-content span[itemprop] {
+            /* itemprop spans (SEO keywords) - auto highlight */
+            .service-content span[itemprop] {
               color: #e11d48;
               font-weight: 700;
             }
 
             /* Arrow paragraphs (👉 ...) */
-            .blog-content p:has(👉) {
+            .service-content p:has(👉) {
               background: linear-gradient(135deg, #fff1f2 0%, #fdf2f8 100%);
               border: 2px dashed #fda4af;
               border-radius: 14px;
@@ -272,7 +578,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             }
 
             /* Checkmark paragraphs (✔ ...) */
-            .blog-content p:has(✔) {
+            .service-content p:has(✔) {
               background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
               border-left: 5px solid #10b981;
               border-radius: 0 14px 14px 0;
@@ -283,13 +589,13 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             }
 
             /* ---------- Lists (UL) ---------- */
-            .blog-content ul {
+            .service-content ul {
               margin: 1.25rem 0;
               padding-left: 0;
               list-style: none;
             }
 
-            .blog-content ul li {
+            .service-content ul li {
               position: relative;
               padding: 0.75rem 1rem 0.75rem 2.75rem;
               margin-bottom: 0.5rem;
@@ -302,13 +608,13 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               transition: all 0.2s ease;
             }
 
-            .blog-content ul li:hover {
+            .service-content ul li:hover {
               transform: translateX(4px);
               border-color: #fda4af;
               box-shadow: 0 4px 12px rgba(244, 63, 94, 0.1);
             }
 
-            .blog-content ul li::before {
+            .service-content ul li::before {
               content: "✓";
               position: absolute;
               left: 0.75rem;
@@ -328,14 +634,14 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             }
 
             /* ---------- Lists (OL) with counter ---------- */
-            .blog-content ol {
+            .service-content ol {
               margin: 1.25rem 0;
               padding-left: 0;
               list-style: none;
               counter-reset: step-counter;
             }
 
-            .blog-content ol li {
+            .service-content ol li {
               position: relative;
               counter-increment: step-counter;
               padding: 0.9rem 1rem 0.9rem 3.25rem;
@@ -349,13 +655,13 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               transition: all 0.2s ease;
             }
 
-            .blog-content ol li:hover {
+            .service-content ol li:hover {
               transform: translateX(4px);
               border-color: #fda4af;
               box-shadow: 0 4px 12px rgba(244, 63, 94, 0.1);
             }
 
-            .blog-content ol li::before {
+            .service-content ol li::before {
               content: counter(step-counter);
               position: absolute;
               left: 0.75rem;
@@ -374,8 +680,8 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               box-shadow: 0 2px 8px rgba(244, 63, 94, 0.35);
             }
 
-            /* ---------- Horizontal Rule ---------- */
-            .blog-content hr {
+            /* ---------- Horizontal Rule (Divider) ---------- */
+            .service-content hr {
               border: none;
               height: 1px;
               background: linear-gradient(90deg, transparent 0%, #fecdd3 50%, transparent 100%);
@@ -383,7 +689,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             }
 
             /* ---------- Blockquote ---------- */
-            .blog-content blockquote {
+            .service-content blockquote {
               margin: 1.5rem 0;
               padding: 1.25rem 1.5rem;
               border-left: 5px solid #f43f5e;
@@ -396,7 +702,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             }
 
             /* ---------- Links ---------- */
-            .blog-content a {
+            .service-content a {
               color: #e11d48;
               text-decoration: underline;
               text-decoration-color: #fda4af;
@@ -405,13 +711,13 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               font-weight: 500;
             }
 
-            .blog-content a:hover {
+            .service-content a:hover {
               color: #be123c;
               text-decoration-color: #f43f5e;
             }
 
             /* ---------- Images ---------- */
-            .blog-content img {
+            .service-content img {
               border-radius: 14px;
               box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
               margin: 1.5rem 0;
@@ -420,7 +726,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             }
 
             /* ---------- Tables ---------- */
-            .blog-content table {
+            .service-content table {
               width: 100%;
               border-collapse: separate;
               border-spacing: 0;
@@ -430,7 +736,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
             }
 
-            .blog-content th {
+            .service-content th {
               background: linear-gradient(135deg, #f43f5e 0%, #ec4899 100%);
               color: white;
               padding: 0.875rem 1rem;
@@ -438,18 +744,18 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               font-weight: 600;
             }
 
-            .blog-content td {
+            .service-content td {
               padding: 0.875rem 1rem;
               border-bottom: 1px solid #fecdd3;
               background: white;
             }
 
-            .blog-content tr:last-child td {
+            .service-content tr:last-child td {
               border-bottom: none;
             }
 
-            /* ---------- Highlight Box ---------- */
-            .blog-content .highlight-box {
+            /* ---------- Highlight Box (API ka custom class) ---------- */
+            .service-content .highlight-box {
               background: linear-gradient(135deg, #fff1f2 0%, #fdf2f8 100%);
               border-left: 5px solid #f43f5e;
               border-radius: 0 14px 14px 0;
@@ -458,7 +764,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               box-shadow: 0 2px 12px rgba(244, 63, 94, 0.08);
             }
 
-            .blog-content .highlight-box h4 {
+            .service-content .highlight-box h4 {
               color: #be123c;
               font-weight: 700;
               font-size: 1.05rem;
@@ -468,32 +774,37 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               gap: 0.5rem;
             }
 
-            .blog-content .highlight-box p {
+            .service-content .highlight-box p {
               margin: 0;
               color: #4b5563;
               font-size: 0.95rem;
             }
 
             /* ---------- Main wrapper reset ---------- */
-            .blog-content main {
+            .service-content main {
               display: block;
+            }
+
+            /* ---------- FAQ Questions (Q.) ---------- */
+            .service-content p:has(strong:first-child) {
+              margin-top: 1.25rem;
             }
 
             /* ---------- Mobile Responsive ---------- */
             @media (max-width: 768px) {
-              .blog-content h2 {
+              .service-content h2 {
                 font-size: 1.25rem;
                 padding: 0.625rem 0.875rem;
               }
-              .blog-content h3 {
+              .service-content h3 {
                 font-size: 1.05rem;
               }
-              .blog-content > p:first-of-type {
+              .service-content > p:first-of-type {
                 font-size: 1rem;
                 padding: 1rem 1.125rem;
               }
-              .blog-content ul li,
-              .blog-content ol li {
+              .service-content ul li,
+              .service-content ol li {
                 font-size: 0.9rem;
                 padding-left: 2.5rem;
               }
@@ -511,29 +822,29 @@ export default async function BlogPostPage({ params }: { params: Params }) {
           <Breadcrumb
             items={[
               { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
+              { label: "Service Area", href: "/service-area" },
               { label: post.title },
             ]}
           />
 
           <div className="mt-6 max-w-3xl">
             <div className="flex flex-wrap items-center gap-2 mb-3">
-              <span className="text-xs font-medium text-rose-600 bg-rose-100 px-3 py-1 rounded-full capitalize">
-                {post.category}
+              <span className="inline-flex items-center gap-1 text-xs font-medium text-rose-600 bg-rose-100 px-3 py-1 rounded-full">
+                <MapPin className="h-3 w-3" />
+                {post.location}
               </span>
+              {post.title_meta_keyword && (
+                <span className="text-xs font-medium text-pink-600 bg-pink-100 px-3 py-1 rounded-full capitalize">
+                  {post.title_meta_keyword}
+                </span>
+              )}
             </div>
 
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-ink-900 leading-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-ink-900 leading-tight capitalize">
               {post.title}
             </h2>
 
             <div className="flex flex-wrap items-center gap-4 mt-3 text-sm text-ink-500">
-              <span className="flex items-center gap-2">
-                <div className="h-8 w-8 rounded-full bg-gradient-to-br from-rose-400 to-pink-400 flex items-center justify-center text-white text-xs font-bold">
-                  D
-                </div>
-                Dr. Mandavi Rai
-              </span>
               <span className="flex items-center gap-1.5">
                 <Calendar className="h-4 w-4" />
                 {formatDate(post.created_at)}
@@ -583,38 +894,19 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
               {/* ===== DYNAMIC HTML CONTENT (Beautifully Styled) ===== */}
               <article
-                className="blog-content"
-                dangerouslySetInnerHTML={{ __html: post.description }}
+                className="service-content"
+                dangerouslySetInnerHTML={{ __html: descriptionHtml }}
               />
-
-              {/* Tags */}
-              {post.tags && post.tags.length > 0 && (
-                <div className="mt-8 pt-6 border-t border-rose-100">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <Tag className="h-4 w-4 text-ink-400" />
-                    {post.tags.map((tagItem) =>
-                      tagItem.split(",").map((t) => (
-                        <span
-                          key={t}
-                          className="px-3 py-1.5 bg-rose-50 text-rose-600 text-xs font-medium rounded-full hover:bg-rose-100 transition-colors cursor-pointer capitalize"
-                        >
-                          {t.trim()}
-                        </span>
-                      ))
-                    )}
-                  </div>
-                </div>
-              )}
 
               {/* Quick Action CTA */}
               <div className="mt-10 p-6 bg-gradient-to-r from-rose-500 to-pink-500 rounded-2xl text-white shadow-xl shadow-rose-200">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div>
                     <h3 className="font-bold text-lg mb-1">
-                      Have Questions About Fertility?
+                      Ready to Book Your Consultation?
                     </h3>
                     <p className="text-white/90 text-sm">
-                      Talk to our experts today
+                      Get expert care in {post.location} today
                     </p>
                   </div>
                   <div className="flex gap-2 flex-shrink-0">
@@ -639,51 +931,32 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               {/* Navigation */}
               <div className="mt-8 pt-6 border-t border-rose-100 flex flex-wrap justify-between gap-4">
                 <Link
-                  href="/blog"
+                  href="/service-area"
                   className="inline-flex items-center gap-2 px-4 py-2 text-sm text-ink-500 hover:text-rose-600 hover:bg-rose-50 rounded-xl transition-all"
                 >
                   <ArrowLeft className="h-4 w-4" />
-                  Back to Blog
+                  Back to Service Areas
                 </Link>
                 <Link
-                  href="/blog"
+                  href="/service-area"
                   className="inline-flex items-center gap-2 px-4 py-2 text-sm text-rose-600 hover:bg-rose-50 rounded-xl transition-all"
                 >
-                  All Articles
+                  All Locations
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
 
-              {/* Author Bio */}
-              <div className="mt-10 p-6 bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl border border-rose-100">
-                <div className="flex items-start gap-4">
-                  <div className="h-14 w-14 rounded-full bg-gradient-to-br from-rose-500 to-pink-500 flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
-                    D
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-ink-900">
-                      Dr. Mandavi Rai
-                    </h4>
-                    <p className="text-sm text-ink-500 mt-1">
-                      Fertility Specialist at Divine IVF, Noida. Dedicated to
-                      helping couples achieve their dream of parenthood with
-                      compassionate care and advanced treatments.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Related Posts */}
-              {relatedPosts.length > 0 && (
+              {/* Related */}
+              {relatedPages.length > 0 && (
                 <div className="mt-12">
                   <h3 className="text-xl font-bold text-ink-900 mb-6">
-                    Related Articles
+                    More Services in {post.location}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {relatedPosts.map((related) => (
+                    {relatedPages.map((related) => (
                       <Link
                         key={related.id}
-                        href={`/blog/${related.slug}`}
+                        href={`/service-area/${related.slug}`}
                         className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-rose-50"
                       >
                         <div className="relative aspect-[16/9] overflow-hidden">
@@ -696,10 +969,11 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                           />
                         </div>
                         <div className="p-4">
-                          <span className="text-[10px] font-medium text-rose-600 bg-rose-50 px-2 py-0.5 rounded-full capitalize">
-                            {related.category}
+                          <span className="text-[10px] font-medium text-rose-600 bg-rose-50 px-2 py-0.5 rounded-full inline-flex items-center gap-1">
+                            <MapPin className="h-2.5 w-2.5" />
+                            {post.location}
                           </span>
-                          <h4 className="font-semibold text-ink-900 group-hover:text-rose-600 transition-colors mt-1 text-sm line-clamp-2">
+                          <h4 className="font-semibold text-ink-900 group-hover:text-rose-600 transition-colors mt-1 text-sm line-clamp-2 capitalize">
                             {related.title}
                           </h4>
                           <div className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-rose-600 group-hover:gap-2 transition-all">
@@ -720,10 +994,10 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               <div className="bg-gradient-to-br from-rose-500 to-pink-500 rounded-2xl p-6 text-white shadow-xl shadow-rose-200">
                 <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
                   <HelpCircle className="h-5 w-5" />
-                  Need Help?
+                  Need Help in {post.location}?
                 </h3>
                 <p className="text-white/90 text-sm mb-4">
-                  Connect with us instantly. We&apos;re here to help you.
+                  Connect with us instantly. We`re here to help you.
                 </p>
 
                 <div className="space-y-3">
@@ -784,7 +1058,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                   <h3 className="font-bold text-ink-900">Book Consultation</h3>
                 </div>
                 <p className="text-sm text-ink-500 mb-4">
-                  Schedule a personalized consultation with Dr. Mandavi Rai.
+                  Schedule a consultation at {post.location}.
                 </p>
                 <Link
                   href="/consultation"
@@ -795,7 +1069,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                 </Link>
               </div>
 
-              {/* Our Services */}
+              {/* Services */}
               <div className="bg-white rounded-2xl p-6 border border-rose-100 shadow-md">
                 <h3 className="font-bold text-ink-900 mb-4 flex items-center gap-2">
                   <Award className="h-5 w-5 text-rose-500" />
@@ -830,7 +1104,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                 </div>
               </div>
 
-              {/* Why Choose Us */}
+              {/* Why Choose */}
               <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-6 border border-rose-100">
                 <h3 className="font-bold text-ink-900 mb-3 flex items-center gap-2">
                   <Shield className="h-5 w-5 text-rose-500" />

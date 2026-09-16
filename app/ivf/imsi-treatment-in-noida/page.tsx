@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "IMSI Treatment in Noida | IMSI Centre & Specialist | Divine IVF",
     description:
       "Get IMSI treatment in Noida at Divine IVF for selected male infertility and sperm morphology concerns. Consult Dr. Mandavi Rai for personalised IVF-ICSI-IMSI care.",
-    url: "https://www.divineivf.com/imsi-treatment-in-noida",
+    url: "http://divine-ivf.vercel.app/imsi-treatment-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -179,12 +179,12 @@ export default function ImsiTreatmentPage() {
             "The IMSI procedure takes place in the laboratory and is not felt by the patient. However, the IVF cycle itself includes ovarian stimulation and egg retrieval.",
         },
         {
-          question: "What is the cost of IMSI treatment in Noida?",
+          question: "What is the cost of IMSI treatment  ",
           answer:
             "The total cost depends on the IVF cycle, medicines, ICSI, IMSI laboratory charges, investigations, embryo freezing and other treatment components.",
         },
         {
-          question: "Where can I get IMSI treatment in Noida?",
+          question: "Where can I get IMSI treatment  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for fertility evaluation and personalised IVF-ICSI-IMSI treatment planning.",
         },
@@ -478,26 +478,46 @@ export default function ImsiTreatmentPage() {
             <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
             Benefits of IMSI Treatment
           </h3>
+
           <ul className="space-y-2">
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Detailed Sperm Assessment</strong> — IMSI allows sperm morphology to be examined under higher magnification.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Detailed Sperm Assessment
+              </strong>
+              IMSI allows sperm morphology to be examined under higher magnification.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Advanced Sperm Selection</strong> — The technique may help embryologists select sperm more carefully in selected cases.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Advanced Sperm Selection
+              </strong>
+              The technique may help embryologists select sperm more carefully in selected cases.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Useful in Certain Male-Factor Cases</strong> — It may be considered when significant sperm morphology abnormalities or previous fertilisation issues are present.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Useful in Certain Male-Factor Cases
+              </strong>
+              It may be considered when significant sperm morphology abnormalities or previous fertilisation issues are present.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Used With ICSI</strong> — The selected sperm is injected directly into a mature egg using ICSI.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Used With ICSI
+              </strong>
+              The selected sperm is injected directly into a mature egg using ICSI.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Personalised Laboratory Approach</strong> — IMSI can be considered as part of an individualised IVF plan rather than a routine add-on.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Personalised Laboratory Approach
+              </strong>
+              IMSI can be considered as part of an individualised IVF plan rather than a routine add-on.
             </li>
           </ul>
         </div>
@@ -597,7 +617,7 @@ export default function ImsiTreatmentPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for IMSI Treatment in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for IMSI Treatment  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

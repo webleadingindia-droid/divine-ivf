@@ -82,18 +82,95 @@ export default function AboutPage() {
   ];
 
   const coreValues = [
-    { icon: Heart, label: "Compassionate Care", desc: "Every patient receives emotional support throughout their fertility journey" },
-    { icon: Shield, label: "Evidence-Based", desc: "Treatments backed by the latest medical research and clinical evidence" },
-    { icon: Sparkles, label: "Personalized Approach", desc: "Treatment plans tailored to your unique medical history and reproductive goals" },
-    { icon: Users, label: "Doctor-Led Practice", desc: "Single point of contact from start to finish with complete continuity of care" },
-  ];
+  {
+    icon: Heart,
+    label: "Compassionate Care",
+    desc: "Fertility treatment is a deeply personal journey. We provide empathetic, respectful and emotionally supportive care at every step.",
+  },
+  {
+    icon: Microscope,
+    label: "Evidence-Based Medicine",
+    desc: "Our treatment decisions are guided by current scientific evidence, established reproductive medicine practices and each patient's individual needs.",
+  },
+  {
+    icon: Sparkles,
+    label: "Personalized Treatment",
+    desc: "Every couple is different. We create individualized treatment plans based on age, ovarian reserve, fertility history, diagnosis and reproductive goals.",
+  },
+  {
+    icon: Stethoscope,
+    label: "Doctor-Led Continuity of Care",
+    desc: "Direct clinical involvement and continuity of care from consultation and diagnosis through treatment and follow-up.",
+  },
+  {
+    icon: ClipboardCheck,
+    label: "Transparency & Cost Clarity",
+    desc: "Transparent treatment plans and clear communication about costs, including potential additional expenses, with no hidden surprises.",
+  },
+  {
+    icon: Shield,
+    label: "Ethical & Responsible Fertility Care",
+    desc: "We recommend treatments and procedures based on genuine clinical need, with a focus on responsible and ethical fertility care.",
+  },
+  {
+    icon: BadgeCheck,
+    label: "Safety, Quality & Excellence",
+    desc: "We maintain high standards of clinical care, laboratory practices, infection control and patient safety throughout the treatment journey.",
+  },
+];
 
   const facilities = [
-    { icon: Microscope, label: "Advanced Embryology Lab", desc: "State-of-the-art IVF laboratory with cutting-edge technology" },
-    { icon: Activity, label: "Modern Operation Theatre", desc: "Fully equipped surgical facilities for gynecological procedures" },
-    { icon: ClipboardCheck, label: "Digital Health Records", desc: "Secure electronic medical records for seamless patient care" },
-    { icon: Flower2, label: "Comfortable Consultation", desc: "Warm, welcoming consultation rooms designed for patient comfort" },
-  ];
+  {
+    icon: Microscope,
+    label: "Advanced Embryology Laboratory",
+    desc: "State-of-the-art IVF laboratory equipped for embryo culture and advanced assisted reproductive procedures.",
+  },
+  {
+    icon: Syringe,
+    label: "ICSI Facility",
+    desc: "Advanced laboratory support for Intracytoplasmic Sperm Injection (ICSI) when clinically indicated.",
+  },
+  {
+    icon: Flower2,
+    label: "Embryo & Gamete Cryopreservation",
+    desc: "Modern vitrification facilities for safe preservation of embryos, oocytes and sperm.",
+  },
+  {
+    icon: Activity,
+    label: "Advanced Ultrasound & Follicular Monitoring",
+    desc: "High-quality ultrasound facilities for follicular monitoring, ovulation tracking and treatment planning.",
+  },
+  {
+    icon: Building2,
+    label: "Modern Operation Theatre",
+    desc: "Well-equipped OT for oocyte retrieval and essential gynaecological procedures, with a focus on patient safety.",
+  },
+  {
+    icon: UserRound,
+    label: "Male Fertility & Andrology Services",
+    desc: "Comprehensive evaluation and management of male-factor infertility, including semen assessment.",
+  },
+  {
+    icon: Baby,
+    label: "Dedicated Embryo Transfer Facility",
+    desc: "A comfortable and controlled environment for precise embryo transfer procedures.",
+  },
+  {
+    icon: ClipboardCheck,
+    label: "Digital Health Records",
+    desc: "Secure electronic medical records supporting coordinated and seamless patient care.",
+  },
+  {
+    icon: Heart,
+    label: "Comfortable Consultation & Recovery Areas",
+    desc: "Private, calm and welcoming spaces designed around patient comfort and dignity.",
+  },
+  {
+    icon: Stethoscope,
+    label: "Dedicated Fertility Counselling",
+    desc: "Personalized guidance to help couples understand their diagnosis, treatment options, costs and next steps.",
+  },
+];
 
   const serviceGroups = [
     { key: 'fertility', title: 'Fertility Evaluation', summary: 'Comprehensive fertility assessment and diagnosis' },
@@ -126,11 +203,11 @@ export default function AboutPage() {
                 <span className="font-serif italic text-transparent bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text">understanding first</span>
               </h1>
               
-              <p className="text-sm sm:text-base text-ink-500 leading-relaxed max-w-lg">
+              <p className="text-sm sm:text-base text-ink-500 leading-relaxed max-w-lg text-justify">
                 At Divine IVF, we bring fertility evaluation, advanced IVF, gynaecology, and pregnancy care together under one doctor-led practice in Sector 76, Noida. Our focus is on providing expert, personalized care that makes your journey toward parenthood more informed, comfortable, and reassuring.
               </p>
               
-              <p className="text-sm sm:text-base text-ink-500 leading-relaxed max-w-lg">
+              <p className="text-sm sm:text-base text-ink-500 leading-relaxed max-w-lg text-justify">
                 From your first fertility consultation to IVF and pregnancy care, Divine IVF stays with you at every step. Expert care, personal attention, and a journey designed around you.
               </p>
 
@@ -294,19 +371,19 @@ export default function AboutPage() {
                       </p>
                     </div>
 
-                    <p className="text-sm sm:text-base text-ink-500 leading-relaxed mb-3 md:mb-4">
+                    <p className="text-sm sm:text-base text-ink-500 leading-relaxed mb-3 md:mb-4 text-justify">
                       At Divine IVF, we understand that behind every consultation is a story — the hope, the questions, the waiting, and the desire to finally understand what comes next.
                     </p>
                     
-                    <p className="text-sm sm:text-base text-ink-500 leading-relaxed mb-3 md:mb-4">
+                    <p className="text-sm sm:text-base text-ink-500 leading-relaxed mb-3 md:mb-4 text-justify">
                       Divine IVF is the outcome of Dr. Mandavi Rai`s years of experience caring for patients with diverse fertility needs and challenges. Over time, these experiences have shaped an approach to fertility care that is thoughtful, individualised and grounded in sound clinical judgement.
                     </p>
                     
-                    <p className="text-sm sm:text-base text-ink-500 leading-relaxed mb-3 md:mb-4">
+                    <p className="text-sm sm:text-base text-ink-500 leading-relaxed mb-3 md:mb-4 text-justify">
                       Rather than following a one-size-fits-all pathway, we begin by understanding the person behind the diagnosis — evaluating each couple carefully and choosing the treatment approach that is appropriate for their individual needs.
                     </p>
                     
-                    <p className="text-sm sm:text-base text-ink-500 leading-relaxed">
+                    <p className="text-sm sm:text-base text-ink-500 leading-relaxed text-justify">
                       From fertility evaluation and ovulation management to IUI, IVF, ICSI and advanced reproductive procedures, Divine IVF brings together experience, evidence-based care and personal attention — so that every patient feels heard, informed and cared for through their journey.
                     </p>
                   </div>
@@ -315,7 +392,7 @@ export default function AboutPage() {
                   <div className="relative bg-gradient-to-br from-rose-50/80 to-pink-50/50 rounded-2xl p-4 sm:p-6 border border-rose-100/50 overflow-hidden">
                     <div className="absolute -top-10 -right-10 w-32 h-32 bg-rose-100/30 rounded-full blur-2xl"></div>
                     <Quote className="h-5 w-5 text-rose-400 mb-3 relative z-10" />
-                    <p className="text-sm sm:text-base text-ink-600 leading-relaxed relative z-10 italic">
+                    <p className="text-sm sm:text-base text-ink-600 leading-relaxed relative z-10 italic text-justify">
                       Every consultation starts the same way: understanding your history before recommending anything. Not every patient needs IVF immediately — some respond to simpler treatment, others benefit from advanced techniques from the outset. Getting that judgement right, early, is central to how we work.
                     </p>
                     <div className="mt-4 flex items-center gap-3 relative z-10">
@@ -457,14 +534,14 @@ export default function AboutPage() {
                   </div>
                   <div className="flex items-center gap-3 text-xs sm:text-sm text-ink-600">
                     <Phone className="h-4 w-4 text-rose-500 shrink-0" />
-                    <a href="tel:+919560026697" className="hover:text-rose-600 transition-colors">
-                      +91 95600 26697
+                    <a href="tel:+917678451808" className="hover:text-rose-600 transition-colors">
+                      +91 7678451808
                     </a>
                   </div>
                   <div className="flex items-center gap-3 text-xs sm:text-sm text-ink-600">
                     <Mail className="h-4 w-4 text-rose-500 shrink-0" />
-                    <a href="mailto:info@divineivf.com" className="hover:text-rose-600 transition-colors">
-                      info@divineivf.com
+                    <a href="mailto:divineivf003@gmail.com" className="hover:text-rose-600 transition-colors">
+                      divineivf003@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center gap-3 text-xs sm:text-sm text-ink-600">
@@ -488,7 +565,7 @@ export default function AboutPage() {
               <div className="bg-white rounded-2xl p-4 sm:p-6 border border-rose-100/50 shadow-sm">
                 <h3 className="text-sm font-semibold text-ink-900 mb-3 sm:mb-4 flex items-center gap-2">
                   <Sparkle className="h-4 w-4 text-rose-500" />
-                  Why Choose Divine IVF
+                  Why Should You Choose Divine IVF?
                 </h3>
                 <ul className="space-y-1.5 sm:space-y-2">
                   <li className="flex items-center gap-2 text-[10px] sm:text-xs text-ink-600">

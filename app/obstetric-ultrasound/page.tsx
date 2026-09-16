@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/obstetric-ultrasound-in-noida" },
   title: "Obstetric Ultrasound in Noida | Pregnancy Scan | Divine IVF",
   description:
-    "Looking for obstetric ultrasound in Noida? Consult Dr. Mandavi Rai at Divine IVF for pregnancy dating scan, anomaly scan, growth scan and personalised pregnancy monitoring.",
+    "Looking for obstetric ultrasound   Consult Dr. Mandavi Rai at Divine IVF for pregnancy dating scan, anomaly scan, growth scan and personalised pregnancy monitoring.",
   robots: { index: true, follow: true },
   keywords:
     "Obstetric Ultrasound in Noida, Pregnancy Ultrasound in Noida, Pregnancy Scan in Noida, Dating Scan in Noida, Anomaly Scan in Noida, Nuchal Translucency Scan in Noida, Growth Scan in Noida, Fetal Ultrasound in Noida, Prenatal Ultrasound in Noida, Pregnancy Monitoring in Noida, Pregnancy Care in Noida, Obstetrician in Noida, Gynaecologist in Noida, Ultrasound Clinic in Noida, Fetal Medicine in Noida, IVF Pregnancy Scan in Noida, High-Risk Pregnancy Care in Noida, Obstetric Ultrasound Cost in Noida, Fetal Wellbeing Scan in Noida, Pregnancy Ultrasound Near Me",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Obstetric Ultrasound in Noida | Pregnancy Scan | Divine IVF",
     description:
       "Personalised pregnancy ultrasound monitoring in Noida with Dr. Mandavi Rai — dating scan, anomaly scan, growth scan and comprehensive pregnancy care.",
-    url: "https://www.divineivf.com/obstetric-ultrasound-in-noida",
+    url: "http://divine-ivf.vercel.app/obstetric-ultrasound-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -478,7 +478,7 @@ export default function ObstetricUltrasoundPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Obstetric Ultrasound in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Obstetric Ultrasound  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "ICSI Treatment in Noida | ICSI Centre & Specialist | Divine IVF",
     description:
       "Get ICSI treatment in Noida at Divine IVF for male infertility, low sperm count and fertilisation problems. Consult Dr. Mandavi Rai for personalised IVF-ICSI care.",
-    url: "https://www.divineivf.com/icsi-treatment-in-noida",
+    url: "http://divine-ivf.vercel.app/icsi-treatment-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -179,12 +179,12 @@ export default function IcsiTreatmentPage() {
             "ICSI itself does not directly cause twins. The chance of multiple pregnancy is more closely related to the number of embryos transferred.",
         },
         {
-          question: "What is the cost of ICSI treatment in Noida?",
+          question: "What is the cost of ICSI treatment  ",
           answer:
             "The total cost depends on IVF cycle charges, medicines, ICSI laboratory fees, investigations, sperm retrieval if required, embryo freezing and other treatment components.",
         },
         {
-          question: "Where can I get ICSI treatment in Noida?",
+          question: "Where can I get ICSI treatment  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for fertility evaluation and personalised IVF with ICSI treatment planning.",
         },
@@ -602,26 +602,46 @@ export default function IcsiTreatmentPage() {
             <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
             Benefits of ICSI Treatment
           </h3>
+
           <ul className="space-y-2">
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Helps With Severe Male-Factor Infertility</strong> — ICSI may allow fertilisation to be attempted when sperm count or motility is severely reduced.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Helps With Severe Male-Factor Infertility
+              </strong>
+              ICSI may allow fertilisation to be attempted when sperm count or motility is severely reduced.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Direct Sperm Injection</strong> — The sperm does not need to penetrate the egg on its own.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Direct Sperm Injection
+              </strong>
+              The sperm does not need to penetrate the egg on its own.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Can Be Used With Retrieved Sperm</strong> — ICSI can be used when sperm are obtained through certain surgical sperm retrieval procedures.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Can Be Used With Retrieved Sperm
+              </strong>
+              ICSI can be used when sperm are obtained through certain surgical sperm retrieval procedures.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>May Help After Previous Fertilisation Failure</strong> — Couples with previous failed or very low fertilisation may be considered for ICSI.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                May Help After Previous Fertilisation Failure
+              </strong>
+              Couples with previous failed or very low fertilisation may be considered for ICSI.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Uses a Small Number of Sperm</strong> — Only a limited number of suitable sperm may be required for the injection procedure.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Uses a Small Number of Sperm
+              </strong>
+              Only a limited number of suitable sperm may be required for the injection procedure.
             </li>
           </ul>
         </div>
@@ -722,7 +742,7 @@ export default function IcsiTreatmentPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for ICSI Treatment in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for ICSI Treatment  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

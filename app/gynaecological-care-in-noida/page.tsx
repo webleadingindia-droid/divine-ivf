@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gynaecological-care-in-noida" },
   title: "Gynaecologist in Noida | Gynaecological Care | Divine IVF",
   description:
-    "Looking for a gynaecologist in Noida? Consult Dr. Mandavi Rai at Divine IVF for PCOS, irregular periods, fibroids, ovarian cysts, pelvic pain and women's health care.",
+    "Looking for a gynaecologist   Consult Dr. Mandavi Rai at Divine IVF for PCOS, irregular periods, fibroids, ovarian cysts, pelvic pain and women's health care.",
   robots: { index: true, follow: true },
   keywords:
     "Gynaecological Care in Noida, Gynaecologist in Noida, Gynecologist in Noida, Gynaecology Clinic in Noida, Gynecology Clinic in Noida, Gynaecologist in Sector 76 Noida, Women's Health Clinic in Noida, Women's Health Specialist in Noida, Female Gynaecologist in Noida, PCOS Treatment in Noida, PCOD Treatment in Noida, Irregular Periods Treatment in Noida, Heavy Periods Treatment in Noida, Painful Periods Treatment in Noida, Fibroid Treatment in Noida, Ovarian Cyst Treatment in Noida, Endometriosis Treatment in Noida, Adenomyosis Treatment in Noida, Pelvic Pain Treatment in Noida, Hormonal Imbalance Treatment in Noida, Abnormal Uterine Bleeding Treatment in Noida, Menopause Treatment in Noida, Fertility Specialist in Noida, Fertility Clinic in Noida, Gynaecologist Near Me, Gynecologist Near Me",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Gynaecologist in Noida | Gynaecological Care | Divine IVF",
     description:
       "Consult Dr. Mandavi Rai at Divine IVF, Noida for PCOS, irregular periods, fibroids, ovarian cysts, pelvic pain and personalised women's health care.",
-    url: "https://www.divineivf.com/gynaecological-care-in-noida",
+    url: "http://divine-ivf.vercel.app/gynaecological-care-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -188,7 +188,7 @@ export default function GynaecologicalCarePage() {
             "A gynaecologist manages general female reproductive health, while a fertility specialist has additional focus on infertility and assisted reproductive treatment. Some doctors provide both forms of care.",
         },
         {
-          question: "Where can I consult a gynaecologist in Noida?",
+          question: "Where can I consult a gynaecologist  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for gynaecological and fertility-related evaluation.",
         },
@@ -637,7 +637,7 @@ export default function GynaecologicalCarePage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Gynaecological Care in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Gynaecological Care  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

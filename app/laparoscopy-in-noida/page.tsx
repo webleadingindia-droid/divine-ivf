@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Laparoscopy in Noida | Minimally Invasive Gynaecology | Divine IVF",
     description:
       "Learn about diagnostic and operative laparoscopy in Noida for endometriosis, pelvic pain, ovarian cysts, adhesions and selected fertility concerns.",
-    url: "https://www.divineivf.com/laparoscopy-in-noida",
+    url: "http://divine-ivf.vercel.app/laparoscopy-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -192,12 +192,12 @@ export default function LaparoscopyPage() {
             "It may help when a treatable pelvic condition is affecting fertility, but it does not guarantee pregnancy.",
         },
         {
-          question: "What is the cost of laparoscopy in Noida?",
+          question: "What is the cost of laparoscopy  ",
           answer:
             "The cost depends on whether it is diagnostic or operative and whether additional procedures such as endometriosis treatment, cyst removal or tubal evaluation are required.",
         },
         {
-          question: "Where can I discuss laparoscopy for fertility in Noida?",
+          question: "Where can I discuss laparoscopy for fertility  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for personalised gynaecological and fertility evaluation.",
         },
@@ -819,7 +819,7 @@ export default function LaparoscopyPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Laparoscopy Assessment in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Laparoscopy Assessment  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

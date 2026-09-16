@@ -20,7 +20,7 @@ export type ServiceGroup = {
 export const serviceGroups: ServiceGroup[] = [
   {
     key: "ivf",
-    title: "IVF",
+    title: "IVF-ICSI",
     summary:
       "In vitro fertilisation, from stimulation to embryo transfer.",
     href: "/ivf",

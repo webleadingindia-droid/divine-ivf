@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "PRP for Fertility in Noida | Ovarian & Endometrial PRP | Divine IVF",
     description:
       "Learn about ovarian and intrauterine PRP for fertility concerns in Noida, including current evidence, limitations, possible risks and alternatives.",
-    url: "https://www.divineivf.com/prp-for-fertility-in-noida",
+    url: "http://divine-ivf.vercel.app/prp-for-fertility-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -171,12 +171,12 @@ export default function PrpForFertilityPage() {
             "PRP is prepared from your own blood, which minimises the risk of allergic reactions or transmission of infectious diseases. However, the procedure itself carries risks including infection, bleeding, and pain at the injection site.",
         },
         {
-          question: "What is the cost of PRP for fertility in Noida?",
+          question: "What is the cost of PRP for fertility  ",
           answer:
             "Cost varies depending on the type of PRP (ovarian vs intrauterine), number of treatments, and associated procedures. Patients should ask about the evidence supporting PRP in their specific case before paying for this experimental add-on.",
         },
         {
-          question: "Where can I discuss PRP for fertility in Noida?",
+          question: "Where can I discuss PRP for fertility  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for personalised fertility evaluation and evidence-based counselling regarding PRP and other fertility treatment options.",
         },
@@ -550,7 +550,7 @@ export default function PrpForFertilityPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Fertility Evaluation in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Fertility Evaluation  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

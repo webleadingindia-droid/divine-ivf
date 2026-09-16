@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/cesarean-delivery-in-noida" },
   title: "Cesarean Delivery in Noida | C-Section Delivery | Divine IVF",
   description:
-    "Looking for Cesarean Delivery in Noida? Consult Dr. Mandavi Rai at Divine IVF for planned C-section, pregnancy care and personalised delivery planning.",
+    "Looking for Cesarean Delivery   Consult Dr. Mandavi Rai at Divine IVF for planned C-section, pregnancy care and personalised delivery planning.",
   robots: { index: true, follow: true },
   keywords:
     "Cesarean Delivery in Noida, C-Section Delivery in Noida, C Section in Noida, Cesarean Birth in Noida, Caesarean Delivery in Noida, Caesarean Section in Noida, Planned Cesarean Delivery in Noida, Emergency Cesarean Delivery in Noida, Planned C Section in Noida, Emergency C Section in Noida, C Section Doctor in Noida, Cesarean Delivery Doctor in Noida, Cesarean Delivery Cost in Noida, C Section Delivery Cost in Noida, Pregnancy Delivery in Noida, Pregnancy Care in Noida, Obstetrician in Noida, Gynaecologist in Noida, IVF Pregnancy Delivery in Noida, Repeat Cesarean Delivery in Noida, VBAC in Noida",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Cesarean Delivery in Noida | C-Section Delivery | Divine IVF",
     description:
       "Personalised pregnancy and C-section delivery planning in Noida with guidance for planned and emergency Cesarean birth.",
-    url: "https://www.divineivf.com/cesarean-delivery-in-noida",
+    url: "http://divine-ivf.vercel.app/cesarean-delivery-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -202,12 +202,12 @@ export default function CesareanDeliveryPage() {
             "Risks of certain complications, particularly placenta-related problems in future pregnancies, increase with repeated Cesarean deliveries.",
         },
         {
-          question: "What is the cost of Cesarean delivery in Noida?",
+          question: "What is the cost of Cesarean delivery  ",
           answer:
             "Cost depends on hospital charges, anaesthesia, planned or emergency surgery, newborn care and additional medical requirements.",
         },
         {
-          question: "Where can I discuss Cesarean delivery in Noida?",
+          question: "Where can I discuss Cesarean delivery  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for personalised pregnancy and delivery planning.",
         },
@@ -818,7 +818,7 @@ export default function CesareanDeliveryPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Pregnancy & Cesarean Delivery Planning in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Pregnancy & Cesarean Delivery Planning  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

@@ -8,15 +8,15 @@ export const metadata: Metadata = {
   alternates: { canonical: "/ivf-treatment-in-noida" },
   title: "IVF Treatment in Noida | IVF Centre & Specialist | Divine IVF",
   description:
-    "Looking for IVF treatment in Noida? Consult Dr. Mandavi Rai at Divine IVF for personalised IVF, ICSI, fertility evaluation and advanced fertility treatment.",
+    "Looking for IVF treatment   Consult Dr. Mandavi Rai at Divine IVF for personalised IVF, ICSI, fertility evaluation and advanced fertility treatment.",
   robots: { index: true, follow: true },
   keywords:
     "IVF Treatment in Noida, IVF Centre in Noida, IVF Clinic in Noida, Best IVF Centre in Noida, Best IVF Clinic in Noida, IVF Specialist in Noida, IVF Doctor in Noida, Best IVF Doctor in Noida, IVF Cost in Noida, IVF Treatment Cost in Noida, IVF Procedure in Noida, IVF Fertility Treatment in Noida, IVF Treatment Near Me, IVF Centre Near Me, IVF Clinic Near Me, Fertility Clinic in Noida, Best Fertility Clinic in Noida, Fertility Specialist in Noida, Infertility Treatment in Noida, ICSI Treatment in Noida, IMSI Treatment in Noida, Embryo Transfer in Noida, IVF for Male Infertility in Noida, IVF for Blocked Fallopian Tubes, IVF for Low AMH, IVF for Endometriosis, IVF for PCOS",
   openGraph: {
     title: "IVF Treatment in Noida | IVF Centre & Specialist | Divine IVF",
     description:
-      "Looking for IVF treatment in Noida? Consult Dr. Mandavi Rai at Divine IVF for personalised IVF, ICSI, fertility evaluation and advanced fertility treatment.",
-    url: "https://www.divineivf.com/ivf-treatment-in-noida",
+      "Looking for IVF treatment   Consult Dr. Mandavi Rai at Divine IVF for personalised IVF, ICSI, fertility evaluation and advanced fertility treatment.",
+    url: "http://divine-ivf.vercel.app/ivf-treatment-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -202,17 +202,17 @@ export default function IvfTreatmentPage() {
             "No. IVF cannot guarantee pregnancy or live birth. Treatment outcomes depend on age, egg and sperm factors, embryo development, uterine health and other clinical factors.",
         },
         {
-          question: "What is the cost of IVF treatment in Noida?",
+          question: "What is the cost of IVF treatment  ",
           answer:
             "IVF cost varies according to medicines, investigations, laboratory treatment and whether additional procedures such as ICSI, embryo freezing, PGT or sperm retrieval are required.",
         },
         {
-          question: "How do I choose an IVF centre in Noida?",
+          question: "How do I choose an IVF centre  ",
           answer:
             "Consider the fertility specialist's approach, diagnostic evaluation, embryology services, treatment transparency, laboratory standards, communication and whether treatment is personalised to your fertility condition.",
         },
         {
-          question: "Where can I get IVF treatment in Noida?",
+          question: "Where can I get IVF treatment  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for fertility evaluation and personalised IVF treatment planning.",
         },
@@ -835,7 +835,7 @@ export default function IvfTreatmentPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for IVF Treatment in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for IVF Treatment  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

@@ -48,7 +48,7 @@ const oneStopFeatures = [
   "Genetic Testing & Screening",
   "Male Infertility Solutions",
   "Gynaecology & Women's Health",
-  "Pregnancy Care & Support",
+  "PRP & LIT Therapy",
   "Counselling & Emotional Support"
 ];
 

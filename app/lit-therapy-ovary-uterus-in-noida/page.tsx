@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "LIT Therapy in Noida | Ovary & Uterus Fertility Evaluation | Divine IVF",
     description:
       "Learn about LIT Therapy and personalised ovarian and uterine fertility evaluation for recurrent miscarriage and implantation concerns in Noida.",
-    url: "https://www.divineivf.com/lit-therapy-ovary-uterus-in-noida",
+    url: "http://divine-ivf.vercel.app/lit-therapy-ovary-uterus-in-noida",
     siteName: "Divine IVF",
     images: [
       {

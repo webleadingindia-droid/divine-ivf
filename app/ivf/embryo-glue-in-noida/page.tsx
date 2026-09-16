@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Embryo Glue in Noida | Embryo Glue for IVF & Transfer | Divine IVF",
     description:
       "Learn about Embryo Glue for IVF embryo transfer in Noida, including hyaluronan transfer medium, possible benefits, limitations, safety and cost.",
-    url: "https://www.divineivf.com/embryo-glue-in-noida",
+    url: "http://divine-ivf.vercel.app/embryo-glue-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -194,12 +194,12 @@ export default function EmbryoGluePage() {
             "Current evidence reviewed by the HFEA has not identified additional known risks to the patient or resulting child from hyaluronate-enriched transfer medium.",
         },
         {
-          question: "What is the cost of Embryo Glue in Noida?",
+          question: "What is the cost of Embryo Glue  ",
           answer:
             "The cost varies depending on the IVF centre, embryo-transfer package and whether the add-on is charged separately.",
         },
         {
-          question: "Where can I discuss Embryo Glue in Noida?",
+          question: "Where can I discuss Embryo Glue  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for personalised IVF and embryo-transfer treatment planning.",
         },
@@ -685,7 +685,7 @@ export default function EmbryoGluePage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Embryo Transfer Planning in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Embryo Transfer Planning  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

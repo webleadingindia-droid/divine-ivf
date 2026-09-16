@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Hysteroscopy in Noida | Diagnostic & Operative Hysteroscopy | Divine IVF",
     description:
       "Learn about hysteroscopy in Noida for uterine polyps, fibroids, adhesions, abnormal bleeding and selected fertility-related uterine conditions.",
-    url: "https://www.divineivf.com/hysteroscopy-in-noida",
+    url: "http://divine-ivf.vercel.app/hysteroscopy-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -197,12 +197,12 @@ export default function HysteroscopyPage() {
             "It may help if a treatable uterine cavity abnormality is present, but hysteroscopy itself does not guarantee IVF success.",
         },
         {
-          question: "What is the cost of hysteroscopy in Noida?",
+          question: "What is the cost of hysteroscopy  ",
           answer:
             "Cost varies depending on whether the procedure is diagnostic or operative and whether treatment such as polyp, fibroid or adhesion removal is required.",
         },
         {
-          question: "Where can I discuss hysteroscopy in Noida?",
+          question: "Where can I discuss hysteroscopy  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for personalised uterine, gynaecological and fertility evaluation.",
         },
@@ -810,7 +810,7 @@ export default function HysteroscopyPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Hysteroscopy Assessment in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Hysteroscopy Assessment  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

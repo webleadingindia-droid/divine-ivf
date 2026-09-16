@@ -1,11 +1,19 @@
 // components/layout/TopBar.tsx
-import { MapPin, Phone, Mail, MessageCircle, Clock, Award, ChevronRight } from "lucide-react";
+import { MapPin, Phone, Mail, ChevronRight, Instagram, Facebook, Youtube, Twitter } from "lucide-react";
 import { clinic } from "@/data/clinic";
 
 export function TopBar() {
   // WhatsApp number (same as phone or separate)
-  const whatsappNumber = clinic.phone.replace(/[^0-9]/g, '');
+  const whatsappNumber = clinic.phone.replace(/[^0-9]/g, "");
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+
+  // 👇 Apne actual social URLs yahan daalo (ya clinic data se lo)
+  const socials = [
+    { label: "Instagram", href: "https://www.instagram.com/dr.mandavirai/", icon: Instagram },
+    { label: "Facebook",  href: "https://www.facebook.com/drmandavirai",  icon: Facebook },
+    { label: "YouTube",   href: "https://www.youtube.com/@drmandavirai",  icon: Youtube },
+    { label: "Twitter",   href: "https://x.com/DrMandavi_rai",   icon: Twitter },
+  ];
 
   return (
     <div className="hidden md:block bg-gradient-to-r from-rose-700 via-rose-600 to-rose-500 text-white border-b border-white/10">
@@ -26,16 +34,8 @@ export function TopBar() {
           </a>
         </div>
 
-        {/* Right Section - Contact Info */}
+        {/* Right Section - Contact Info + Social */}
         <div className="flex items-center gap-4">
-          {/* Working Hours Badge */}
-          <div className="flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full backdrop-blur-sm">
-            <Clock className="h-3.5 w-3.5" />
-            <span className="font-medium">Mon-Sat 9AM-7PM</span>
-          </div>
-
-          <div className="h-5 w-px bg-white/20"></div>
-
           {/* Phone */}
           <a
             href={clinic.phoneHref}
@@ -60,6 +60,23 @@ export function TopBar() {
             <span className="font-medium hidden xl:inline">{clinic.email}</span>
           </a>
 
+          <div className="h-5 w-px bg-white/20"></div>
+
+          {/* Social Media Icons */}
+          <div className="flex items-center gap-1.5">
+            {socials.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="p-1.5 rounded-full bg-white/10 hover:bg-white/25 transition-all duration-200 hover:scale-110"
+              >
+                <Icon className="h-3.5 w-3.5" />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>

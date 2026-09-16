@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Male Infertility Treatment in Noida | Male Fertility Care | Divine IVF",
     description:
       "Get male infertility treatment in Noida at Divine IVF. Evaluation for low sperm count, motility issues, semen analysis, IUI, IVF and ICSI with personalised fertility care.",
-    url: "https://www.divineivf.com/male-infertility-treatment-in-noida",
+    url: "http://divine-ivf.vercel.app/male-infertility-treatment-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -170,12 +170,12 @@ export default function MaleInfertilityTreatmentPage() {
             "ICSI may be considered for severe sperm abnormalities, previous fertilisation problems, very low sperm count, or when surgically retrieved sperm are used.",
         },
         {
-          question: "What is the cost of male infertility treatment in Noida?",
+          question: "What is the cost of male infertility treatment  ",
           answer:
             "The cost depends on the investigations and treatment required. Simple evaluation and medical management will differ in cost from IUI, IVF, ICSI or sperm retrieval procedures.",
         },
         {
-          question: "Where can I get male infertility treatment in Noida?",
+          question: "Where can I get male infertility treatment  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for fertility evaluation and personalised treatment planning for male-factor infertility.",
         },
@@ -600,29 +600,45 @@ export default function MaleInfertilityTreatmentPage() {
             <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
             Benefits of Proper Male Fertility Evaluation
           </h3>
+
           <ul className="space-y-2">
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Identifies Possible Male Factors</strong> — Testing helps determine whether sperm-related or other male fertility factors may be contributing to infertility.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Identifies Possible Male Factors
+              </strong>
+              Testing helps determine whether sperm-related or other male fertility factors may be contributing to infertility.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Prevents One-Sided Fertility Evaluation</strong> — Infertility should not automatically be considered only a female problem. Evaluation of both partners is important.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Prevents One-Sided Fertility Evaluation
+              </strong>
+              Infertility should not automatically be considered only a female problem. Evaluation of both partners is important.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Helps Select the Right Treatment</strong> — The results may help determine whether natural attempts, IUI, IVF, ICSI or another treatment is appropriate.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Helps Select the Right Treatment
+              </strong>
+              The results may help determine whether natural attempts, IUI, IVF, ICSI or another treatment is appropriate.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Can Avoid Delays</strong> — Early identification of significant male-factor infertility can help couples avoid unnecessary treatment delays.
+
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">✓ </span>
+                Can Avoid Delays
+              </strong>
+              Early identification of significant male-factor infertility can help couples avoid unnecessary treatment delays.
             </li>
           </ul>
         </div>
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Male Infertility Treatment in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Male Infertility Treatment  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

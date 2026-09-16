@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Egg Donor IVF in Noida | Donor Egg IVF Treatment | Divine IVF",
     description:
       "Explore Egg Donor IVF in Noida at Divine IVF for low ovarian reserve, premature ovarian insufficiency and selected IVF cases with personalised fertility guidance.",
-    url: "https://www.divineivf.com/egg-donor-ivf-in-noida",
+    url: "http://divine-ivf.vercel.app/egg-donor-ivf-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -185,12 +185,12 @@ export default function EggDonorIVFPage() {
             "ART treatment eligibility is regulated by law. The ART Act specifies age ranges for women and men receiving ART services.",
         },
         {
-          question: "How much does Egg Donor IVF cost in Noida?",
+          question: "How much does Egg Donor IVF cost  ",
           answer:
             "The cost depends on recipient evaluation, donor-related ART bank processes, IVF or ICSI, laboratory charges, medicines, embryo transfer and any additional procedures required.",
         },
         {
-          question: "Where can I discuss Egg Donor IVF in Noida?",
+          question: "Where can I discuss Egg Donor IVF  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for fertility evaluation and personalised donor egg IVF treatment planning.",
         },
@@ -489,31 +489,57 @@ export default function EggDonorIVFPage() {
 
         {/* Factors That May Affect Egg Donor IVF Success */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Factors That May Affect Egg Donor IVF Success</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">
+            Factors That May Affect Egg Donor IVF Success
+          </h2>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <div className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">•</span>
-              <strong>Embryo Development</strong> — Not every fertilised egg develops into a transferable embryo
+            <div className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">• </span>
+                Embryo Development
+              </strong>
+              Not every fertilised egg develops into a transferable embryo
             </div>
-            <div className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">•</span>
-              <strong>Sperm Quality</strong> — Sperm-related factors can influence fertilisation and embryo development
+
+            <div className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">• </span>
+                Sperm Quality
+              </strong>
+              Sperm-related factors can influence fertilisation and embryo development
             </div>
-            <div className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">•</span>
-              <strong>Uterine Health</strong> — Fibroids, polyps, adhesions or other uterine factors may affect implantation
+
+            <div className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">• </span>
+                Uterine Health
+              </strong>
+              Fibroids, polyps, adhesions or other uterine factors may affect implantation
             </div>
-            <div className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">•</span>
-              <strong>Endometrial Preparation</strong> — The uterine lining needs to be appropriately prepared before transfer
+
+            <div className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">• </span>
+                Endometrial Preparation
+              </strong>
+              The uterine lining needs to be appropriately prepared before transfer
             </div>
-            <div className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">•</span>
-              <strong>General Medical Health</strong> — Certain medical conditions may affect pregnancy or treatment planning
+
+            <div className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">• </span>
+                General Medical Health
+              </strong>
+              Certain medical conditions may affect pregnancy or treatment planning
             </div>
-            <div className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">•</span>
-              <strong>Embryology Factors</strong> — Laboratory fertilisation and embryo culture also influence treatment outcomes
+
+            <div className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+                <span className="text-rose-500">• </span>
+                Embryology Factors
+              </strong>
+              Laboratory fertilisation and embryo culture also influence treatment outcomes
             </div>
           </div>
         </div>
@@ -685,7 +711,7 @@ export default function EggDonorIVFPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Egg Donor IVF in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Egg Donor IVF  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

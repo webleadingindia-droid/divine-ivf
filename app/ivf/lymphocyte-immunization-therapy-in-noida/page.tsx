@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "LIT Treatment in Noida | Lymphocyte Immunization Therapy | Divine IVF",
     description:
       "Understand Lymphocyte Immunization Therapy in Noida for recurrent pregnancy loss and implantation concerns, including current evidence, limitations and potential risks.",
-    url: "https://www.divineivf.com/lymphocyte-immunization-therapy-in-noida",
+    url: "http://divine-ivf.vercel.app/lymphocyte-immunization-therapy-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -182,12 +182,12 @@ export default function LitTherapyPage() {
             "No.",
         },
         {
-          question: "What is the cost of LIT treatment in Noida?",
+          question: "What is the cost of LIT treatment  ",
           answer:
             "Costs can vary, but patients should first establish whether there is a scientifically supported indication for treatment.",
         },
         {
-          question: "Where can I get evaluated for recurrent miscarriage in Noida?",
+          question: "Where can I get evaluated for recurrent miscarriage  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for evaluation of recurrent pregnancy loss, IVF failure and related fertility concerns.",
         },
@@ -729,7 +729,7 @@ export default function LitTherapyPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Recurrent Pregnancy Loss Evaluation in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Recurrent Pregnancy Loss Evaluation  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

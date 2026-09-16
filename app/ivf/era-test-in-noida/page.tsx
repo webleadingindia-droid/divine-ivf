@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "ERA Test in Noida | Endometrial Receptivity Test for IVF | Divine IVF",
     description:
       "Learn about ERA testing in Noida for selected IVF and implantation concerns, including process, limitations, risks and personalised fertility guidance.",
-    url: "https://www.divineivf.com/era-test-in-noida",
+    url: "http://divine-ivf.vercel.app/era-test-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -198,12 +198,12 @@ export default function EraTestPage() {
             "If used, it is commonly performed in a mock or preparation cycle designed to resemble the intended frozen embryo transfer protocol.",
         },
         {
-          question: "How much does an ERA test cost in Noida?",
+          question: "How much does an ERA test cost  ",
           answer:
             "Cost varies according to the biopsy, laboratory analysis, medicines, monitoring and associated fertility treatment.",
         },
         {
-          question: "Where can I discuss ERA testing in Noida?",
+          question: "Where can I discuss ERA testing  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida to review previous IVF and embryo-transfer outcomes and discuss whether an endometrial receptivity test is appropriate.",
         },
@@ -638,7 +638,7 @@ export default function EraTestPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for ERA and IVF Evaluation in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for ERA and IVF Evaluation  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

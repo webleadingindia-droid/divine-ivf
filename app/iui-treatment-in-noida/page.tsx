@@ -8,15 +8,15 @@ export const metadata: Metadata = {
   alternates: { canonical: "/iui-treatment-in-noida" },
   title: "IUI Treatment in Noida | IUI Centre & Specialist | Divine IVF",
   description:
-    "Looking for IUI treatment in Noida? Consult Dr. Mandavi Rai at Divine IVF for fertility evaluation, ovulation monitoring and personalised IUI treatment.",
+    "Looking for IUI treatment   Consult Dr. Mandavi Rai at Divine IVF for fertility evaluation, ovulation monitoring and personalised IUI treatment.",
   robots: { index: true, follow: true },
   keywords:
     "IUI Treatment in Noida, IUI Centre in Noida, IUI Clinic in Noida, Best IUI Centre in Noida, IUI Specialist in Noida, IUI Doctor in Noida, IUI Cost in Noida, IUI Treatment Cost in Noida, Intrauterine Insemination in Noida, IUI Procedure in Noida, IUI Fertility Treatment in Noida, IUI Treatment Near Me, Fertility Clinic in Noida, Infertility Treatment in Noida, Fertility Specialist in Noida",
   openGraph: {
     title: "IUI Treatment in Noida | IUI Centre & Specialist | Divine IVF",
     description:
-      "Looking for IUI treatment in Noida? Consult Dr. Mandavi Rai at Divine IVF for fertility evaluation, ovulation monitoring and personalised IUI treatment.",
-    url: "https://www.divineivf.com/iui-treatment-in-noida",
+      "Looking for IUI treatment   Consult Dr. Mandavi Rai at Divine IVF for fertility evaluation, ovulation monitoring and personalised IUI treatment.",
+    url: "http://divine-ivf.vercel.app/iui-treatment-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -164,12 +164,12 @@ export default function IuiTreatmentPage() {
             "IUI may be considered in some cases of mild male factor infertility. Severe sperm abnormalities may require other treatments such as IVF with ICSI.",
         },
         {
-          question: "What is the cost of IUI treatment in Noida?",
+          question: "What is the cost of IUI treatment  ",
           answer:
             "The cost varies according to medicines, ultrasound monitoring, semen preparation, tests and the number of cycles required. A personalised estimate can be provided after fertility evaluation.",
         },
         {
-          question: "Where can I get IUI treatment in Noida?",
+          question: "Where can I get IUI treatment  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for fertility evaluation and personalised IUI treatment planning.",
         },
@@ -518,7 +518,7 @@ export default function IuiTreatmentPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for IUI Treatment in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for IUI Treatment  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
@@ -554,25 +554,30 @@ export default function IuiTreatmentPage() {
             Benefits of IUI Treatment at Divine IVF
           </h3>
           <ul className="space-y-2">
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Less Invasive Than IVF</strong> — IUI usually does not require egg retrieval or anaesthesia.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Less Invasive Than IVF</strong> IUI usually does not require egg retrieval or anaesthesia.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Simple Fertility Procedure</strong> — The actual insemination procedure is relatively quick.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Simple Fertility Procedure</strong> The actual insemination procedure is relatively quick.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Can Be Combined With Ovulation Treatment</strong> — IUI can be performed with ovulation induction when clinically appropriate.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Can Be Combined With Ovulation Treatment</strong> IUI can be performed with ovulation induction when clinically appropriate.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Lower Treatment Complexity</strong> — Compared with IVF, IUI generally involves fewer treatment steps.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Lower Treatment Complexity</strong> Compared with IVF, IUI generally involves fewer treatment steps.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Suitable for Selected Fertility Problems</strong> — For properly selected patients, IUI may be considered before moving to more advanced treatments.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Suitable for Selected Fertility Problems</strong> For properly selected patients, IUI may be considered before moving to more advanced treatments.
             </li>
           </ul>
         </div>

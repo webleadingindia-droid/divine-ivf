@@ -38,16 +38,16 @@ export function SuccessRate() {
             <Baby className="h-3.5 w-3.5" />
             <span>Our Success Rate</span>
           </div>
-          
+
           <h2 className="text-3xl md:text-4xl font-bold text-ink-900">
             Success Rate{' '}
             <span className="bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent">
               You Can Trust
             </span>
           </h2>
-          
+
           <p className="text-sm text-ink-500 mt-2">
-            Transparent success rates across age groups
+            70 – 80% Overall Success
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export function SuccessRate() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
           {ageData.map((item) => {
             const Icon = item.icon;
-            
+
             return (
               <div
                 key={item.age}
@@ -94,7 +94,7 @@ export function SuccessRate() {
                   {/* Info */}
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-1">
-                      <div 
+                      <div
                         className="w-7 h-7 rounded-lg flex items-center justify-center"
                         style={{ background: `${item.color}15` }}
                       >
@@ -102,18 +102,18 @@ export function SuccessRate() {
                       </div>
                       <h3 className="text-sm font-semibold text-ink-900">{item.age}</h3>
                     </div>
-                    
+
                     <div className="flex items-center gap-3 text-xs text-ink-500">
                       <span className="flex items-center gap-1">
                         <Users className="w-3 h-3" />
                         {item.patients}
                       </span>
                       <span className="w-px h-3 bg-rose-200" />
-                      <span 
+                      <span
                         className="font-medium px-2 py-0.5 rounded-full text-[10px]"
-                        style={{ 
+                        style={{
                           background: `${item.color}15`,
-                          color: item.color 
+                          color: item.color
                         }}
                       >
                         {item.label}
@@ -127,7 +127,7 @@ export function SuccessRate() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mb-8">
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-3 md:gap-4 mb-8">
 
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 border border-rose-100/50 shadow-lg hover:shadow-xl transition-all hover:bg-white">
             <p className="text-xs text-ink-500">Total Patients</p>
@@ -136,10 +136,10 @@ export function SuccessRate() {
               <ArrowUpRight className="w-3 h-3" /> 12.5% growth
             </p>
           </div>
-          
+
           <div className="bg-gradient-to-br from-rose-500 to-pink-500 rounded-2xl p-4 text-white shadow-lg backdrop-blur-sm">
             <p className="text-xs opacity-90">Overall Success</p>
-            <p className="text-2xl md:text-3xl font-bold mt-1">67.7%</p>
+            <p className="text-2xl md:text-3xl font-bold mt-1">70–80%</p>
             <p className="text-[10px] opacity-75">Average across ages</p>
           </div>
 

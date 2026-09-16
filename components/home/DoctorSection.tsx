@@ -52,6 +52,7 @@ const expertise = [
   { icon: Stethoscope, label: "Infertility & IVF" },
   { icon: Activity, label: "Recurrent IVF Failure" },
   { icon: Microscope, label: "Minimal Stimulation Protocols" },
+  { icon: Microscope, label: "PRP & Lit Therapy" },
 ];
 
 // Real qualifications, chronological
@@ -61,15 +62,15 @@ const education = [
   "Diploma in Ultrasound — Randhawa Institute, Delhi (2015)",
   "M.MAS, Minimal Access Surgery — Gold Medalist, World Laparoscopy Hospital (2016)",
   "Fellowship, Reproductive Medicine — CREST, NUHS, Singapore (2017–18)",
-  "PG Diploma, Hospital & Health Management — IGNOU (2020)",
   "PG Diploma, Sexual & Reproductive Medicine — Univ. of South Wales, UK (2020)",
 ];
 
 // Condensed one-line summary of her real work history, most recent first
 const experienceHighlights = [
   "Center Head & Senior Consultant, IVF — Indira IVF, Noida",
-  "Senior Consultant, IVF — Indira IVF, Raj Nagar, Ghaziabad (~200% growth in ET cases)",
-  "Senior Consultant, IVF — Indira IVF, Patel Nagar, New Delhi (50,000+ IVF cycles milestone)",
+  "Senior Consultant, IVF — Motherhood",
+  "Senior Consultant, IVF — Indira IVF, Raj Nagar, Ghaziabad",
+  "Senior Consultant, IVF — Indira IVF, Patel Nagar, New Delhi",
   "Senior Resident — ESIC Hospital & Medical College, Faridabad",
   "Senior Resident — Lady Hardinge Medical College, New Delhi",
   "Senior Resident — Max Super Speciality Hospital, Saket, Delhi",
@@ -93,9 +94,6 @@ export function DoctorSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-ink-900 leading-tight">
             Dr. <span className="bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent">Mandavi Rai</span>
           </h2>
-          <p className="text-sm sm:text-base text-ink-500 mt-1.5">
-            Best IVF &amp; Gynaecologist Doctor in Noida
-          </p>
         </div>
 
         {/* ===== Photo (overlaid quote) | About + Approach ===== */}
@@ -130,12 +128,12 @@ export function DoctorSection() {
             <div className="absolute left-4 right-4 bottom-4">
               <div className="relative bg-white/90 backdrop-blur-xl border border-white/60 rounded-2xl px-5 py-4 shadow-xl">
                 <Quote className="h-3 w-3 text-rose-400 mb-1.5" fill="currentColor" strokeWidth={0} />
-                <p className="text-[12px] italic text-ink-700 leading-relaxed">
+                <p className="text-[12px] italic text-ink-700 leading-relaxed text-justify">
                   There is no one-size-fits-all path to parenthood. My role is to
                   understand, guide and support you with the right care, at the right
                   time.
                 </p>
-                <p className="text-xs font-semibold text-rose-600 mt-2">— Dr. Mandavi Rai</p>
+                <p className="text-xs font-semibold text-rose-600 mt-2 text-justify">— Dr. Mandavi Rai</p>
               </div>
             </div>
           </div>
@@ -147,24 +145,27 @@ export function DoctorSection() {
               ABOUT DR. MANDAVI RAI
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-ink-900 leading-tight mb-3">
-              Gynaecologist &amp; IVF Doctor
+              Best Fertility &amp; IVF Doctor in Noida
               <span className="block font-serif italic text-ink-400 text-lg sm:text-xl font-medium mt-0.5">
                 Professional Journey
               </span>
             </h3>
 
-            <p className="text-sm text-ink-600 leading-relaxed mb-2">
+            <p className="text-sm text-ink-600 leading-relaxed mb-2 text-justify">
               Dr. Mandavi Rai is an IVF fertility specialist in Noida with a vision to
               improve the reproductive outcomes of childless couples and individuals.
               She has been on this journey for over 15 years, with 10 years of focused
               experience in infertility.
             </p>
-            <p className="text-sm text-ink-600 leading-relaxed mb-5">
+            <p className="text-sm text-ink-600 leading-relaxed mb-5 text-justify">
               After her MBBS from Pune and M.S. in Obstetrics &amp; Gynaecology from
               Mumbai, she pursued a fellowship in Reproductive Medicine from NUS
               Singapore. Over the years, she has come to understand the pain and
               anguish of people who are unable to conceive naturally, while embracing
               the evolving, ever more accessible science of assisted reproduction.
+            </p>
+            <p className="text-sm text-ink-600 leading-relaxed mb-5 text-justify">
+              15+ years of experience, including 8+ years as Centre Head at Indira IVF. Now leading Divine IVF.
             </p>
 
             {/* Expertise tags */}

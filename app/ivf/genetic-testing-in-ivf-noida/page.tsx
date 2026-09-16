@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Genetic Testing in IVF Noida | PGT & Embryo Testing | Divine IVF",
     description:
       "Explore genetic testing in IVF in Noida at Divine IVF, including PGT-A, PGT-M and PGT-SR. Consult Dr. Mandavi Rai for personalised embryo genetic testing guidance.",
-    url: "https://www.divineivf.com/genetic-testing-in-ivf-noida",
+    url: "http://divine-ivf.vercel.app/genetic-testing-in-ivf-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -185,12 +185,12 @@ export default function GeneticTestingInIVFPage() {
             "PGT-M may be used for selected known inherited single-gene disorders when an appropriate genetic test can be developed.",
         },
         {
-          question: "What is the cost of embryo genetic testing in Noida?",
+          question: "What is the cost of embryo genetic testing  ",
           answer:
             "Cost depends on the type of PGT, number of samples, IVF treatment, embryo biopsy, genetic laboratory charges and other fertility procedures.",
         },
         {
-          question: "Where can I discuss genetic testing for IVF in Noida?",
+          question: "Where can I discuss genetic testing for IVF  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for fertility evaluation and personalised discussion regarding IVF and embryo genetic testing.",
         },
@@ -525,25 +525,30 @@ export default function GeneticTestingInIVFPage() {
             Benefits of Genetic Testing in IVF
           </h3>
           <ul className="space-y-2">
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Provides Genetic Information Before Embryo Transfer</strong> — PGT can provide information about selected genetic or chromosomal abnormalities before an embryo is transferred.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Provides Genetic Information Before Embryo Transfer</strong> PGT can provide information about selected genetic or chromosomal abnormalities before an embryo is transferred.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>May Help Couples With Known Inherited Conditions</strong> — PGT-M can help couples at risk of transmitting certain known inherited diseases.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                May Help Couples With Known Inherited Conditions</strong> PGT-M can help couples at risk of transmitting certain known inherited diseases.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Helps With Structural Chromosome Rearrangements</strong> — PGT-SR may help couples where one partner carries an appropriate structural chromosome rearrangement.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Helps With Structural Chromosome Rearrangements</strong> PGT-SR may help couples where one partner carries an appropriate structural chromosome rearrangement.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Supports Informed Embryo Selection</strong> — Testing results may provide additional information when choosing embryos for transfer.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Supports Informed Embryo Selection</strong> Testing results may provide additional information when choosing embryos for transfer.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Enables Personalised Fertility Planning</strong> — PGT can be incorporated into IVF only when there is an appropriate clinical or genetic indication.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Enables Personalised Fertility Planning</strong> PGT can be incorporated into IVF only when there is an appropriate clinical or genetic indication.
             </li>
           </ul>
         </div>
@@ -651,7 +656,7 @@ export default function GeneticTestingInIVFPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Genetic Testing in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Genetic Testing  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

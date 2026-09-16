@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Fertility Investigation in Noida | Fertility Tests | Divine IVF",
     description:
       "Get fertility investigation in Noida with Dr. Mandavi Rai at Divine IVF. Female & male fertility tests, AMH, ultrasound, semen analysis and personalised evaluation.",
-    url: "https://www.divineivf.com/fertility-investigation-in-noida",
+    url: "http://divine-ivf.vercel.app/fertility-investigation-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -153,7 +153,7 @@ export default function FertilityInvestigationPage() {
             "You may consider evaluation after trying unsuccessfully for approximately one year if under 35, or after around six months if 35 or older. Earlier consultation may be appropriate if you have irregular periods, PCOS, endometriosis, known reproductive problems, recurrent pregnancy loss, or male fertility concerns.",
         },
         {
-          question: "Where can I get fertility investigation in Noida?",
+          question: "Where can I get fertility investigation  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for fertility evaluation and investigation for both partners.",
         },
@@ -412,7 +412,7 @@ export default function FertilityInvestigationPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Fertility Investigation in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Fertility Investigation  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>
@@ -491,25 +491,30 @@ export default function FertilityInvestigationPage() {
             Key Benefits of Fertility Investigation at Divine IVF
           </h3>
           <ul className="space-y-2">
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Helps Identify Possible Causes</strong> — A systematic evaluation provides more information about factors that may be affecting conception.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Helps Identify Possible Causes</strong> A systematic evaluation provides more information about factors that may be affecting conception.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Evaluates Both Partners</strong> — Fertility is a couple-related issue, which is why assessment of both partners may be important.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Evaluates Both Partners</strong> Fertility is a couple-related issue, which is why assessment of both partners may be important.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Helps Avoid Unnecessary Treatment</strong> — Not every couple experiencing difficulty conceiving requires IVF.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Helps Avoid Unnecessary Treatment</strong> Not every couple experiencing difficulty conceiving requires IVF.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Supports Personalised Treatment Planning</strong> — Treatment can be selected based on actual clinical findings rather than assumptions.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Supports Personalised Treatment Planning</strong> Treatment can be selected based on actual clinical findings rather than assumptions.
             </li>
-            <li className="flex items-start gap-2 text-sm text-ink-600">
-              <span className="text-rose-500">✓</span>
-              <strong>Helps Save Valuable Time</strong> — For women with age-related fertility concerns or reduced ovarian reserve, early evaluation may help avoid unnecessary delay.
+            <li className="grid grid-cols-2 items-start gap-2 text-sm text-ink-600">
+              <strong>
+              <span className="text-rose-500">✓ </span>
+                Helps Save Valuable Time</strong> For women with age-related fertility concerns or reduced ovarian reserve, early evaluation may help avoid unnecessary delay.
             </li>
           </ul>
         </div>

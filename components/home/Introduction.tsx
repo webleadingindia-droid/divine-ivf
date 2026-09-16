@@ -341,11 +341,11 @@ export function Introduction() {
 
           {/* Main Description */}
           <div className="space-y-3 sm:space-y-4 text-ink-600 leading-relaxed">
-            <p className="text-[13px] sm:text-[15px]">
+            <p className="text-[13px] sm:text-[15px] text-justify">
               At Divine IVF, we understand that behind every consultation is a story — the hope, the questions, the waiting, and the desire to finally understand what comes next.
             </p>
 
-            <p className="text-[13px] sm:text-[15px]">
+            <p className="text-[13px] sm:text-[15px] text-justify">
               Divine IVF is the outcome of Dr. Mandavi Rai`s years of experience caring for patients with diverse fertility needs and challenges. Over time, these experiences have shaped an approach to fertility care that is thoughtful, individualised and grounded in sound clinical judgement.
             </p>
           </div>

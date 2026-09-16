@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "PICSI Treatment in Noida | PICSI IVF & Sperm Selection | Divine IVF",
     description:
       "Learn about PICSI treatment in Noida, HA-based sperm selection and its use with ICSI for selected male-factor infertility cases at Divine IVF.",
-    url: "https://www.divineivf.com/picsi-treatment-in-noida",
+    url: "http://divine-ivf.vercel.app/picsi-treatment-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -193,12 +193,12 @@ export default function PicsiTreatmentPage() {
             "PICSI itself is a laboratory procedure performed on the sperm sample, so there is no separate invasive procedure for the patient.",
         },
         {
-          question: "How much does PICSI cost in Noida?",
+          question: "How much does PICSI cost  ",
           answer:
             "The total cost depends on the IVF-ICSI package, laboratory charges, medicines, investigations and any additional procedures required.",
         },
         {
-          question: "Where can I discuss PICSI treatment in Noida?",
+          question: "Where can I discuss PICSI treatment  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for fertility evaluation and personalised IVF-ICSI treatment planning.",
         },
@@ -628,7 +628,7 @@ export default function PicsiTreatmentPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for PICSI Treatment Planning in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for PICSI Treatment Planning  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

@@ -12,6 +12,11 @@ export type NavItem = {
 
 export const primaryNav: NavItem[] = [
   {
+    label: "Home",
+    href: "/",
+  },
+
+  {
     label: "About",
     href: "/about",
     children: [
@@ -99,7 +104,7 @@ export const primaryNav: NavItem[] = [
   },
 
   {
-    label: "Women's Health",
+    label: "Women's Care",
     href: "/services",
     children: [
       {
@@ -122,13 +127,8 @@ export const primaryNav: NavItem[] = [
         label: "LIT — Ovary & Uterus",
         href: "/lit-therapy-ovary-uterus-in-noida",
       },
-    ],
-  },
 
-  {
-    label: "Pregnancy Care",
-    href: "/services",
-    children: [
+      // Pregnancy Care (merged)
       {
         label: "Obstetric Ultrasound",
         href: "/obstetric-ultrasound",
@@ -169,10 +169,14 @@ export const primaryNav: NavItem[] = [
         href: "/videos",
       },
       {
-        label: "Contact",
-        href: "/contact",
+        label: "Faqs",
+        href: "/faqs",
       },
     ],
   },
 
+  {
+    label: "Contact",
+    href: "/contact",
+  },
 ];

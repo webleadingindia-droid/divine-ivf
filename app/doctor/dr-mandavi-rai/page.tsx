@@ -54,7 +54,6 @@ const doctorData = {
     { degree: "MBBS", institution: "Bharati Vidyapeeth University, Pune (2005)" },
     { degree: "Fellowship in Reproductive Medicine", institution: "CREST, National University Health System, Singapore (2017-2019)" },
     { degree: "Masters in Minimal Access Surgery (M.MAS) - Gold Medalist", institution: "World Laparoscopy Hospital, Gurgaon (2016)" },
-    { degree: "Post-Graduation Diploma in Hospital and Health Management", institution: "IGNOU, New Delhi (2020)" },
     { degree: "Post Graduate Diploma in Sexual Health and Reproductive Medicine", institution: "University of South Wales, UK (2020)" },
     { degree: "Diploma in Ultrasound", institution: "Randhawa Institute of Ultrasound Training, Delhi (2015)" },
     { degree: "FICOG", institution: "Fellow of the Indian College of Obstetricians and Gynecologists" },
@@ -77,6 +76,7 @@ const doctorData = {
   ],
   philosophy: "There is no one-size-fits-all path to parenthood. Every patient's history, body, and journey is different, so their treatment should be too. Dr. Mandavi Rai believes in understanding each patient's complete medical history, lifestyle, and reproductive goals before creating a customized treatment plan. From diagnosis to successful pregnancy, patients receive complete transparency, emotional support, and the latest evidence-based fertility care.",
   memberships: [
+    "American Society for Reproductive Medicine (ASRM)",
     "Indian Society for Assisted Reproduction (ISAR)",
     "Federation of Obstetric & Gynaecological Societies of India (FOGSI)",
     "Indian Medical Association (IMA)",
@@ -84,41 +84,56 @@ const doctorData = {
     "Indian College of Obstetricians and Gynecologists (ICOG)",
   ],
   experienceTimeline: [
-    { year: "Jul 2023 - Present", title: "Senior Consultant – IVF & Reproductive Medicine – Cloudnine Hospital, Gurugram" },
-    { year: "2025 - Present", title: "Visiting Consultant – Infertility – Motherhood Hospital, Gurugram" },
-    { year: "Jul 2022 - Jul 2023", title: "Chief Consultant & Centre Head – IVF & Wings IVF & Orthus Health, New Delhi" },
-    { year: "Jan 2021 - Jul 2022", title: "Consultant – IVF Specialist – Milan Fertility Centre, Delhi & Gurugram" },
-    { year: "Jul 2020 - Present", title: "Director & Consultant – IVF & Gynaecology – The Fertility, Gurugram" },
-    { year: "Jan 2020 - Dec 2020", title: "Consultant – IVF Specialist – W Pratishka Hospital, Gurugram" },
-    { year: "Apr 2019 - Present", title: "Visiting Consultant – Infertility & Gynaecology – Max Hospital, Gurugram" },
-    { year: "Jun 2019 - Aug 2019", title: "Consultant-IVF Specialist – Myra IVF Center, Gurugram" },
-    { year: "2017 - 2018", title: "Fellowship in Reproductive Medicine – CIMAR, Kochi" },
-    { year: "2012 - 2014", title: "Diploma in Obstetrics & Gynaecology – HIHT University, Dehradun" },
-    { year: "2008 - 2011", title: "MBBS – HIHT University, Dehradun" },
-  ],
+  { year: "Present", title: "Head – Divine IVF, Sector 76, Noida" },
+  { year: "2025", title: "Visiting Consultant – Infertility – Motherhood Hospital, Gurugram" },
+  { year: "Jul 2023", title: "Senior Consultant – IVF & Reproductive Medicine – Cloudnine Hospital, Gurugram" },
+  { year: "Jul 2022 – Jul 2023", title: "Chief Consultant & Centre Head – IVF – Wings IVF & Orthus Health, New Delhi" },
+  { year: "Jan 2021 – Jul 2022", title: "Consultant – IVF Specialist – Milan Fertility Centre, Delhi & Gurugram" },
+  { year: "Jul 2020 – Present", title: "Director & Consultant – IVF & Gynaecology – The Fertility, Gurugram" },
+  { year: "Jan 2020 – Dec 2020", title: "Consultant – IVF Specialist – W Pratishka Hospital, Gurugram" },
+  { year: "Apr 2019 – Present", title: "Visiting Consultant – Infertility & Gynaecology – Max Hospital, Gurugram" },
+  { year: "Jun 2019 – Aug 2019", title: "Consultant – IVF Specialist – Myra IVF Center, Gurugram" },
+  { year: "2017 – 2018", title: "Fellowship in Reproductive Medicine – CREST, NUHS, Singapore" },
+  { year: "2013", title: "M.S. OBGY – MGM Institute of Health Sciences, Mumbai" },
+  { year: "2005", title: "MBBS – Bharati Vidyapeeth University, Pune" },
+],
   achievements: [
-    "Recognized for one of the best success rates in ART procedures",
-    "Led the Noida centre of INDIRA IVF as administrative head-cum-IVF consultant",
-    "Achieved 200% growth in embryo transfer cases within a short span",
-    "Contributed to 50,000 successful IVF cycles at INDIRA IVF",
-    "Successfully institutionalized formal tie-ups with other OPD centres to enhance revenue generation",
+    "Recognized for excellence in Assisted Reproductive Technology (ART) and fertility care",
+    "Extensive experience in IVF, IUI and advanced fertility treatments, with a strong focus on individualized treatment planning",
+    "Successfully managed a wide range of complex infertility cases, including diminished ovarian reserve, PCOS, endometriosis, male-factor infertility and recurrent IVF failure",
+    "Contributed to thousands of fertility treatment cycles, including IVF, ICSI, embryo transfer and fertility preservation",
+    "Leadership experience in a high-volume IVF centre, with expertise in clinical management as well as patient-centric fertility care",
+    "Known for a personalized and evidence-based approach, combining advanced reproductive medicine with compassionate patient counselling",
+    "Founder & Fertility/IVF Specialist at Divine Women IVF, providing comprehensive fertility and reproductive healthcare in Noida",
   ],
   publications: [
-    "Second Trimester Uterine Rupture – Journal of Evolutionary Medicine and Dental Sciences, Volume 3, Issue 14, 7th April 2014",
-    "Uterus Didelphys with Pregnancy in Right Cornu – Journal of Evolutionary Medicine and Dental Sciences, Volume 3, Issue 24, 16th June 2014",
-    "Study of Drug Utilization Pattern in Gynaecology OPD – World Journal of Pharmacy and Pharmaceutical Sciences, Volume 3, Issue 12, 19th October 2014",
-    "One Step Diagnosis of GDM – International Journal of Medicine and Allied Sciences, Volume 7, 15th August 2015",
-    "Clinical Study of Cases of Intrauterine Foetal Death – International Journal of Research in Medical Sciences, Volume 4, Issue 3, March 2016",
-    "Comparison between Different Entry Techniques in Performing Pneumoperitoneum – World Journal of Laparoscopic Surgery, September-December 2016",
-    "Prenatal Diagnosis of AVM in Liver – MAR Gynecology Journal, August 2022",
-    "Successful IVF Pregnancy in patient with Serous Borderline Ovarian Tumor – MAR Gynecology Journal, July 2022",
+
+    "A Case Report of Platelet-Rich Plasma Therapy for Thin Endometrium – MAR Gynecology & Urology, 2025, Volume 8, Issue 7",
+
     "Conservative Management in Single Foetal Death in DADC Twin Pregnancy – MAR Gynecology Journal, January 2023",
-  ],
+
+    "Prenatal Diagnosis of AVM in Liver – MAR Gynecology Journal, August 2022",
+
+    "Successful IVF Pregnancy in patient with Serous Borderline Ovarian Tumor – MAR Gynecology Journal, July 2022",
+
+    "Comparison between Different Entry Techniques in Performing Pneumoperitoneum – World Journal of Laparoscopic Surgery, September-December 2016",
+
+    "Clinical Study of Cases of Intrauterine Foetal Death – International Journal of Research in Medical Sciences, Volume 4, Issue 3, March 2016",
+
+    "One Step Diagnosis of GDM – International Journal of Medicine and Allied Sciences, Volume 7, 15th August 2015",
+
+    "Study of Drug Utilization Pattern in Gynaecology OPD – World Journal of Pharmacy and Pharmaceutical Sciences, Volume 3, Issue 12, 19th October 2014",
+
+    "Uterus Didelphys with Pregnancy in Right Cornu – Journal of Evolutionary Medicine and Dental Sciences, Volume 3, Issue 24, 16th June 2014",
+
+    "Second Trimester Uterine Rupture – Journal of Evolutionary Medicine and Dental Sciences, Volume 3, Issue 14, 7th April 2014",
+
+],
   clinic: {
     name: "Divine IVF",
     address: "Sector 76, Noida, Uttar Pradesh 201301",
-    phone: "+91 95600 26697",
-    email: "info@divineivf.com",
+    phone: "+91 7678451808",
+    email: "divineivf003@gmail.com",
     hours: "Mon – Sat: 9:00 AM – 7:00 PM",
   }
 };
@@ -174,11 +189,11 @@ export default function DoctorPage() {
 
               {/* Name */}
               <h1 className="text-4xl md:text-[3.5rem] leading-[1.1] font-bold text-ink-900">
-                Dr. <span className="font-serif italic text-transparent bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text">{doctorData.name}</span>
+                <span className="font-serif italic text-transparent bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text">{doctorData.name}</span>
               </h1>
               
               {/* Description */}
-              <p className="text-base text-ink-500 leading-relaxed max-w-lg">
+              <p className="text-base text-ink-500 leading-relaxed max-w-lg text-justify">
                 {doctorData.bio[0]}
               </p>
 
@@ -305,7 +320,7 @@ export default function DoctorPage() {
                   <div>
                     <h2 className="text-2xl md:text-3xl text-ink-900 mb-6">About {doctorData.name}</h2>
                     {doctorData.bio.map((p, i) => (
-                      <p key={i} className="text-ink-400 leading-relaxed mb-4">{p}</p>
+                      <p key={i} className="text-ink-400 leading-relaxed mb-4 text-justify">{p}</p>
                     ))}
                   </div>
 
@@ -313,7 +328,7 @@ export default function DoctorPage() {
                   <div className="relative bg-gradient-to-br from-rose-50/80 to-pink-50/50 rounded-2xl p-6 border border-rose-100/50 overflow-hidden">
                     <div className="absolute -top-10 -right-10 w-32 h-32 bg-rose-100/30 rounded-full blur-2xl"></div>
                     <Quote className="h-5 w-5 text-rose-400 mb-3 relative z-10" />
-                    <p className="text-sm text-ink-600 leading-relaxed relative z-10 italic">
+                    <p className="text-sm text-ink-600 leading-relaxed relative z-10 italic text-justify">
                       {doctorData.philosophy}
                     </p>
                   </div>
@@ -414,7 +429,7 @@ export default function DoctorPage() {
                     {doctorData.publications.map((pub, i) => (
                       <div key={i} className="flex items-start gap-3 p-4 bg-rose-50/30 rounded-xl border border-rose-100/30 hover:border-rose-200 transition-all">
                         <FileText className="h-5 w-5 text-rose-500 shrink-0 mt-0.5" />
-                        <p className="text-sm text-ink-600 leading-relaxed">{pub}</p>
+                        <p className="text-sm text-ink-600 leading-relaxed text-justify">{pub}</p>
                       </div>
                     ))}
                   </div>

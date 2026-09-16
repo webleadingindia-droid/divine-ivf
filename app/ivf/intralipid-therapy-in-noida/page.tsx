@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Intralipid Therapy in Noida | IVF Intralipid Infusion | Divine IVF",
     description:
       "Learn about intralipid therapy for IVF and implantation concerns in Noida, including its potential uses, limited evidence, risks and personalised fertility guidance.",
-    url: "https://www.divineivf.com/intralipid-therapy-in-noida",
+    url: "http://divine-ivf.vercel.app/intralipid-therapy-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -175,12 +175,12 @@ export default function IntralipidTherapyPage() {
             "No. Intralipid is a fat emulsion, while IVIG contains immunoglobulins obtained from donated plasma.",
         },
         {
-          question: "What is the cost of intralipid therapy in Noida?",
+          question: "What is the cost of intralipid therapy  ",
           answer:
             "Cost varies according to the product, dose, number of infusions, monitoring and associated fertility treatment.",
         },
         {
-          question: "Where can I discuss intralipid therapy in Noida?",
+          question: "Where can I discuss intralipid therapy  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida to review your fertility history and discuss whether any treatment add-on is medically appropriate.",
         },
@@ -707,7 +707,7 @@ export default function IntralipidTherapyPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Fertility Evaluation in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Fertility Evaluation  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

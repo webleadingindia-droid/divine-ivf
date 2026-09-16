@@ -23,7 +23,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.divinewomenivfclinic.com"),
+  metadataBase: new URL("http://divine-ivf.vercel.app"),
   title: {
     default: "Divine Women & IVF Clinic | Dr. Mandavi Rai, Noida",
     template: "%s | Divine Women & IVF Clinic",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Divine Women & IVF Clinic | Dr. Mandavi Rai, Noida",
     description:
       "Personalised fertility evaluation, IVF, IUI and women's healthcare with Dr. Mandavi Rai in Sector 76, Noida.",
-    url: "https://www.divinewomenivfclinic.com",
+    url: "http://divine-ivf.vercel.app",
     siteName: "Divine Women & IVF Clinic",
     locale: "en_IN",
     type: "website",
@@ -62,7 +62,7 @@ const jsonLd = {
   },
   telephone: clinic.phone,
   email: clinic.email,
-  url: "https://www.divinewomenivfclinic.com",
+  url: "http://divine-ivf.vercel.app",
   hasMap: clinic.mapsUrl,
   physician: {
     "@type": "Physician",
@@ -79,7 +79,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <TopBar />
         <Header />
         <main>{children}</main>
         <Footer />

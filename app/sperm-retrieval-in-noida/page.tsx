@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Sperm Retrieval in Noida | TESA, PESA, TESE & Micro-TESE | Divine IVF",
     description:
       "Learn about sperm retrieval options in Noida for azoospermia and male infertility, including TESA, PESA, TESE and Micro-TESE with IVF-ICSI planning.",
-    url: "https://www.divineivf.com/sperm-retrieval-in-noida",
+    url: "http://divine-ivf.vercel.app/sperm-retrieval-in-noida",
     siteName: "Divine IVF",
     images: [
       {
@@ -192,12 +192,12 @@ export default function SpermRetrievalPage() {
             "The procedure is performed with appropriate anaesthesia or pain control. Temporary discomfort, swelling or bruising may occur afterward.",
         },
         {
-          question: "How much does sperm retrieval cost in Noida?",
+          question: "How much does sperm retrieval cost  ",
           answer:
             "Cost varies according to whether PESA, TESA, TESE or Micro-TESE is required and whether IVF, ICSI, sperm freezing and additional investigations are involved.",
         },
         {
-          question: "Where can I discuss sperm retrieval in Noida?",
+          question: "Where can I discuss sperm retrieval  ",
           answer:
             "You can consult Dr. Mandavi Rai at Divine IVF, Sector 76, Noida for couple fertility assessment and treatment planning for male-factor infertility, azoospermia and IVF-ICSI.",
         },
@@ -726,7 +726,7 @@ export default function SpermRetrievalPage() {
 
         {/* Why Choose Divine IVF */}
         <div className="bg-white rounded-2xl p-6 border border-ink-100/50">
-          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Sperm Retrieval Treatment Planning in Noida?</h2>
+          <h2 className="text-xl font-bold text-ink-900 mb-4">Why Choose Divine IVF for Sperm Retrieval Treatment Planning  </h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-ink-600">
               <span className="text-rose-500 font-bold text-lg">✓</span>

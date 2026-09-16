@@ -8,7 +8,7 @@ export const clinic = {
   addressShort: "Sector 76, Noida",
   phone: "+91 7678451808",
   phoneHref: "tel:+917678451808",
-  email: "mandavirai1988@gmail.com",
-  emailHref: "mailto:mandavirai1988@gmail.com",
+  email: "divineivf003@gmail.com",
+  emailHref: "mailto:divineivf003@gmail.com",
   mapsUrl: "https://maps.app.goo.gl/SgKxv5wxwZjZUhTa7",
 };
