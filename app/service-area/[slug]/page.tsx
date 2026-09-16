@@ -34,7 +34,7 @@ type Params = { slug: string };
 // NOTE: update these to match your real domain / clinic details.
 // They're used to fill the JSON-LD + microdata below.
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "http://divine-ivf.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.divineivf.com";
 const CLINIC_PHONE = "+91-7678451808";
 const CLINIC_LOGO = `${SITE_URL}/logo.png`;
 const CLINIC_GEO = { latitude: "28.6139", longitude: "77.2090" }; // Delhi/NCR default
@@ -73,6 +73,51 @@ interface InternalPagesResponse {
   status: boolean;
   message: string;
   data: InternalPage[];
+  pagination?: {
+    current_page: number;
+    per_page: number;
+    total: number;
+    last_page: number;
+  };
+}
+
+/**
+ * fetch with a couple of retries + a short backoff.
+ *
+ * Why this matters: on Vercel, the very first request to a
+ * /service-area/[slug] page that wasn't pre-rendered at build time
+ * (e.g. because generateStaticParams didn't cover every page, or a
+ * new page was added after the last build) gets rendered on-demand.
+ * If that single fetch to the API has a transient hiccup — a cold
+ * start, a slow response, a momentary network blip — the page falls
+ * straight through to notFound(), and Next then caches that 404 for
+ * `revalidate` seconds. That's exactly why a reload "fixes" it: the
+ * next request just happens to succeed. Retrying a couple of times
+ * before giving up removes almost all of that flakiness.
+ */
+async function fetchWithRetry(
+  url: string,
+  init: RequestInit & { next?: { revalidate?: number } },
+  retries = 2,
+  delayMs = 400
+): Promise<Response | null> {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(url, init);
+      // Only retry on server-side failures — a genuine 404 from the
+      // API shouldn't be retried, it just means the slug doesn't exist.
+      if (res.ok || res.status < 500 || attempt === retries) return res;
+    } catch (error) {
+      if (attempt === retries) {
+        console.error(`fetchWithRetry failed for ${url}:`, error);
+        return null;
+      }
+    }
+    await new Promise((resolve) =>
+      setTimeout(resolve, delayMs * (attempt + 1))
+    );
+  }
+  return null;
 }
 
 // ============ HELPERS ============
@@ -235,19 +280,53 @@ function buildSchemas(post: SingleInternalPage) {
 }
 
 // ============ STATIC PARAMS ============
+// Pre-renders every /service-area/[slug] page at build time.
+// IMPORTANT: this must fetch every page via pagination (per_page=1000,
+// looping through last_page) — without it, the API's default page size
+// silently returns only a fraction of all slugs, and every page outside
+// that list has to be rendered on-demand on its first real visit
+// instead of being served instantly from the pre-built cache.
 export async function generateStaticParams() {
   try {
-    const res = await fetch(
-      "https://ivfapi.webleadingindia.com/api/internal-pages",
-      { next: { revalidate: 60 } }
+    let allPages: InternalPage[] = [];
+
+    const firstRes = await fetchWithRetry(
+      "https://ivfapi.webleadingindia.com/api/internal-pages?page=1&per_page=1000",
+      { next: { revalidate: 3600 } }
     );
-    if (!res.ok) return [];
-    const json: InternalPagesResponse = await res.json();
-    return (json.data || []).map((post) => ({ slug: post.slug }));
-  } catch {
+    if (!firstRes || !firstRes.ok) return [];
+
+    const firstJson: InternalPagesResponse = await firstRes.json();
+    allPages = firstJson.data || [];
+
+    const lastPage = firstJson.pagination?.last_page || 1;
+    if (lastPage > 1) {
+      const requests = [];
+      for (let p = 2; p <= lastPage; p++) {
+        requests.push(
+          fetchWithRetry(
+            `https://ivfapi.webleadingindia.com/api/internal-pages?page=${p}&per_page=1000`,
+            { next: { revalidate: 3600 } }
+          ).then((r) => (r && r.ok ? r.json() : null))
+        );
+      }
+      const results = await Promise.all(requests);
+      for (const r of results) {
+        if (r && r.data) allPages = allPages.concat(r.data);
+      }
+    }
+
+    return allPages.map((post) => ({ slug: post.slug }));
+  } catch (error) {
+    console.error("Error in generateStaticParams for service-area:", error);
     return [];
   }
 }
+
+// Pages not covered by generateStaticParams (e.g. added after the last
+// build) are still rendered on-demand and cached — they just aren't
+// pre-built. Keeping this explicit documents that intent.
+export const dynamicParams = true;
 
 // ============ METADATA ============
 export async function generateMetadata({
@@ -256,11 +335,11 @@ export async function generateMetadata({
   params: Params;
 }): Promise<Metadata> {
   try {
-    const res = await fetch(
+    const res = await fetchWithRetry(
       `https://ivfapi.webleadingindia.com/api/internal-pages/${params.slug}`,
       { next: { revalidate: 60 } }
     );
-    if (!res.ok) return {};
+    if (!res || !res.ok) return {};
 
     const json: SingleInternalPageResponse = await res.json();
     const post = json.data;
@@ -338,11 +417,11 @@ export default async function ServiceAreaDetailPage({
 }) {
   let post: SingleInternalPage | null = null;
   try {
-    const res = await fetch(
+    const res = await fetchWithRetry(
       `https://ivfapi.webleadingindia.com/api/internal-pages/${params.slug}`,
       { next: { revalidate: 60 } }
     );
-    if (res.ok) {
+    if (res && res.ok) {
       const json: SingleInternalPageResponse = await res.json();
       post = json.data;
     }
@@ -355,11 +434,11 @@ export default async function ServiceAreaDetailPage({
   // Related pages
   let allPages: InternalPage[] = [];
   try {
-    const res = await fetch(
-      "https://ivfapi.webleadingindia.com/api/internal-pages",
+    const res = await fetchWithRetry(
+      "https://ivfapi.webleadingindia.com/api/internal-pages?per_page=1000",
       { next: { revalidate: 60 } }
     );
-    if (res.ok) {
+    if (res && res.ok) {
       const json: InternalPagesResponse = await res.json();
       allPages = json.data || [];
     }
@@ -918,7 +997,7 @@ export default async function ServiceAreaDetailPage({
                       Call Now
                     </a>
                     <Link
-                      href="/consultation"
+                      href="/book-appointment"
                       className="inline-flex items-center gap-2 px-4 py-2.5 bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-semibold rounded-xl hover:bg-white/30 transition-all"
                     >
                       Book
@@ -997,7 +1076,7 @@ export default async function ServiceAreaDetailPage({
                   Need Help in {post.location}?
                 </h3>
                 <p className="text-white/90 text-sm mb-4">
-                  Connect with us instantly. We`re here to help you.
+                  Connect with us instantly. We&apos;re here to help you.
                 </p>
 
                 <div className="space-y-3">
@@ -1061,7 +1140,7 @@ export default async function ServiceAreaDetailPage({
                   Schedule a consultation at {post.location}.
                 </p>
                 <Link
-                  href="/consultation"
+                  href="/book-appointment"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-sm font-semibold rounded-xl hover:shadow-lg transition-all"
                 >
                   Book Now
