@@ -38,7 +38,6 @@ const columns = [
     title: "Clinic",
     links: [
       { label: "Dr. Mandavi Rai", href: "/doctor/dr-mandavi-rai" },
-      { label: "Service Area", href: "/service-area" },
       { label: "Blogs", href: "/blog" },
       { label: "Patient Stories", href: "/patient-stories" },
       { label: "Gallery", href: "/gallery" },
